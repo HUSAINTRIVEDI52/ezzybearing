@@ -6,8 +6,23 @@ import { siteConfig } from "@/lib/siteConfig";
 import { ShieldCheck, Lock, Eye, FileText } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | EZZI Bearing Suppliers",
+  title: "Privacy Policy",
   description: "Privacy policy and B2B communication transparency guidelines for EZZI Bearing Suppliers, Manmad.",
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/privacy-policy`,
+  },
+  openGraph: {
+    title: `Privacy Policy | ${siteConfig.name}`,
+    description: "Privacy policy and B2B communication transparency guidelines for EZZI Bearing Suppliers, Manmad.",
+    url: `${siteConfig.siteUrl}/privacy-policy`,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Privacy Policy | ${siteConfig.name}`,
+    description: "Privacy policy and B2B communication transparency guidelines for EZZI Bearing Suppliers, Manmad.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function PrivacyPolicyPage() {

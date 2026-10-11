@@ -54,27 +54,31 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: siteConfig.siteUrl,
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: siteConfig.siteUrl,
-    title: `${siteConfig.name} | Authorized Bearing Stockist`,
+    title: `${siteConfig.name} | Stockist - SKF, TATA, XNO, DSF | Manmad`,
     description: `${siteConfig.subtitle}. ${siteConfig.slogan}`,
     siteName: siteConfig.name,
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: `${siteConfig.name} - Official Stockist`,
+        type: "image/png",
+        alt: `${siteConfig.name} - Bearing Suppliers Manmad`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Manmad Depot`,
+    title: `${siteConfig.name} | Stockist - SKF, TATA, XNO, DSF | Manmad`,
     description: siteConfig.slogan,
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: [

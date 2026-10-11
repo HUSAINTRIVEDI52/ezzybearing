@@ -44,7 +44,7 @@ export function getImagePath(key?: string): string {
 
 /**
  * Generates descriptive, SEO-optimized image alt text
- * e.g., "SKF deep groove ball bearing 6205 - EZZI Bearing Suppliers"
+ * e.g., "Genuine Tapered Roller Bearing 30208 - EZZI Bearing Suppliers Manmad"
  */
 export function getBearingAltText(item: {
   partNumber?: string;
@@ -53,7 +53,12 @@ export function getBearingAltText(item: {
   brand?: string;
 }): string {
   const brand = item.brand || "Genuine";
-  const part = item.partNumber ? ` ${item.partNumber}` : "";
-  const name = item.name || item.categoryName || "Bearing";
-  return `${brand} ${name}${part} - EZZI Bearing Suppliers Manmad`;
+  let baseName = item.name || item.categoryName || "Bearing";
+  
+  // If partNumber is present and not already part of baseName, append it once
+  if (item.partNumber && !baseName.includes(item.partNumber)) {
+    baseName = `${baseName} ${item.partNumber}`;
+  }
+  
+  return `${brand} ${baseName} - EZZI Bearing Suppliers Manmad`;
 }

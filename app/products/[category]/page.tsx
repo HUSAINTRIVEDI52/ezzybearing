@@ -40,7 +40,9 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     };
   }
 
-  const title = `${cat.name} Stockist & Wholesale Supplier | EZZI Bearing Suppliers`;
+  const title = `${cat.name} Stockist & Wholesale Supplier`;
+  const fullPageTitle = `${cat.name} Stockist & Wholesale Supplier | ${siteConfig.name}`;
+  const canonicalUrl = `${siteConfig.siteUrl}/products/${cat.id}`;
   const description = `${cat.seoIntro?.slice(0, 155)}... Genuine SKF, TATA, XNO, DSF stock in Manmad with all-India express delivery.`;
 
   return {
@@ -54,10 +56,29 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       "bearing wholesale india",
       "skf tata bearings manmad"
     ],
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
-      title,
+      title: fullPageTitle,
       description,
       type: "website",
+      url: canonicalUrl,
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          type: "image/png",
+          alt: `${cat.name} - ${siteConfig.name}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: fullPageTitle,
+      description,
+      images: ["/og-image.png"],
     },
   };
 }

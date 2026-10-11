@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us - EZZI Bearing Suppliers | Manmad, Maharashtra",
+  title: "Contact Us | Manmad, Maharashtra",
   description: "Contact Shabbir and Ammar Sakriwala at EZZI Bearing Suppliers in Manmad. Call, WhatsApp, email, or visit our Burhani Complex warehouse in Bohri Compound.",
   keywords: [
     "contact ezzi bearing suppliers",
@@ -26,7 +26,22 @@ export const metadata: Metadata = {
     "ammar sakriwala contact",
     "bearing supplier manmad address",
     "bearing shop near bohri masjid manmad"
-  ]
+  ],
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/contact`,
+  },
+  openGraph: {
+    title: `Contact Us | ${siteConfig.name}`,
+    description: "Contact Shabbir and Ammar Sakriwala at EZZI Bearing Suppliers in Manmad. Call, WhatsApp, email, or visit our warehouse.",
+    url: `${siteConfig.siteUrl}/contact`,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact Us | ${siteConfig.name}`,
+    description: "Contact Shabbir and Ammar Sakriwala at EZZI Bearing Suppliers in Manmad.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function ContactPage() {

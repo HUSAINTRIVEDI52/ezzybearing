@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us - EZZI Bearing Suppliers | Manmad, Maharashtra",
+  title: "About Us | Manmad, Maharashtra",
   description: "Learn about EZZI Bearing Suppliers, stockist of SKF, TATA, XNO, DSF bearings and hand tools in Manmad, Maharashtra. Founded on Quality, Precision, and Trust.",
   keywords: [
     "about ezzi bearing suppliers",
@@ -29,7 +29,22 @@ export const metadata: Metadata = {
     "ammar sakriwala bearing",
     "bearing stockist bohari compound manmad",
     "bearing supplier maharashtra"
-  ]
+  ],
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/about`,
+  },
+  openGraph: {
+    title: `About Us | ${siteConfig.name}`,
+    description: "Learn about EZZI Bearing Suppliers, stockist of SKF, TATA, XNO, DSF bearings and hand tools in Manmad, Maharashtra.",
+    url: `${siteConfig.siteUrl}/about`,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `About Us | ${siteConfig.name}`,
+    description: "Learn about EZZI Bearing Suppliers, stockist of SKF, TATA, XNO, DSF bearings and hand tools in Manmad, Maharashtra.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function AboutPage() {

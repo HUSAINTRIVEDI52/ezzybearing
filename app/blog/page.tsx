@@ -15,14 +15,29 @@ import {
 import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Industrial Bearing Knowledge Hub & Guides | EZZI Bearing Suppliers",
+  title: "Industrial Bearing Knowledge Hub & Guides",
   description: "Expert engineering articles, part number decoding guides, and practical bearing selection tips from EZZI Bearing Suppliers, Manmad.",
   keywords: [
     "bearing engineering blog",
     "bearing number decoding",
     "bearing maintenance guide",
     "how to select industrial bearings"
-  ]
+  ],
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/blog`,
+  },
+  openGraph: {
+    title: `Knowledge Hub & Guides | ${siteConfig.name}`,
+    description: "Expert engineering articles, part number decoding guides, and practical bearing selection tips.",
+    url: `${siteConfig.siteUrl}/blog`,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Knowledge Hub & Guides | ${siteConfig.name}`,
+    description: "Expert engineering articles, part number decoding guides, and practical bearing selection tips.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function BlogIndexPage() {

@@ -16,7 +16,22 @@ export const metadata: Metadata = {
     "manmad bearing supplier",
     "tapered roller bearing catalogue",
     "deep groove ball bearing stockist"
-  ]
+  ],
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/products`,
+  },
+  openGraph: {
+    title: `Industrial Bearing Catalogue | ${siteConfig.name}`,
+    description: "Browse 198+ verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and pillow blocks.",
+    url: `${siteConfig.siteUrl}/products`,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Industrial Bearing Catalogue | ${siteConfig.name}`,
+    description: "Browse 198+ verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and pillow blocks.",
+    images: ["/og-image.png"],
+  },
 };
 
 import { getAllProducts, getCategories } from "@/lib/products";

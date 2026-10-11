@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Industries Served - Bearing Solutions | EZZI Bearing Suppliers",
+  title: "Industries Served - Bearing Solutions",
   description: "Specialized bearing solutions for automotive, agriculture, textile, cement, steel, sugar, material handling, and general engineering industries across India.",
   keywords: [
     "automotive bearings",
@@ -27,7 +27,22 @@ export const metadata: Metadata = {
     "cement plant bearings",
     "textile machine bearings",
     "steel mill bearings maharashtra"
-  ]
+  ],
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/industries`,
+  },
+  openGraph: {
+    title: `Industries Served | ${siteConfig.name}`,
+    description: "Specialized bearing solutions for automotive, agriculture, textile, cement, steel, sugar, and heavy manufacturing.",
+    url: `${siteConfig.siteUrl}/industries`,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Industries Served | ${siteConfig.name}`,
+    description: "Specialized bearing solutions for automotive, agriculture, textile, cement, steel, sugar, and heavy manufacturing.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function IndustriesPage() {

@@ -47,12 +47,15 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const product = getProductBySlug(params.category, params.slug);
   if (!product) {
     return {
-      title: "Product Not Found | EZZI Bearing Suppliers",
+      title: "Product Not Found",
     };
   }
 
-  const title = `${product.partNumber} ${product.name} | EZZI Bearing Suppliers`;
-  const description = `Buy authentic ${product.partNumber} ${product.name} (${product.d}x${product.D}x${product.B} mm). In stock at EZZI Bearing Suppliers, Manmad with all-India express delivery.`;
+  // The title passed to the layout template (%s | EZZI Bearing Suppliers)
+  const title = product.name;
+  const fullPageTitle = `${product.name} | ${siteConfig.name}`;
+  const canonicalUrl = `${siteConfig.siteUrl}/products/${product.category}/${product.slug || product.id}`;
+  const description = `Buy authentic ${product.name} (${product.d}x${product.D}x${product.B} mm). In stock at EZZI Bearing Suppliers, Manmad with all-India express delivery.`;
 
   return {
     title,
@@ -67,10 +70,29 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       "bearing stockist manmad",
       "industrial bearing supplier"
     ],
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
-      title,
+      title: fullPageTitle,
       description,
       type: "website",
+      url: canonicalUrl,
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          type: "image/png",
+          alt: `${product.name} - ${siteConfig.name}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: fullPageTitle,
+      description,
+      images: ["/og-image.png"],
     },
   };
 }
@@ -88,7 +110,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": `${product.partNumber} ${product.name}`,
+    "name": product.name,
     "image": `${siteConfig.siteUrl}/logo.svg`,
     "description": product.description || `Industrial ${product.categoryName} part number ${product.partNumber}.`,
     "sku": product.partNumber,
@@ -258,9 +280,9 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 </span>
               </div>
 
-              {/* Title: {Article No.} {Description} */}
+              {/* Product Heading */}
               <h1 className="font-heading font-black text-3xl sm:text-4xl text-[#0B1B3D] tracking-tight uppercase">
-                {product.partNumber} {product.name}
+                {product.name}
               </h1>
 
               {/* Availability Note */}

@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bearing Brands Stocked - XNO, DSF, SKF, TATA | EZZI Bearing Suppliers",
+  title: "Bearing Brands Stocked - XNO, DSF, SKF, TATA",
   description: "Explore world-class bearing brands stocked at EZZI Bearing Suppliers in Manmad: XNO, DSF, SKF, and TATA. Instant WhatsApp price quotes and all-India dispatch.",
   keywords: [
     "skf bearings stockist",
@@ -24,7 +24,22 @@ export const metadata: Metadata = {
     "xno bearings distributor",
     "dsf bearings dealer",
     "industrial bearing brands maharashtra"
-  ]
+  ],
+  alternates: {
+    canonical: `${siteConfig.siteUrl}/brands`,
+  },
+  openGraph: {
+    title: `Bearing Brands Stocked | ${siteConfig.name}`,
+    description: "Explore world-class bearing brands stocked at EZZI Bearing Suppliers in Manmad: XNO, DSF, SKF, and TATA.",
+    url: `${siteConfig.siteUrl}/brands`,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Bearing Brands Stocked | ${siteConfig.name}`,
+    description: "Explore world-class bearing brands stocked at EZZI Bearing Suppliers in Manmad: XNO, DSF, SKF, and TATA.",
+    images: ["/og-image.png"],
+  },
 };
 
 const BRAND_PROFILES = [

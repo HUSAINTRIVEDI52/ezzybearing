@@ -38,14 +38,36 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
+  const fullTitle = `${post.title} | ${siteConfig.name}`;
+  const canonicalUrl = `${siteConfig.siteUrl}/blog/${post.slug}`;
+
   return {
-    title: `${post.title} | EZZI Bearing Suppliers Knowledge Hub`,
+    title: `${post.title} | Knowledge Hub`,
     description: post.excerpt,
     keywords: post.keywords,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
-      title: post.title,
+      title: fullTitle,
       description: post.excerpt,
       type: "article",
+      url: canonicalUrl,
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          type: "image/png",
+          alt: `${post.title} - ${siteConfig.name}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: fullTitle,
+      description: post.excerpt,
+      images: ["/og-image.png"],
     },
   };
 }
