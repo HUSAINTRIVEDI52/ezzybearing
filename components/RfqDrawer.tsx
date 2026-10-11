@@ -71,10 +71,10 @@ export function RfqDrawer() {
   const handleCopyBOM = () => {
     if (items.length === 0) return;
     const text = items.map((item, idx) => 
-      `${idx + 1}. Part: ${item.product.partNumber} | Size: ${item.product.d}x${item.product.D}x${item.product.B} mm | Qty: ${item.quantity} | Brands: ${item.product.brands.join(', ')}`
+      `${idx + 1}. Part: ${item.product.partNumber} | Size: ${item.product.d}x${item.product.D}x${item.product.B} mm | Qty: ${item.quantity}`
     ).join("\n");
 
-    const fullSummary = `EZZI BEARING SUPPLIERS - RFQ BOM\n--------------------------------------\n${text}\n--------------------------------------\nSupplier: ${siteConfig.name}, Manmad Depot\nWhatsApp: +91 ${siteConfig.whatsappNumber}`;
+    const fullSummary = `EZZI BEARING SUPPLIERS - RFQ BOM\n--------------------------------------\n${text}\n--------------------------------------\nSupplier: ${siteConfig.name}, Manmad\nWhatsApp: +91 ${siteConfig.whatsappNumber}`;
 
     navigator.clipboard.writeText(fullSummary);
     setCopied(true);
@@ -159,13 +159,9 @@ export function RfqDrawer() {
                       <p className="text-xs text-slate-500 mt-0.5 line-clamp-1">
                         {item.product.categoryName}
                       </p>
-                      <div className="flex flex-wrap gap-1 mt-1.5">
-                        {item.product.brands.map(b => (
-                          <span key={b} className="text-[10px] font-mono font-bold px-1.5 py-0.2 rounded bg-[#C9962B]/10 text-[#C9962B]">
-                            {b}
-                          </span>
-                        ))}
-                      </div>
+                      <p className="text-[11px] text-slate-500 mt-1 italic">
+                        Enquire for availability
+                      </p>
                     </div>
 
                     <button
@@ -239,7 +235,7 @@ export function RfqDrawer() {
               <div className="p-3.5 rounded-lg bg-[#C9962B]/10 border border-[#C9962B]/30 flex items-start gap-2.5">
                 <ShieldCheck className="w-4 h-4 text-[#C9962B] shrink-0 mt-0.5" />
                 <p className="text-xs text-slate-700 leading-snug">
-                  All listed SKF, TATA, XNO, DSF bearings supplied from authentic manufacturer authorized pipelines. Zero counterfeit guarantee.
+                  Bulk orders and delivery across India. Send your bearing requirements for a direct quote.
                 </p>
               </div>
             </div>

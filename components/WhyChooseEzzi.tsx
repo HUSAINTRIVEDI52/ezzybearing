@@ -11,17 +11,17 @@ export function WhyChooseEzzi() {
     {
       icon: <ShoppingBag className="w-6 h-6 text-[#0B1B3D]" />,
       title: "Bulk & Wholesale Orders",
-      description: "Competitive wholesale pricing, tax-compliant GST invoicing, and secure industrial batch packaging."
+      description: "Competitive wholesale pricing and dedicated trade order handling."
     },
     {
       icon: <Truck className="w-6 h-6 text-[#C9962B]" />,
-      title: "All-India Delivery",
-      description: "Strategic logistics hub at Manmad Junction ensuring fast and reliable freight dispatch across India."
+      title: "Delivery Across India",
+      description: "Reliable freight and parcel dispatch arranged to destinations across India."
     },
     {
       icon: <MessageSquare className="w-6 h-6 text-[#0B1B3D]" />,
-      title: "Quick Quotes on WhatsApp",
-      description: "Direct assistance from our trade desk. Share your part numbers and receive rapid stock availability."
+      title: "Quotes on WhatsApp",
+      description: "Direct trade assistance. Send us your bearing number for pricing and availability."
     }
   ];
 
@@ -46,7 +46,7 @@ export function WhyChooseEzzi() {
           </div>
 
           <p className="text-sm text-slate-600 font-sans">
-            Built on Quality, Precision, and Trust — supplying authentic bearing solutions with reliable service.
+            Built on Quality, Precision, and Trust — supplying bearing solutions with reliable service.
           </p>
         </div>
 

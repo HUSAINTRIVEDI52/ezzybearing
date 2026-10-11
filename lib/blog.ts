@@ -37,7 +37,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "- **Metal Shields (ZZ / 2Z):** Non-contact steel dust shields ideal for clean indoor environments requiring high operating RPM with negligible friction.",
       "- **Rubber Contact Seals (2RS / 2RSH):** Nitrile rubber contact seals that physically seal against the inner ring shoulder. Critical for dusty quarry plants, agricultural rotavators, and washdown environments.",
       "### Summary & Expert Procurement",
-      "When in doubt, cross-reference operating conditions with our technical trade desk at EZZI Bearing Suppliers, Manmad. We supply authentic SKF, TATA, XNO, and DSF bearings with factory certificates across India."
+      "When in doubt, get in touch with EZZI Bearing Suppliers, Manmad. We are a stockist of SKF, TATA, XNO, and DSF bearings, with delivery across India."
     ]
   },
   {
@@ -62,9 +62,9 @@ export const BLOG_POSTS: BlogPost[] = [
       "- **Deep Groove Ball Bearings are non-separable.** They come pre-assembled with factory-defined internal clearance. Installation involves simply pressing the rings onto shaft and housing shoulders.",
       "- **Tapered Roller Bearings are separable.** The inner cone (with cage and rollers) separates cleanly from the outer cup. This enables simpler individual mounting, but requires precise manual end-play or preload adjustment during assembly using shims, locknuts, or threaded rings.",
       "### 4. Ideal Application Breakdown",
-      "| Parameter | Deep Groove Ball (e.g. 6205) | Tapered Roller (e.g. 30208) |\n|---|---|---|\n| Contact Type | Point Contact | Line Contact |\n| Speed Limit | Very High (up to 15,000+ RPM) | Moderate to High |\n| Shock Resistance | Moderate | Outstanding |\n| Axial Direction | Bidirectional | Unidirectional (requires pair) |\n| Typical Uses | Electric motors, water pumps, alternators | Truck wheel hubs, differentials, sugar mill reducers |",
-      "### Sourcing Verified Units from Manmad",
-      "EZZI Bearing Suppliers stocks full series of both deep groove ball and metric tapered roller bearings from SKF, TATA, XNO, and DSF at our Bohri Compound depot, with express transit nationwide."
+      "| Parameter | Deep Groove Ball (e.g. 6205) | Tapered Roller (e.g. 30208) |\n|---|---|---|\n| Contact Type | Point Contact | Line Contact |\n| Speed Limit | Very High (up to 15,000+ RPM) | Moderate to High |\n| Shock Resistance | Moderate | Outstanding |\n| Axial Direction | Bidirectional | Unidirectional (requires pair) |\n| Typical Uses | Electric motors, water pumps, alternators | Truck wheel hubs, gearboxes, industrial equipment |",
+      "### Sourcing Bearings in Manmad",
+      "EZZI Bearing Suppliers is a stockist of SKF, TATA, XNO, and DSF bearings in Manmad, with delivery across India."
     ]
   },
   {
@@ -89,10 +89,9 @@ export const BLOG_POSTS: BlogPost[] = [
       "### 2. Identifying the Bearing Family (The First Digit/Letters)",
       "- **6**: Single row deep groove ball bearing (e.g. 6004, 6205, 6308)",
       "- **3**: Metric tapered roller bearing (e.g. 30208, 32210, 32309)",
-      "- **2**: Spherical roller bearing (e.g. 22218, 22220-E)",
+      "- **2**: Spherical roller bearing (e.g. 22218)",
       "- **5**: Thrust ball bearing (e.g. 51105, 51208)",
       "- **NU / NJ / NUP**: Cylindrical roller bearing with varying inner/outer rib arrangements",
-      "- **UCP / UCF**: Mounted pillow and flange block cast iron units",
       "### 3. The ISO Bore Size Rule (Last Two Digits)",
       "For standard bearings with bore diameters of 20 mm and above, the last two digits multiplied by 5 gives the exact inner bore in millimeters:",
       "- `04`: 04 × 5 = **20 mm**",
@@ -113,7 +112,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "- **Cages:** `M` = Machined brass cage; `J` = Pressed sheet steel cage; `TN9` or `ECP` = Glass fiber reinforced polyamide cage.",
       "- **Locating:** `NR` or `2N` = Snap ring groove with snap ring on the outer ring.",
       "### Keep this Guide Handy in Your Workshop",
-      "Save this reference for your next equipment overhaul. If your machine's stamped part number has worn away, send the measured shaft diameter and housing bore to EZZI Bearing Suppliers on WhatsApp for instant cross-matching."
+      "Save this reference for your next equipment overhaul. If your machine's stamped part number has worn away, send the measured shaft diameter and housing bore to EZZI Bearing Suppliers on WhatsApp for assistance."
     ]
   }
 ];

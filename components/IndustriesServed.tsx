@@ -63,7 +63,7 @@ export function IndustriesServed() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] uppercase tracking-tight">
-            Industries Served
+            Industry Applications
           </h2>
 
           <div className="flex items-center justify-center gap-3 my-3">
@@ -73,7 +73,7 @@ export function IndustriesServed() {
           </div>
 
           <p className="text-sm text-slate-600 font-sans">
-            Tailored rolling element solutions for primary machinery and plant sectors across India.
+            Common bearing types used across industrial machinery and commercial applications.
           </p>
         </div>
 

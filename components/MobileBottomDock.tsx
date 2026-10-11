@@ -7,16 +7,16 @@ import { Phone, MessageSquare, FileSpreadsheet } from "lucide-react";
 
 export function MobileBottomDock() {
   const { totalItems, openDrawer } = useRfq();
-  const contact = siteConfig.contacts[0]; // Ammar
+  const contact = siteConfig.contacts.primary; // Shabbir Sakriwala
 
   return (
     <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0B1B3D]/95 backdrop-blur-lg border-t border-[#C9962B]/30 py-2 px-4 shadow-2xl safe-area-bottom">
       <div className="grid grid-cols-3 gap-2 items-center max-w-md mx-auto">
         {/* 1. Call Button */}
         <a
-          href={`tel:+91${contact.phone}`}
+          href={`tel:${contact.phoneClean}`}
           className="flex flex-col items-center justify-center min-h-[48px] py-1 text-slate-200 hover:text-[#E4B94F] transition-colors rounded-xl active:bg-white/10 touch-manipulation"
-          aria-label="Call Depot Desk"
+          aria-label={`Call ${contact.name}`}
         >
           <div className="w-8 h-8 rounded-full bg-[#132752] border border-[#C9962B]/40 flex items-center justify-center text-[#E4B94F]">
             <Phone className="w-4 h-4" />

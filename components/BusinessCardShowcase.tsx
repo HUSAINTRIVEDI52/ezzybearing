@@ -16,8 +16,8 @@ import {
 
 export function BusinessCardShowcase() {
   const [addressCopied, setAddressCopied] = useState(false);
-  const ammar = siteConfig.contacts[0];
-  const shabbir = siteConfig.contacts[1];
+  const shabbir = siteConfig.contacts.primary;
+  const ammar = siteConfig.contacts.secondary;
 
   const handleCopyAddress = () => {
     navigator.clipboard.writeText(siteConfig.address);
@@ -36,11 +36,11 @@ export function BusinessCardShowcase() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#C9962B] font-mono text-xs font-bold mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>OFFICIAL BUSINESS CREDENTIAL</span>
+            <span>BUSINESS DETAILS</span>
           </div>
 
           <h2 className="text-4xl sm:text-5xl font-heading font-extrabold text-[#0B1B3D] uppercase tracking-tight">
-            Direct Trade Depot &amp; Visiting Card
+            Direct Trade Contacts
           </h2>
 
           <div className="flex items-center justify-center gap-3 my-3">
@@ -50,7 +50,7 @@ export function BusinessCardShowcase() {
           </div>
 
           <p className="text-sm sm:text-base text-slate-600 font-sans">
-            Connect directly with our partners for wholesale rates, bulk tender supply, or emergency breakdown delivery from Manmad, Maharashtra.
+            Connect directly with our partners for quotes, bulk orders, and bearing enquiries.
           </p>
         </div>
 
@@ -107,10 +107,10 @@ export function BusinessCardShowcase() {
             {/* Stockist Brands Banner */}
             <div className="p-3 rounded-xl bg-[#132752] border border-[#C9962B]/30 my-4 text-center">
               <span className="text-[10px] font-mono uppercase tracking-wider text-slate-300 block mb-1">
-                Official Stockist Brands In Ready Inventory:
+                Stockist of SKF, TATA, XNO, DSF:
               </span>
               <p className="text-xs font-mono font-bold text-[#E4B94F]">
-                XNO • DSF • SKF • TATA • BALL &amp; TAPER ROLLER BEARINGS • HAND TOOLS
+                XNO • DSF • SKF • TATA • BALL &amp; ROLLER TAPER BEARINGS • HAND TOOLS
               </p>
             </div>
 
@@ -119,71 +119,33 @@ export function BusinessCardShowcase() {
               {/* Left Column: Direct Partner Phones */}
               <div className="space-y-4">
                 <span className="text-xs font-mono uppercase tracking-wider text-[#E4B94F] font-bold block">
-                  Direct Stockist Partners:
+                  Direct Contacts:
                 </span>
 
-                {/* Ammar Sakriwala */}
+                {/* Shabbir Sakriwala */}
                 <div className="p-3.5 rounded-xl bg-[#132752] border border-[#C9962B]/30 flex items-center justify-between">
                   <div>
                     <div className="flex items-center gap-2">
                       <h4 className="text-sm font-heading font-extrabold text-white uppercase">
-                        {ammar.name}
+                        {shabbir.name}
                       </h4>
                       <span className="text-[9px] font-mono font-bold uppercase px-1.5 py-0.5 rounded bg-[#C9962B]/20 text-[#E4B94F] border border-[#C9962B]/30">
-                        Default POC
+                        Managing Partner
                       </span>
                     </div>
                     <p className="text-[11px] font-mono text-slate-300">
-                      Partner &amp; Operations
+                      Wholesale &amp; Procurement
                     </p>
                     <a 
-                      href={`tel:+91${ammar.phone}`}
+                      href={`tel:${shabbir.phoneClean}`}
                       className="text-xs font-mono font-bold text-[#E4B94F] hover:underline mt-0.5 block"
                     >
-                      +91 {ammar.phone}
+                      {shabbir.phone}
                     </a>
                   </div>
                   <div className="flex items-center gap-1.5">
                     <a
-                      href={`tel:+91${ammar.phone}`}
-                      className="p-2 rounded-lg bg-[#0B1B3D] hover:bg-black text-[#E4B94F] transition-colors"
-                      title="Call Ammar bhai"
-                      aria-label="Call Ammar bhai"
-                    >
-                      <Phone className="w-4 h-4" />
-                    </a>
-                    <a
-                      href={`https://wa.me/91${ammar.phone}?text=${encodeURIComponent("Hello Ammar bhai, I am contacting you via EZZI Bearing Suppliers website for a quote.")}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-lg bg-[#25D366] text-slate-950 transition-colors"
-                      title="WhatsApp Ammar bhai"
-                      aria-label="WhatsApp Ammar bhai"
-                    >
-                      <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
-                    </a>
-                  </div>
-                </div>
-
-                {/* Shabbir Sakriwala */}
-                <div className="p-3.5 rounded-xl bg-[#132752] border border-white/10 flex items-center justify-between">
-                  <div>
-                    <h4 className="text-sm font-heading font-extrabold text-white uppercase">
-                      {shabbir.name}
-                    </h4>
-                    <p className="text-[11px] font-mono text-slate-300">
-                      Managing Partner
-                    </p>
-                    <a 
-                      href={`tel:+91${shabbir.phone}`}
-                      className="text-xs font-mono font-bold text-[#E4B94F] hover:underline mt-0.5 block"
-                    >
-                      +91 {shabbir.phone}
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <a
-                      href={`tel:+91${shabbir.phone}`}
+                      href={`tel:${shabbir.phoneClean}`}
                       className="p-2 rounded-lg bg-[#0B1B3D] hover:bg-black text-[#E4B94F] transition-colors"
                       title="Call Shabbir bhai"
                       aria-label="Call Shabbir bhai"
@@ -191,12 +153,50 @@ export function BusinessCardShowcase() {
                       <Phone className="w-4 h-4" />
                     </a>
                     <a
-                      href={`https://wa.me/91${shabbir.phone}?text=${encodeURIComponent("Hello Shabbir bhai, I am contacting you via EZZI Bearing Suppliers website for a quote.")}`}
+                      href={`https://wa.me/${shabbir.whatsappClean}?text=${encodeURIComponent("Hello Shabbir bhai, I am contacting you via EZZI Bearing Suppliers website for a quote.")}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-[#25D366] text-slate-950 transition-colors"
                       title="WhatsApp Shabbir bhai"
                       aria-label="WhatsApp Shabbir bhai"
+                    >
+                      <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
+                    </a>
+                  </div>
+                </div>
+
+                {/* Ammar Sakriwala */}
+                <div className="p-3.5 rounded-xl bg-[#132752] border border-white/10 flex items-center justify-between">
+                  <div>
+                    <h4 className="text-sm font-heading font-extrabold text-white uppercase">
+                      {ammar.name}
+                    </h4>
+                    <p className="text-[11px] font-mono text-slate-300">
+                      Partner &amp; Operations
+                    </p>
+                    <a 
+                      href={`tel:${ammar.phoneClean}`}
+                      className="text-xs font-mono font-bold text-[#E4B94F] hover:underline mt-0.5 block"
+                    >
+                      {ammar.phone}
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <a
+                      href={`tel:${ammar.phoneClean}`}
+                      className="p-2 rounded-lg bg-[#0B1B3D] hover:bg-black text-[#E4B94F] transition-colors"
+                      title="Call Ammar bhai"
+                      aria-label="Call Ammar bhai"
+                    >
+                      <Phone className="w-4 h-4" />
+                    </a>
+                    <a
+                      href={`https://wa.me/${ammar.whatsappClean}?text=${encodeURIComponent("Hello Ammar bhai, I am contacting you via EZZI Bearing Suppliers website for a quote.")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-lg bg-[#25D366] text-slate-950 transition-colors"
+                      title="WhatsApp Ammar bhai"
+                      aria-label="WhatsApp Ammar bhai"
                     >
                       <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
                     </a>
@@ -212,10 +212,10 @@ export function BusinessCardShowcase() {
                 </div>
               </div>
 
-              {/* Right Column: Physical Depot Address */}
+              {/* Right Column: Physical Address */}
               <div className="space-y-4">
                 <span className="text-xs font-mono uppercase tracking-wider text-[#E4B94F] font-bold block">
-                  Depot &amp; Shop Location:
+                  Address &amp; Location:
                 </span>
 
                 <div className="p-4 rounded-xl bg-[#132752] border border-white/10 space-y-2">
@@ -225,9 +225,6 @@ export function BusinessCardShowcase() {
                       {siteConfig.address}
                     </p>
                   </div>
-                  <p className="text-[11px] font-mono text-[#E4B94F] pl-6">
-                    Near Manmad Central Railway Junction • NH-753J
-                  </p>
                 </div>
 
                 {/* Address Action Buttons */}

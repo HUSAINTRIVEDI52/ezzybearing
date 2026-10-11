@@ -40,21 +40,21 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     };
   }
 
-  const title = `${cat.name} Stockist & Wholesale Supplier`;
-  const fullPageTitle = `${cat.name} Stockist & Wholesale Supplier | ${siteConfig.name}`;
+  const title = `${cat.name} | ${siteConfig.name}`;
+  const fullPageTitle = `${cat.name} | ${siteConfig.name}`;
   const canonicalUrl = `${siteConfig.siteUrl}/products/${cat.id}`;
-  const description = `${cat.seoIntro?.slice(0, 155)}... Genuine SKF, TATA, XNO, DSF stock in Manmad with all-India express delivery.`;
+  const description = `${cat.seoIntro?.slice(0, 155)}... Bearing range at EZZI Bearing Suppliers, Manmad. Delivery across India. Enquire for availability.`;
 
   return {
     title,
     description,
     keywords: [
       cat.name,
-      `${cat.shortName} stockist`,
+      `${cat.shortName} bearings`,
       `${cat.code} bearings`,
       "bearing supplier maharashtra",
       "bearing wholesale india",
-      "skf tata bearings manmad"
+      "industrial bearings manmad"
     ],
     alternates: {
       canonical: canonicalUrl,
@@ -177,10 +177,6 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                   </li>
                 ))}
               </ul>
-              <div className="mt-4 pt-4 border-t border-white/10 text-[11px] font-mono text-slate-400">
-                <span>Stockist brands: </span>
-                <span className="text-white font-bold">{siteConfig.brands.join(", ")}</span>
-              </div>
             </div>
           </div>
         </div>
@@ -193,17 +189,17 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-200 mb-8 gap-3">
           <div>
             <h2 className="font-heading font-extrabold text-2xl text-[#0B1B3D] uppercase tracking-tight">
-              In-Stock {cat.shortName} ({products.length})
+              {cat.shortName} ({products.length})
             </h2>
             <p className="text-xs font-mono text-slate-500 mt-0.5">
-              Showing all verified part numbers available from our Manmad warehouse.
+              Showing part numbers in our range. Enquire for availability.
             </p>
           </div>
           <Link
             href="/products"
             className="text-xs font-mono font-bold text-[#0B1B3D] hover:text-[#C9962B] inline-flex items-center gap-1.5 transition-colors"
           >
-            <span>Browse All 193 Bearings in Main Directory</span>
+            <span>Browse Full Range in Directory</span>
             <ArrowRight className="w-3.5 h-3.5 text-[#C9962B]" />
           </Link>
         </div>
@@ -222,7 +218,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
               Custom Sourcing Available
             </h3>
             <p className="text-sm text-slate-600 max-w-md mx-auto mt-2 font-sans">
-              We frequently stock non-standard sizes in this series. Send your required part number on WhatsApp for instant pricing.
+              Send your required part number on WhatsApp for pricing and availability.
             </p>
             <a
               href={categoryWaUrl}
@@ -252,15 +248,15 @@ export default function CategoryPage({ params }: CategoryPageProps) {
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-100 font-mono text-xs text-slate-600">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#C9962B]" />
-                <span>100% Genuine Inspected Bearings</span>
+                <span>Quality • Precision • Trust</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Ready Stock for Immediate Dispatch</span>
+                <span>Delivery Across India</span>
               </div>
               <div className="flex items-center gap-2">
                 <Boxes className="w-4 h-4 text-[#0B1B3D]" />
-                <span>Bulk Wholesale Discounts Available</span>
+                <span>Bulk Orders Welcome</span>
               </div>
             </div>
           </div>

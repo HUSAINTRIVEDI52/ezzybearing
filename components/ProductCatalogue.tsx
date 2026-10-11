@@ -51,10 +51,9 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
         const matchesPart = p.partNumber.toLowerCase().includes(q);
         const matchesName = p.name.toLowerCase().includes(q);
         const matchesCategory = p.categoryName.toLowerCase().includes(q);
-        const matchesBrands = p.brands.some(b => b.toLowerCase().includes(q));
         const matchesDimensions = `${p.d}x${p.D}x${p.B}`.includes(q) || `${p.d}` === q;
         const matchesApps = p.popularApplications.some(a => a.toLowerCase().includes(q));
-        if (!matchesPart && !matchesName && !matchesCategory && !matchesBrands && !matchesDimensions && !matchesApps) {
+        if (!matchesPart && !matchesName && !matchesCategory && !matchesDimensions && !matchesApps) {
           return false;
         }
       }
@@ -117,7 +116,7 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#C9962B] font-mono text-xs font-semibold mb-3">
               <Layers className="w-3.5 h-3.5" />
-              <span>LIVE READY STOCK INVENTORY • 193 PRODUCT SERIES</span>
+              <span>PRODUCT CATALOGUE • 193 BEARING SERIES</span>
             </div>
 
             <h2 className="text-4xl sm:text-5xl font-heading font-extrabold text-[#0B1B3D] uppercase tracking-tight">
@@ -131,7 +130,7 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
             </div>
 
             <p className="text-sm sm:text-base text-slate-600 max-w-2xl font-sans">
-              Search by part number (e.g. <strong className="text-[#0B1B3D] font-mono">30208</strong>, <strong className="text-[#0B1B3D] font-mono">6205</strong>, <strong className="text-[#0B1B3D] font-mono">32220</strong>) or filter by category and brand for instant WhatsApp wholesale quotations.
+              Search by part number (e.g. <strong className="text-[#0B1B3D] font-mono">30208</strong>, <strong className="text-[#0B1B3D] font-mono">6205</strong>, <strong className="text-[#0B1B3D] font-mono">32220</strong>) or filter by category for WhatsApp quotations.
             </p>
           </div>
 
@@ -157,7 +156,7 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search bearing part number, bore (mm), brand (SKF, TATA, XNO), or application..."
+                placeholder="Search bearing part number, dimensions, bore (mm), or category..."
                 className="w-full pl-10 pr-4 py-3 rounded-xl bg-[#F4F6FA] border border-slate-300 text-sm text-[#0B1B3D] placeholder-slate-400 focus:outline-none focus:border-[#C9962B] focus:ring-1 focus:ring-[#C9962B] transition-all font-mono"
               />
               {searchQuery && (
@@ -371,7 +370,6 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
                     <th className="py-3.5 px-4 font-bold">d (Bore)</th>
                     <th className="py-3.5 px-4 font-bold">D (OD)</th>
                     <th className="py-3.5 px-4 font-bold">B (Width)</th>
-                    <th className="py-3.5 px-4 font-bold">Stockist Brands</th>
                     <th className="py-3.5 px-4 font-bold">Clearance</th>
                     <th className="py-3.5 px-4 font-bold text-right">Wholesale RFQ</th>
                   </tr>
@@ -400,9 +398,6 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
                         <td className="py-3.5 px-4 text-slate-800 font-semibold">{p.dimensionsVerified ? `${p.d} mm` : "—"}</td>
                         <td className="py-3.5 px-4 text-slate-800 font-semibold">{p.dimensionsVerified ? `${p.D} mm` : "—"}</td>
                         <td className="py-3.5 px-4 text-slate-800 font-semibold">{p.dimensionsVerified ? `${p.B} mm` : "—"}</td>
-                        <td className="py-3.5 px-4 whitespace-nowrap">
-                          <span className="font-bold text-[#0B1B3D]">{p.brands.join(", ")}</span>
-                        </td>
                         <td className="py-3.5 px-4 text-slate-600 whitespace-nowrap">
                           {p.clearance}
                         </td>
@@ -471,7 +466,7 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
 
         {/* Footer info pill */}
         <div className="mt-8 text-center text-xs font-mono text-slate-500">
-          Showing {visibleProducts.length} of {filteredProducts.length} bearings • All items authentic OEM with ready stock at Manmad Depot
+          Showing {visibleProducts.length} of {filteredProducts.length} bearings • Delivery across India • Enquire for availability
         </div>
       </div>
 

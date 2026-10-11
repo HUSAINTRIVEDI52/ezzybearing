@@ -14,13 +14,13 @@ import { FinalCtaBand } from "@/components/FinalCtaBand";
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} | Stockist - SKF, TATA, XNO, DSF | Manmad`,
-  description: `${siteConfig.subtitle}. ${siteConfig.slogan} Ready stock with same-day dispatch across India.`,
+  description: siteConfig.seoDescription,
   alternates: {
     canonical: siteConfig.siteUrl,
   },
   openGraph: {
     title: `${siteConfig.name} | Stockist - SKF, TATA, XNO, DSF | Manmad`,
-    description: `${siteConfig.subtitle}. ${siteConfig.slogan}`,
+    description: siteConfig.seoDescription,
     url: siteConfig.siteUrl,
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} | Stockist - SKF, TATA, XNO, DSF | Manmad`,
-    description: `${siteConfig.subtitle}. ${siteConfig.slogan}`,
+    description: siteConfig.seoDescription,
     images: ["/og-image.png"],
   },
 };

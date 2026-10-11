@@ -27,7 +27,7 @@ export function RfqSection() {
   const [contactName, setContactName] = useState("");
   const [phone, setPhone] = useState("");
   const [city, setCity] = useState("");
-  const [urgency, setUrgency] = useState("Immediate Dispatch (Breakdown)");
+  const [urgency, setUrgency] = useState("Standard Requirement");
   const [selectedBrands, setSelectedBrands] = useState<string[]>(["SKF", "TATA"]);
   const [bearingList, setBearingList] = useState("");
   const [recipient, setRecipient] = useState<WhatsAppRecipient>(DEFAULT_RECIPIENT);
@@ -44,23 +44,23 @@ export function RfqSection() {
     e.preventDefault();
 
     const formattedMessage = 
-`*OFFICIAL RFQ: EZZI BEARING SUPPLIERS (Manmad)*
+`*RFQ ENQUIRY: EZZI BEARING SUPPLIERS (Manmad)*
 --------------------------------------
-*Procurement Details:*
-• Company / Plant: ${company || "Not provided"}
-• Contact Person: ${contactName || "Procurement Officer"}
+*Requirement Details:*
+• Company / Shop: ${company || "Not provided"}
+• Contact Person: ${contactName || "Buyer"}
 • Phone: ${phone || "Not provided"}
 • Delivery Location: ${city || "Maharashtra / India"}
-• Urgency Level: ${urgency}
-• Preferred Brands: ${selectedBrands.join(", ") || "Any OEM Approved"}
+• Order Type: ${urgency}
+• Preferred Brands: ${selectedBrands.join(", ") || "SKF, TATA, XNO, DSF"}
 
 --------------------------------------
 *Bearing Part Numbers & Quantities:*
 ${bearingList || "Please check requirement list with sales desk."}
 
 --------------------------------------
-_Source: Home Page RFQ Portal_
-Please provide stock availability, brand quotation, and delivery lead time. Thank you!`;
+_Source: Website RFQ Portal_
+Please provide availability and quote. Thank you!`;
 
     const url = buildWhatsAppLink(formattedMessage, recipient);
     window.open(url, "_blank");
@@ -87,7 +87,7 @@ Please provide stock availability, brand quotation, and delivery lead time. Than
           </div>
 
           <p className="text-sm sm:text-base text-slate-600 font-sans">
-            Need pricing for multiple bearing series? Enter your part numbers below for an official quotation via WhatsApp or email within 30 minutes.
+            Need pricing for bearing part numbers? Enter your list below for a quotation via WhatsApp or email.
           </p>
         </div>
 
@@ -163,12 +163,12 @@ Please provide stock availability, brand quotation, and delivery lead time. Than
             <div>
               <label className="block text-xs font-mono text-slate-700 font-bold mb-1.5 flex items-center gap-1.5">
                 <Clock className="w-3.5 h-3.5 text-[#C9962B]" />
-                Procurement Urgency
+                Inquiry Type
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                 {[
-                  "Immediate Dispatch (Breakdown)",
-                  "Routine Weekly Stock",
+                  "Standard Requirement",
+                  "Bulk Order Inquiry",
                   "Price Check & Comparison"
                 ].map((opt) => (
                   <button
@@ -190,7 +190,7 @@ Please provide stock availability, brand quotation, and delivery lead time. Than
             {/* Row 4: Preferred Brands */}
             <div>
               <label className="block text-xs font-mono text-slate-700 font-bold mb-2">
-                Preferred Brands (Stockist ready):
+                Preferred Brands (Stockist of SKF, TATA, XNO, DSF):
               </label>
               <div className="flex flex-wrap gap-2">
                 {brandOptions.map((b) => (
@@ -222,9 +222,9 @@ Please provide stock availability, brand quotation, and delivery lead time. Than
                 value={bearingList}
                 onChange={(e) => setBearingList(e.target.value)}
                 placeholder="Example:
-1. 30208 (Taper Roller) - 20 pcs (SKF/TATA)
-2. 6205 - 50 pcs (DSF/XNO)
-3. 32220 (Taper Roller) - 4 pcs for Sugar Mill
+1. 30208 (Taper Roller) - 20 pcs
+2. 6205 (Deep Groove) - 50 pcs
+3. 32220 (Taper Roller) - 4 pcs
 4. LM 44649/10 - 10 sets"
                 className="w-full px-4 py-3 rounded-xl bg-[#F4F6FA] border border-slate-300 text-xs font-mono text-[#0B1B3D] placeholder-slate-400 focus:outline-none focus:border-[#C9962B] focus:ring-1 focus:ring-[#C9962B] leading-relaxed"
               />
@@ -245,7 +245,7 @@ Please provide stock availability, brand quotation, and delivery lead time. Than
                 className="w-full sm:flex-1 py-4 px-6 rounded-xl font-heading font-extrabold text-sm uppercase tracking-wider bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 flex items-center justify-center gap-2.5 transition-all shadow-md active:scale-95"
               >
                 <MessageSquare className="w-5 h-5 fill-slate-950 stroke-none" />
-                <span>Submit RFQ to {WHATSAPP_CONTACTS[recipient].name.split(" ")[0]} via WhatsApp</span>
+                <span>Submit RFQ via WhatsApp</span>
               </button>
 
               <a
@@ -260,7 +260,7 @@ Please provide stock availability, brand quotation, and delivery lead time. Than
             {/* Reassurance note */}
             <div className="text-center text-xs font-mono text-slate-500 flex items-center justify-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Direct quotes from Shabbir Sakriwala &amp; Ammar Sakriwala • No middleman markups</span>
+              <span>Direct trade quotations • Delivery across India</span>
             </div>
           </form>
         </div>

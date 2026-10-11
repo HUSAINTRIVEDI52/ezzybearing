@@ -19,7 +19,7 @@ export function ProductDetailActions({ product }: ProductDetailActionsProps) {
   const { addItem, isInRfq, openDrawer } = useRfq();
   const inRfq = isInRfq(product.id);
   const [copied, setCopied] = useState(false);
-  const contact = siteConfig.contacts[0]; // Ammar
+  const contact = siteConfig.contacts.primary;
 
   const whatsappUrl = buildWhatsAppLink(
     buildProductQuoteMessage(product, "Product Detail Page"),

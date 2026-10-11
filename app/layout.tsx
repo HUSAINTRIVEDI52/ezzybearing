@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     default: `${siteConfig.name} | Stockist - SKF, TATA, XNO, DSF | Manmad`,
     template: `%s | ${siteConfig.name}`,
   },
-  description: `${siteConfig.subtitle}. ${siteConfig.slogan} Ready stock with same-day dispatch across India.`,
+  description: siteConfig.seoDescription,
   keywords: [
     "EZZI Bearing Suppliers",
     "bearing stockist manmad",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteConfig.siteUrl,
     title: `${siteConfig.name} | Stockist - SKF, TATA, XNO, DSF | Manmad`,
-    description: `${siteConfig.subtitle}. ${siteConfig.slogan}`,
+    description: siteConfig.seoDescription,
     siteName: siteConfig.name,
     images: [
       {
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} | Stockist - SKF, TATA, XNO, DSF | Manmad`,
-    description: siteConfig.slogan,
+    description: siteConfig.seoDescription,
     images: ["/og-image.png"],
   },
   icons: {
@@ -96,7 +96,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": siteConfig.name,
-    "description": siteConfig.slogan,
+    "description": siteConfig.seoDescription,
     "url": siteConfig.siteUrl,
     "telephone": siteConfig.contacts.map(c => `+91${c.phone}`),
     "email": siteConfig.email,

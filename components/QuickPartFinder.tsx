@@ -57,7 +57,7 @@ export function QuickPartFinder() {
           <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
             <h2 className="font-heading font-extrabold text-2xl text-[#0B1B3D] uppercase tracking-wide flex items-center gap-2">
               <Search className="w-5 h-5 text-[#C9962B]" />
-              <span>Quick Bearing Finder (193 Ready Products)</span>
+              <span>Quick Bearing Finder (193 Product Range)</span>
             </h2>
 
             <div className="text-xs text-slate-500 font-sans">
@@ -120,8 +120,8 @@ export function QuickPartFinder() {
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-bold">
-                          Ready Stock
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-semibold">
+                          Enquire
                         </span>
                         <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#C9962B] group-hover:translate-x-0.5 transition-all" />
                       </div>

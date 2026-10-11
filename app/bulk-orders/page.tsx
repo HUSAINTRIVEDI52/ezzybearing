@@ -73,22 +73,22 @@ export default function BulkOrdersPage() {
               <span>All-India Delivery</span>
             </div>
             <h1 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight uppercase">
-              Bulk Orders &amp; Pan-India Logistics
+              Bulk Orders &amp; Delivery Across India
             </h1>
             <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
-              Specialized case-lot rates, scheduled plant replenishments, and rapid railway cargo dispatch for machine workshops, sugar mills, cement plants, and regional bearing retailers.
+              Bulk and wholesale orders welcome for workshops, machine operators, and retailers with delivery across India.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
-                href={buildWhatsAppLink("Hello, I want to discuss wholesale case pricing and bulk order delivery.", recipient)}
+                href={buildWhatsAppLink("Hello, I would like to enquire about bulk bearing orders.", recipient)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"
-                aria-label="Instant wholesale quote on WhatsApp"
+                aria-label="Enquire bulk order on WhatsApp"
               >
                 <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
-                <span>Instant Wholesale Quote on WhatsApp ({WHATSAPP_CONTACTS[recipient].name.split(" ")[0]})</span>
+                <span>Enquire on WhatsApp ({WHATSAPP_CONTACTS[recipient].name.split(" ")[0]})</span>
               </a>
             </div>
           </div>
@@ -103,10 +103,10 @@ export default function BulkOrdersPage() {
               <Boxes className="w-5 h-5" />
             </div>
             <h3 className="font-heading font-extrabold text-xl text-[#0B1B3D] uppercase mb-1">
-              Tiered Volume Discounts
+              Bulk Orders Welcome
             </h3>
             <p className="text-xs text-slate-600 font-sans leading-relaxed">
-              Wholesale pricing structures for 50+, 200+, and master carton quantities across SKF, TATA, XNO, and DSF series.
+              Competitive pricing structures for wholesale quantities across SKF, TATA, XNO, and DSF brands.
             </p>
           </div>
 
@@ -115,10 +115,10 @@ export default function BulkOrdersPage() {
               <Truck className="w-5 h-5" />
             </div>
             <h3 className="font-heading font-extrabold text-xl text-[#0B1B3D] uppercase mb-1">
-              Railway Cargo Node
+              Delivery Across India
             </h3>
             <p className="text-xs text-slate-600 font-sans leading-relaxed">
-              Manmad Central Railway junction enables rapid parcel van handovers arriving overnight in Mumbai, Pune, Nagpur, and MP.
+              Dependable transport and courier delivery arranged across Maharashtra and all states in India.
             </p>
           </div>
 
@@ -127,10 +127,10 @@ export default function BulkOrdersPage() {
               <ShieldCheck className="w-5 h-5" />
             </div>
             <h3 className="font-heading font-extrabold text-xl text-[#0B1B3D] uppercase mb-1">
-              Export-Grade Wooden Strapping
+              Secure Packaging
             </h3>
             <p className="text-xs text-slate-600 font-sans leading-relaxed">
-              Heavy spherical and taper sets packed in moisture-proof heavy gauge wrapping and wooden pallet strapping to prevent transit damage.
+              Bearings are packaged securely to prevent damage and contamination during transit.
             </p>
           </div>
         </div>
@@ -141,10 +141,10 @@ export default function BulkOrdersPage() {
           <div className="lg:col-span-6 space-y-6">
             <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-soft">
               <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#C9962B] block mb-2">
-                Supply Chain Architecture
+                Order Process
               </span>
               <h2 className="font-heading font-extrabold text-2xl text-[#0B1B3D] uppercase mb-4">
-                The All-India Delivery Process
+                How We Handle Orders
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
@@ -153,10 +153,10 @@ export default function BulkOrdersPage() {
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-base text-[#0B1B3D] uppercase">
-                      Stock Verification &amp; Instant BOM Quoting
+                      Send Part Numbers &amp; Quantities
                     </h4>
                     <p className="text-xs text-slate-600 font-sans mt-1 leading-relaxed">
-                      Send your part list or Excel sheet via WhatsApp or our enquiry form. Our depot team checks warehouse shelves and returns an itemized quotation with brand options.
+                      Send your required bearing numbers and quantities on WhatsApp or via our enquiry form.
                     </p>
                   </div>
                 </div>
@@ -167,10 +167,10 @@ export default function BulkOrdersPage() {
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-base text-[#0B1B3D] uppercase">
-                      Industrial Packaging &amp; Dispatch within 24 Hours
+                      Quotation &amp; Availability
                     </h4>
                     <p className="text-xs text-slate-600 font-sans mt-1 leading-relaxed">
-                      Bearings are inspected for preservative oil integrity, sealed in poly-wrap, and packed into reinforced corrugated cartons with clear marking tags.
+                      We check availability across our brands (SKF, TATA, XNO, DSF) and provide pricing.
                     </p>
                   </div>
                 </div>
@@ -181,34 +181,23 @@ export default function BulkOrdersPage() {
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-base text-[#0B1B3D] uppercase">
-                      Transport Handover &amp; Waybill Tracking
+                      Packaging &amp; Delivery Across India
                     </h4>
                     <p className="text-xs text-slate-600 font-sans mt-1 leading-relaxed">
-                      Packages are handed over to Indian Railways Parcel Cargo (Manmad Jn) or leading logistics carriers (V-Trans, TCI Freight, Safexpress, Delhivery). LR copy is shared via WhatsApp.
+                      Orders are packed securely and dispatched with transport details shared with you.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Transport Logistics Table */}
+              {/* Transport Logistics Note */}
               <div className="mt-8 pt-6 border-t border-slate-100 font-mono text-xs">
                 <span className="font-bold text-slate-700 block mb-2 uppercase">
-                  Authorized Freight Partners:
+                  Delivery Coverage:
                 </span>
-                <div className="grid grid-cols-2 gap-2 text-slate-600">
-                  <div className="p-2 bg-[#F4F6FA] rounded border border-slate-200">
-                    • V-Trans Express
-                  </div>
-                  <div className="p-2 bg-[#F4F6FA] rounded border border-slate-200">
-                    • TCI Freight Limited
-                  </div>
-                  <div className="p-2 bg-[#F4F6FA] rounded border border-slate-200">
-                    • Safexpress B2B
-                  </div>
-                  <div className="p-2 bg-[#F4F6FA] rounded border border-slate-200">
-                    • Central Railway Parcel Depot
-                  </div>
-                </div>
+                <p className="text-slate-600 font-sans text-xs">
+                  We arrange delivery across India. Enquire for dispatch timelines and transport options.
+                </p>
               </div>
             </div>
 
@@ -216,10 +205,10 @@ export default function BulkOrdersPage() {
             <div className="p-6 rounded-2xl bg-[#0B1B3D] text-white flex items-center justify-between">
               <div>
                 <span className="text-xs font-mono text-[#E4B94F] uppercase tracking-wider block">
-                  Urgent Breakdown Parcel?
+                  Have Questions?
                 </span>
                 <span className="font-heading font-bold text-lg text-white block">
-                  Speak Directly with Ammar Bhai
+                  Speak Directly with Our Desk
                 </span>
                 <span className="text-xs text-slate-300 font-mono">
                   +91 {siteConfig.contacts[0].phone}
@@ -229,7 +218,7 @@ export default function BulkOrdersPage() {
                 href={`tel:${siteConfig.contacts[0].phone}`}
                 className="px-4 py-2.5 rounded-xl bg-[#C9962B] text-[#0B1B3D] font-bold text-xs uppercase font-mono hover:bg-[#E4B94F] transition-colors"
               >
-                Call Depot
+                Call Desk
               </a>
             </div>
           </div>
@@ -320,7 +309,7 @@ export default function BulkOrdersPage() {
                   required
                   value={formData.partNumbers}
                   onChange={(e) => setFormData({ ...formData, partNumbers: e.target.value })}
-                  placeholder="e.g. 6205-2RS (100 pcs), 32208 (50 pcs), UCP 208 (20 pcs), SKF or TATA preferred"
+                  placeholder="e.g. 6205-2RS (100 pcs), 32208 (50 pcs), SKF or TATA preferred"
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-mono"
                 />
               </div>
@@ -340,13 +329,13 @@ export default function BulkOrdersPage() {
 
               <div>
                 <label className="block text-xs font-mono font-bold text-slate-700 uppercase mb-1">
-                  Additional Notes / Urgent Delivery Deadline
+                  Additional Notes
                 </label>
                 <textarea
                   rows={2}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="e.g. Need delivery within 3 days via V-Trans"
+                  placeholder="e.g. Preferred brand or specific requirements"
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-sans"
                 />
               </div>

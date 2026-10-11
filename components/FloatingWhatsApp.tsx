@@ -40,7 +40,7 @@ export function FloatingWhatsApp() {
           </div>
 
           <div className="space-y-2">
-            {/* Ammar Sakriwala (Default) */}
+            {/* Sales Desk (Default) */}
             <a
               href={buildWhatsAppLink("Hello Ammar bhai, I want to check bearing stock availability.", "ammar")}
               target="_blank"
@@ -51,21 +51,21 @@ export function FloatingWhatsApp() {
                   ? "border-[#25D366] bg-emerald-50 text-[#0B1B3D]"
                   : "border-slate-200 hover:bg-slate-50 text-slate-700"
               }`}
-              aria-label="Chat with Ammar Sakriwala (Default Sales Desk)"
+              aria-label="Chat with Sales Desk on WhatsApp"
             >
               <div>
                 <div className="font-heading font-extrabold text-sm flex items-center gap-1.5">
-                  <span>Ammar Sakriwala</span>
+                  <span>Sales Desk</span>
                   <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-200 text-emerald-900">
                     Default
                   </span>
                 </div>
-                <p className="text-[11px] font-mono text-slate-500">Sales &amp; Stock Desk • 8830721850</p>
+                <p className="text-[11px] font-mono text-slate-500">Quotations &amp; Dispatches • 8830721850</p>
               </div>
               <MessageSquare className="w-4 h-4 text-[#25D366] fill-[#25D366]" />
             </a>
 
-            {/* Shabbir Sakriwala */}
+            {/* Wholesale Desk */}
             <a
               href={buildWhatsAppLink("Hello Shabbir bhai, I want to check bearing stock availability.", "shabbir")}
               target="_blank"
@@ -76,13 +76,13 @@ export function FloatingWhatsApp() {
                   ? "border-[#25D366] bg-emerald-50 text-[#0B1B3D]"
                   : "border-slate-200 hover:bg-slate-50 text-slate-700"
               }`}
-              aria-label="Chat with Shabbir Sakriwala (Senior Partner)"
+              aria-label="Chat with Wholesale Desk on WhatsApp"
             >
               <div>
                 <div className="font-heading font-extrabold text-sm">
-                  Shabbir Sakriwala
+                  <span>Wholesale Desk</span>
                 </div>
-                <p className="text-[11px] font-mono text-slate-500">Senior Partner • 9272395247</p>
+                <p className="text-[11px] font-mono text-slate-500">Bulk Orders &amp; Trade • 9272395247</p>
               </div>
               <MessageSquare className="w-4 h-4 text-[#25D366] fill-[#25D366]" />
             </a>

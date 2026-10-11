@@ -85,8 +85,8 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc pl-6 space-y-1 text-slate-600 text-sm font-mono">
               <li>Name and contact phone/WhatsApp number</li>
               <li>Company or workshop name</li>
-              <li>Delivery address, city, and state for transport waybills (LR)</li>
-              <li>GSTIN and billing details for commercial tax invoices</li>
+              <li>Delivery address, city, and state for transport waybills</li>
+              <li>Billing and delivery details</li>
             </ul>
           </section>
 
@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
               <span>4. Data Use &amp; Confidentiality</span>
             </h2>
             <p>
-              Your contact and commercial purchase data is strictly used for quotation fulfillment, parcel logistics coordination with our freight carriers (V-Trans, TCI, Indian Railways), and GST compliance. We never sell, rent, or trade client information to third-party marketing brokers.
+              Your contact and purchase inquiry data is strictly used for quotation fulfillment, parcel logistics coordination with freight and transport carriers for delivery across India. We never sell, rent, or trade client information to third-party marketing brokers.
             </p>
           </section>
 

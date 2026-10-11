@@ -68,7 +68,7 @@ export default function AboutPage() {
               About EZZI Bearing Suppliers
             </h1>
             <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
-              Headquartered at Bohri Compound in the strategic railway transit hub of Manmad, Maharashtra, EZZI Bearing Suppliers provides industrial plants, workshops, and fleet operators with all types of bearing solutions under one roof.
+              Located at Bohri Compound in Manmad, Maharashtra, EZZI Bearing Suppliers provides all types of bearing solutions under one roof with delivery across India.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -108,10 +108,10 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed font-sans">
               <p>
-                EZZI Bearing Suppliers was established to solve a critical challenge faced by machine workshops, agricultural operators, and manufacturing units: prompt access to authentic, accurately dimensioned bearings without long supply delays.
+                EZZI Bearing Suppliers provides ball and roller bearings, tapered roller bearings, and hand tools with delivery across India.
               </p>
               <p>
-                Operating from Burhani Complex, Bohri Compound in Manmad, we sit directly beside one of Western India's most prominent railway junctions. This strategic location enables our team to quickly dispatch critical bearings via Central Railway parcel vans and premier road transport networks directly to industrial clusters in Nashik, Pune, Mumbai, Jalgaon, Dhule, Madhya Pradesh, and across all states in India.
+                Operating from Burhani Complex, Bohri Compound in Manmad, Maharashtra, we stock SKF, TATA, XNO, and DSF bearings, serving customers with bulk orders and reliable trade service.
               </p>
             </div>
 
@@ -120,7 +120,7 @@ export default function AboutPage() {
                 Core Mission:
               </h3>
               <p className="p-4 rounded-xl bg-white border border-slate-200 text-slate-700 text-sm font-sans italic border-l-4 border-l-[#C9962B]">
-                &ldquo;To provide transparent, rapid, and genuine bearing solutions that eliminate machinery downtime for Indian manufacturers, farmers, and transport operators.&rdquo;
+                &ldquo;All types of bearing solutions under one roof — Quality • Precision • Trust.&rdquo;
               </p>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
             <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-100">
               <Image
                 src="/images/warehouse-depot.jpg"
-                alt="EZZI Bearing Suppliers central warehouse and distribution depot in Manmad, Maharashtra"
+                alt="EZZI Bearing Suppliers in Manmad, Maharashtra"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -139,10 +139,10 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B3D]/80 via-transparent to-transparent" />
               <div className="absolute bottom-3 left-4 right-4 text-white">
                 <span className="text-[10px] font-mono text-[#E4B94F] uppercase tracking-wider block font-bold">
-                  Bohri Compound Depot
+                  Bohri Compound, Manmad
                 </span>
                 <span className="font-heading font-extrabold text-base uppercase">
-                  Central Warehouse Logistics Hub
+                  EZZI Bearing Suppliers
                 </span>
               </div>
             </div>
@@ -162,20 +162,20 @@ export default function AboutPage() {
                 <span className="font-bold text-[#0B1B3D]">Nashik, Maharashtra</span>
               </div>
               <div className="flex justify-between py-2 border-b border-slate-100">
-                <span className="text-slate-400">Inventory Breadth:</span>
-                <span className="font-bold text-[#0B1B3D]">193 Ready Product Series</span>
+                <span className="text-slate-400">Catalogue Range:</span>
+                <span className="font-bold text-[#0B1B3D]">193 Bearing Items</span>
               </div>
               <div className="flex justify-between py-2 border-b border-slate-100">
                 <span className="text-slate-400">Stockist Brands:</span>
                 <span className="font-bold text-[#0B1B3D]">SKF, TATA, XNO, DSF</span>
               </div>
               <div className="flex justify-between py-2 border-b border-slate-100">
-                <span className="text-slate-400">Service Area:</span>
-                <span className="font-bold text-emerald-600">All India Delivery</span>
+                <span className="text-slate-400">Delivery:</span>
+                <span className="font-bold text-emerald-600">Across India</span>
               </div>
               <div className="flex justify-between py-2">
-                <span className="text-slate-400">Dispatch Speed:</span>
-                <span className="font-bold text-[#C9962B]">Same Day / 24 Hours</span>
+                <span className="text-slate-400">Orders:</span>
+                <span className="font-bold text-[#C9962B]">Bulk Orders Welcome</span>
               </div>
             </div>
           </div>
@@ -272,9 +272,9 @@ export default function AboutPage() {
             </div>
 
             <div className="p-4 rounded-xl bg-[#F4F6FA] border border-slate-200">
-              <h4 className="font-bold text-[#0B1B3D] text-sm uppercase mb-2">Pillow &amp; Plummer Blocks</h4>
+              <h4 className="font-bold text-[#0B1B3D] text-sm uppercase mb-2">Cone &amp; Cup Sets</h4>
               <p className="text-slate-600 font-sans text-xs">
-                Mounted cast iron pillow blocks (UCP), four-bolt flange units (UCF), two-bolt flange units (UCFL), and heavy split plummer housings.
+                Matched metric and inch tapered roller cone and cup sets for vehicle hubs and machinery assemblies.
               </p>
             </div>
 
@@ -328,7 +328,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <p className="text-xs text-slate-300 font-sans mb-6">
-                    Specializing in bulk orders, OEM brand verification, technical cross-references, and industrial contract supply.
+                    Handling bulk orders, trade enquiries, and technical specifications for industrial clients.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-white/10 flex flex-wrap items-center gap-3">
@@ -360,7 +360,7 @@ export default function AboutPage() {
                         Ammar Sakriwala
                       </h3>
                       <span className="text-xs font-mono text-[#E4B94F] block">
-                        Partner • Depot Operations &amp; Logistics
+                        Partner • Operations &amp; Logistics
                       </span>
                     </div>
                     <div className="w-12 h-12 rounded-full bg-[#C9962B]/20 border border-[#C9962B] flex items-center justify-center text-[#E4B94F] font-heading font-bold text-lg">
@@ -368,7 +368,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <p className="text-xs text-slate-300 font-sans mb-6">
-                    Managing daily parcel dispatches, express railway cargo handovers, order packaging, and inventory stock tracking.
+                    Managing order packaging, daily dispatches across India, and customer communications.
                   </p>
                 </div>
                 <div className="pt-4 border-t border-white/10 flex flex-wrap items-center gap-3">

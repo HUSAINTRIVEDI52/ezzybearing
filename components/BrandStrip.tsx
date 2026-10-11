@@ -35,7 +35,7 @@ export function BrandStrip() {
         <div className="text-center max-w-2xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0B1B3D]/5 border border-slate-200 text-[#0B1B3D] font-mono text-xs font-bold mb-3">
             <Award className="w-3.5 h-3.5 text-[#C9962B]" />
-            <span>AUTHORISED STOCKIST</span>
+            <span>STOCKIST OF SKF, TATA, XNO, DSF</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] uppercase tracking-tight">
@@ -49,7 +49,7 @@ export function BrandStrip() {
           </div>
 
           <p className="text-slate-600 text-sm font-sans">
-            Genuine industrial ball and roller bearings sourced directly from trusted manufacturers.
+            Stockist of SKF, TATA, XNO, and DSF bearings for industrial and automotive applications.
           </p>
         </div>
 

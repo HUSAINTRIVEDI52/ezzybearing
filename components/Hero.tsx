@@ -43,7 +43,7 @@ export function Hero() {
             </div>
 
             <p className="text-slate-200 text-sm sm:text-base max-w-2xl leading-relaxed mb-8 font-sans">
-              Authorised stockist of SKF, TATA, XNO, and DSF ball &amp; roller bearings with all-India express delivery.
+              Stockist of SKF, TATA, XNO, and DSF ball and roller bearings, tapered roller bearings, and hand tools. Bulk orders welcome and delivery across India.
             </p>
 
             {/* Action CTAs */}
@@ -97,10 +97,10 @@ export function Hero() {
               </div>
               <div>
                 <h4 className="font-heading font-bold text-sm text-white uppercase tracking-wider">
-                  Premium Quality
+                  Quality &amp; Precision
                 </h4>
                 <p className="text-[11px] text-slate-300 font-sans">
-                  Genuine industrial-grade bearings
+                  Industrial-grade standards
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ export function Hero() {
                   Wide Range of Bearings
                 </h4>
                 <p className="text-[11px] text-slate-300 font-sans">
-                  Deep groove, tapered, spherical &amp; more
+                  Ball, roller &amp; hand tools
                 </p>
               </div>
             </div>
@@ -142,7 +142,7 @@ export function Hero() {
                   Reliable Service
                 </h4>
                 <p className="text-[11px] text-slate-300 font-sans">
-                  Prompt support &amp; pan-India dispatch
+                  Delivery across India
                 </p>
               </div>
             </div>

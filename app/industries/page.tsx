@@ -18,8 +18,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Industries Served - Bearing Solutions",
-  description: "Specialized bearing solutions for automotive, agriculture, textile, cement, steel, sugar, material handling, and general engineering industries across India.",
+  title: "Industry Applications - Bearing Solutions",
+  description: "Overview of bearing types commonly used across automotive, agriculture, textile, cement, steel, sugar, material handling, and general engineering machinery.",
   keywords: [
     "automotive bearings",
     "agricultural bearings",
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.siteUrl}/industries`,
   },
   openGraph: {
-    title: `Industries Served | ${siteConfig.name}`,
-    description: "Specialized bearing solutions for automotive, agriculture, textile, cement, steel, sugar, and heavy manufacturing.",
+    title: `Industry Applications | ${siteConfig.name}`,
+    description: "Overview of bearing types commonly used across automotive, agriculture, textile, cement, steel, sugar, and general engineering.",
     url: `${siteConfig.siteUrl}/industries`,
     images: ["/og-image.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: `Industries Served | ${siteConfig.name}`,
-    description: "Specialized bearing solutions for automotive, agriculture, textile, cement, steel, sugar, and heavy manufacturing.",
+    title: `Industry Applications | ${siteConfig.name}`,
+    description: "Overview of bearing types commonly used across automotive, agriculture, textile, cement, steel, sugar, and general engineering.",
     images: ["/og-image.png"],
   },
 };
@@ -62,15 +62,15 @@ export default function IndustriesPage() {
 
           <div className="mt-4 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#E4B94F] text-xs font-mono font-bold tracking-wider uppercase mb-3">
-              <span>Engineered For Demanding Sectors</span>
+              <span>Industry Applications</span>
               <span className="text-slate-500">•</span>
-              <span>All-India Supply</span>
+              <span>Delivery Across India</span>
             </div>
             <h1 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight uppercase">
-              Industries Served
+              Industry Applications
             </h1>
             <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
-              Every operating environment poses distinct thermal, load, and contamination demands. Discover how our Manmad bearing inventory supports eight core industrial and agricultural sectors with tailored rolling element solutions.
+              Different operating environments require specific bearing types. Learn about the bearing types commonly used across industrial and agricultural sectors.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -82,7 +82,7 @@ export default function IndustriesPage() {
                 aria-label="Discuss industry bearing needs on WhatsApp"
               >
                 <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
-                <span>Discuss Industry Needs on WhatsApp</span>
+                <span>Enquire on WhatsApp</span>
               </a>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function IndustriesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <div className="space-y-12">
           {industries.map((ind, index) => {
-            const indWaUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(`Hello EZZI Bearing Suppliers, I need bearings for the ${ind.name} industry. Key requirements: ___. Delivery city: ___.`)}`;
+            const indWaUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(`Hello EZZI Bearing Suppliers, I need bearings for ${ind.name}. Key requirements: ___. Delivery city: ___.`)}`;
 
             return (
               <div
@@ -135,15 +135,6 @@ export default function IndustriesPage() {
                         ))}
                       </div>
                     </div>
-
-                    {/* Regional Supply Advantage */}
-                    <div className="p-4 rounded-xl bg-amber-50/60 border border-amber-200/80 text-xs font-mono text-amber-900 flex items-start gap-2.5">
-                      <Factory className="w-4 h-4 text-[#C9962B] shrink-0 mt-0.5" />
-                      <div>
-                        <span className="font-bold text-amber-950 block">Manmad Hub Logistics Advantage:</span>
-                        <span className="text-amber-800">{ind.hubAdvantage}</span>
-                      </div>
-                    </div>
                   </div>
 
                   {/* Right Column: Suited Bearing Types & CTAs */}
@@ -151,7 +142,7 @@ export default function IndustriesPage() {
                     <div>
                       <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-[#0B1B3D] mb-3 flex items-center gap-2">
                         <Layers className="w-4 h-4 text-[#C9962B]" />
-                        <span>Suited Bearing Types &amp; Series:</span>
+                        <span>Common Bearing Types &amp; Series:</span>
                       </h3>
                       
                       <div className="flex flex-wrap gap-2 mb-4">
@@ -167,7 +158,7 @@ export default function IndustriesPage() {
                       </div>
 
                       <p className="text-xs text-slate-500 font-sans leading-relaxed">
-                        Available in SKF, TATA, XNO, and DSF specifications with regular and C3 clearance options for high thermal resistance.
+                        Available in the brands we stock: SKF, TATA, XNO, and DSF. Ask for your preferred brand.
                       </p>
                     </div>
 
@@ -186,7 +177,7 @@ export default function IndustriesPage() {
                         href="/products"
                         className="w-full py-2.5 px-4 rounded-xl bg-white border border-slate-300 hover:border-[#C9962B] text-[#0B1B3D] hover:text-[#C9962B] font-mono text-xs font-bold flex items-center justify-center gap-1.5 transition-colors"
                       >
-                        <span>Search Inventory</span>
+                        <span>Browse Range</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </Link>
                     </div>

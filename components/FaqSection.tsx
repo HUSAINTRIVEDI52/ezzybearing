@@ -9,27 +9,27 @@ interface FaqItem {
 const FAQS: FaqItem[] = [
   {
     question: "What bearing brands do you stock?",
-    answer: "We are stockists of SKF, TATA, XNO, and DSF. Our inventory covers deep groove ball bearings, tapered roller bearings, cylindrical rollers, clutch release bearings, and specialized industrial units."
+    answer: "We are a stockist of SKF, TATA, XNO, and DSF. Our range includes ball & roller taper bearings, hand tools, and related assemblies."
   },
   {
     question: "How can I get a price quotation?",
-    answer: "You can search your bearing article number on our website and click 'Request Quote' to send an enquiry directly via WhatsApp, or call our trade desk. Please mention your required quantity and delivery city."
+    answer: "You can find your bearing part number on our website and click 'Request Quote' to send an enquiry via WhatsApp, or call our trade desk directly. Please mention your required quantity and delivery city."
   },
   {
     question: "Where are you located and how do you ship orders?",
-    answer: "Our depot is located at Burhani Complex, Opp. Post Office, Bohri Compound, Manmad - 423104 (Dist. Nashik, Maharashtra). We dispatch orders across Maharashtra and pan-India via express transport and parcel services."
+    answer: "We are located at Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104 (Dist. Nashik, Maharashtra). We arrange delivery across India."
   },
   {
     question: "Do you handle bulk and wholesale orders?",
-    answer: "Yes. We supply wholesale quantities for industrial plants, sugar factories, automotive workshops, and fleet operators with standard GST invoices and secure industrial packaging."
+    answer: "Yes, bulk and wholesale orders are welcome. Please contact us with your part numbers and quantities for pricing."
   },
   {
-    question: "Are the bearings genuine?",
-    answer: "Yes. All bearings are sourced through authorized manufacturer pipelines and supplied in original manufacturer packaging."
+    question: "Which brands can I request?",
+    answer: "We stock SKF, TATA, XNO, and DSF bearings. Let us know your preferred brand when requesting a quote."
   },
   {
     question: "Can I enquire for bearing sizes not shown on the website?",
-    answer: "Yes. If you need a size or series not listed in our online catalogue, send us the part number or sample dimensions (bore x outer diameter x width) on WhatsApp, and we will check availability."
+    answer: "Yes. If you need a size or series not listed in our online catalogue, send us your part number or required dimensions on WhatsApp, and we will check availability."
   }
 ];
 

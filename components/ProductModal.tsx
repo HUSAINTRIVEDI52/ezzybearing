@@ -71,7 +71,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
         <div className="flex items-center justify-between px-6 py-4 bg-[#0B1B3D] text-white border-b border-[#C9962B]/30">
           <div className="flex items-center gap-3">
             <span className="px-2.5 py-1 text-xs font-mono font-semibold rounded bg-[#C9962B]/20 text-[#E4B94F] border border-[#C9962B]/40">
-              {product.badge || "IN STOCK"}
+              {product.badge || "BEARING SPEC"}
             </span>
             <span className="text-xs text-slate-300 font-mono">
               Category: {product.categoryName}
@@ -94,9 +94,9 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               <h2 id="modal-title" className="text-3xl font-heading font-extrabold text-[#0B1B3D] uppercase tracking-tight">
                 {product.partNumber}
               </h2>
-              <span className="inline-flex items-center gap-1.5 text-xs text-emerald-600 font-mono font-semibold">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                Ready Depot Stock • Manmad
+              <span className="inline-flex items-center gap-1.5 text-xs text-slate-600 font-mono font-semibold">
+                <span className="w-2 h-2 rounded-full bg-[#C9962B]" />
+                Enquire for availability • Manmad
               </span>
             </div>
             <p className="text-sm text-slate-600 mt-1">{product.name}</p>
@@ -125,22 +125,11 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             </div>
           )}
 
-          {/* Brands Available */}
+          {/* Availability */}
           <div>
-            <label className="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold block mb-2">
-              Stockist Brands Ready for Dispatch
-            </label>
-            <div className="flex flex-wrap gap-2">
-              {product.brands.map((b) => (
-                <span 
-                  key={b}
-                  className="px-3 py-1 text-xs font-mono font-bold rounded-md bg-[#0B1B3D] text-[#E4B94F] border border-[#C9962B]/30 inline-flex items-center gap-1.5"
-                >
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#E4B94F]" />
-                  {b}
-                </span>
-              ))}
-            </div>
+            <p className="text-xs text-slate-700 font-medium">
+              Delivery across India. Enquire for availability.
+            </p>
           </div>
 
           {/* Detailed Engineering Specs */}
@@ -207,7 +196,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
           <div className="flex items-center gap-2 text-xs text-slate-500">
             <MapPin className="w-3.5 h-3.5 text-[#C9962B]" />
-            <span>Dispatched directly from Burhani Complex, Manmad • Same day packing</span>
+            <span>Burhani Complex, Manmad • Delivery across India</span>
           </div>
         </div>
 
@@ -218,10 +207,10 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:flex-1 min-h-[44px] py-3.5 px-4 rounded-xl font-heading font-extrabold text-xs uppercase tracking-wider bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 flex items-center justify-center gap-2 transition-all shadow-md active:scale-95 focus-visible:ring-2 focus-visible:ring-[#C9962B]"
-            aria-label={`Get instant WhatsApp quote for ${product.partNumber}`}
+            aria-label={`Get WhatsApp quote for ${product.partNumber}`}
           >
             <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
-            <span>Instant WhatsApp Price Quote</span>
+            <span>WhatsApp Price Quote</span>
           </a>
 
           <button

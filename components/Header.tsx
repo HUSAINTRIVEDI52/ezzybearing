@@ -14,8 +14,8 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const ammar = siteConfig.contacts[0];
-  const shabbir = siteConfig.contacts[1];
+  const shabbir = siteConfig.contacts.primary;
+  const ammar = siteConfig.contacts.secondary;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -96,10 +96,10 @@ export function Header() {
           <div className="flex items-center gap-2.5 sm:gap-3">
             {/* Click to Call on Mobile */}
             <a
-              href={`tel:+91${ammar.phone}`}
+              href={`tel:${shabbir.phoneClean}`}
               className="lg:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl bg-[#132752] text-[#E4B94F] border border-[#C9962B]/30 hover:bg-[#183060] transition-colors focus-visible:ring-2 focus-visible:ring-[#C9962B]"
-              title="Call Depot Desk"
-              aria-label="Call Depot Desk"
+              title={`Call ${shabbir.name}`}
+              aria-label={`Call ${shabbir.name}`}
             >
               <Phone className="w-4 h-4" />
             </a>
@@ -217,7 +217,7 @@ export function Header() {
               </a>
 
               <p className="text-center text-[11px] font-mono text-slate-400 pt-1">
-                Call: +91 {ammar.phone} / +91 {shabbir.phone}
+                Call: {shabbir.phone} / {ammar.phone}
               </p>
             </div>
           </div>

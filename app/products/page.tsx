@@ -7,8 +7,8 @@ import { siteConfig } from "@/lib/siteConfig";
 import { MessageSquare } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Industrial Bearing Catalogue & Part Number Finder | Ready Stock Manmad",
-  description: "Browse 193 verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units with same-day dispatch from Manmad across India.",
+  title: "Industrial Bearing Catalogue & Part Number Finder | EZZI Bearing Suppliers",
+  description: "Browse 193 industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units. Delivery across India. Enquire for availability.",
   keywords: [
     "bearing catalogue india",
     "bearing part number search",
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Industrial Bearing Catalogue | ${siteConfig.name}`,
-    description: "Browse 193 verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units.",
+    description: "Browse 193 industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units.",
     url: `${siteConfig.siteUrl}/products`,
     images: ["/og-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: `Industrial Bearing Catalogue | ${siteConfig.name}`,
-    description: "Browse 193 verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units.",
+    description: "Browse 193 industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units.",
     images: ["/og-image.png"],
   },
 };
@@ -54,20 +54,20 @@ export default function ProductsPage() {
           <div className="mt-4 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <div>
               <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#E4B94F] text-xs font-mono font-bold tracking-wider uppercase mb-2">
-                <span>All-India B2B Catalogue</span>
+                <span>All-India Delivery</span>
                 <span className="text-slate-400">•</span>
-                <span>Manmad Stock</span>
+                <span>Manmad</span>
               </div>
               <h1 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-white uppercase">
-                Complete Bearing Inventory
+                Bearing Range & Catalogue
               </h1>
               <p className="mt-2 text-slate-300 text-sm sm:text-base max-w-2xl">
-                Real-time stockist inventory of ball bearings, metric tapered rollers, automotive hubs, and mounted plummer blocks. Instant RFQ via WhatsApp or multi-item quotation sheet.
+                Catalogue of ball bearings, metric tapered rollers, automotive wheel hubs, and clutch release units. Get a quote via WhatsApp or multi-item enquiry sheet.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
               <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Ammar bhai, I want to check stock availability from your complete bearing catalogue.")}`}
+                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Ammar bhai, I would like to enquire about bearings from your catalogue.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"

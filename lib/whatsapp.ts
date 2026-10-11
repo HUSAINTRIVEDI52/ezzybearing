@@ -24,8 +24,8 @@ export const WHATSAPP_CONTACTS: Record<WhatsAppRecipient, ContactInfo> = {
     id: "ammar",
     name: "Ammar Sakriwala",
     phone: "8830721850",
-    whatsappNumber: "918830721850", // Default recipient per user request
-    role: "Sales Desk & Depot Operations"
+    whatsappNumber: "918830721850",
+    role: "Partner & Operations"
   },
   shabbir: {
     id: "shabbir",
@@ -81,7 +81,7 @@ export function buildProductQuoteMessage(
 • Delivery Location: ___ (City/State)
 ----------------------------------------
 _Ref: EZZI Bearing Suppliers [${pageContext}]_
-Please check depot stock availability & send best wholesale quotation.`
+Please check availability and send quotation.`
   );
 }
 
@@ -107,8 +107,7 @@ export function buildBOMEnquiryMessage(
   const itemsList = items
     .map((item, idx) => {
       const dim = item.dimensions ? ` (${item.dimensions})` : "";
-      const br = item.brands?.length ? ` [${item.brands.join("/")}]` : "";
-      return `${idx + 1}. *${item.partNumber}*${dim}${br} — Qty: ${item.quantity} pcs`;
+      return `${idx + 1}. *${item.partNumber}*${dim} — Qty: ${item.quantity} pcs`;
     })
     .join("\n");
 
@@ -120,11 +119,11 @@ ${itemsList}
 
 ----------------------------------------
 *Buyer Details:*
-• Company / Workshop: ${details?.company || "Not specified"}
+• Company / Shop: ${details?.company || "Not specified"}
 • Delivery City & State: ${details?.city || "Maharashtra / All-India"}
 ----------------------------------------
 _Source: EZZI Bearing Suppliers [${pageContext}]_
-Please confirm ready depot stock at Manmad and dispatch schedule.`
+Please confirm availability and delivery schedule.`
   );
 }
 
@@ -148,14 +147,14 @@ export function buildQuoteFormMessage(
 ----------------------------------------
 • *Buyer Name:* ${formData.name}
 • *Mobile:* ${formData.phone}
-• *Company / Plant:* ${formData.company || "Individual / Workshop"}
+• *Company / Firm:* ${formData.company || "Individual / Workshop"}
 • *Delivery City/State:* ${formData.city}
 • *Bearing Numbers / Description:*
 ${formData.bearingNumbers}
-• *Required Quantity:* ${formData.quantity || "Quote for ready pack sizes"}
+• *Required Quantity:* ${formData.quantity || "Please quote"}
 ${formData.message ? `• *Additional Notes:* ${formData.message}\n` : ""}----------------------------------------
 _Ref: EZZI Bearing Suppliers [${pageContext}]_
-Please send pricing and dispatch ETA.`
+Please send quotation.`
   );
 }
 
@@ -183,10 +182,10 @@ export function buildBulkEnquiryMessage(
 • *Destination City:* ${formData.city}
 • *Required Series / Part Numbers:*
 ${formData.partNumbers || "Refer to message"}
-• *Estimated Volume:* ${formData.estimatedQuantity || "Master Carton / Case Lot"}
+• *Estimated Volume:* ${formData.estimatedQuantity || "Standard Packing"}
 ${formData.message ? `• *Special Instructions:* ${formData.message}\n` : ""}----------------------------------------
 _Ref: EZZI Bearing Suppliers [${pageContext}]_
-Please provide bulk tiered pricing and railway cargo dispatch schedule.`
+Please provide bulk quotation and delivery schedule.`
   );
 }
 
@@ -199,13 +198,13 @@ export function buildGeneralEnquiryMessage(
 ): string {
   const query = customQuery 
     ? `\nI have a specific requirement: "${customQuery}"`
-    : `\nI am browsing your catalog and would like to check bearing stock availability.`;
+    : `\nI am browsing your catalog and would like to enquire about bearing availability.`;
 
   return (
 `Hello EZZI Bearing Suppliers,
 ${query}
 
 _Page Reference: ${pageTitle}_
-Please connect me with your trade desk.`
+Please connect me with your sales desk.`
   );
 }

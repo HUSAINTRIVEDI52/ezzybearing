@@ -20,36 +20,49 @@ export interface ContactPersonFull {
   whatsappClean: string;
 }
 
+export const siteFlags = {
+  // Feature flags for claims awaiting owner confirmation.
+  // Re-enable in siteConfig if confirmed by owner.
+  showAuthorizedDistributor: false,
+  showGstInvoices: false,
+  showSameDayDispatch: false,
+  showYearsInBusiness: false,
+  showEmergencySupport: false,
+  showLogisticsPartners: false,
+  showClientIndustryClaims: false,
+  showGuaranteedAuthenticClaims: false,
+};
+
 export const siteConfig = {
   name: "EZZI Bearing Suppliers",
   tagline: "Quality • Precision • Trust",
-  subtitle: "Stockist of SKF, TATA, XNO, DSF, Ball & Roller Taper Bearings, Hand Tools & more",
+  subtitle: "Stockist of SKF, TATA, XNO, DSF. Ball & Roller Taper Bearings, Hand Tools etc.",
   slogan: "All types of bearing solutions under one roof.",
   contacts: Object.assign(
     [
-      { name: "Ammar Sakriwala",   phone: "8830721850" },
-      { name: "Shabbir Sakriwala", phone: "9272395247" }
+      { name: "Shabbir Sakriwala", phone: "9272395247" },
+      { name: "Ammar Sakriwala",   phone: "8830721850" }
     ],
     {
       primary: {
-        name: "Ammar Sakriwala",
-        role: "Partner & Operations",
-        phone: "+91 88307 21850",
-        phoneClean: "+918830721850",
-        whatsappClean: "918830721850"
-      },
-      secondary: {
         name: "Shabbir Sakriwala",
         role: "Managing Partner",
         phone: "+91 92723 95247",
         phoneClean: "+919272395247",
         whatsappClean: "919272395247"
       },
-      generalPhone: "+91 88307 21850",
+      secondary: {
+        name: "Ammar Sakriwala",
+        role: "Partner & Operations",
+        phone: "+91 88307 21850",
+        phoneClean: "+918830721850",
+        whatsappClean: "918830721850"
+      },
+      generalPhone: "+91 92723 95247",
       email: "sales.ezzybearing@gmail.com"
     }
   ),
-  whatsappNumber: "918830721850",   // primary WhatsApp number (country code, no +) - Ammar Sakriwala (default POC)
+  whatsappNumber: "918830721850",   // default WhatsApp contact - Ammar Sakriwala
   email: "sales.ezzybearing@gmail.com",
   address: Object.assign(
     "Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104, Maharashtra, India",
@@ -71,10 +84,10 @@ export const siteConfig = {
 
   // Extended properties and helpers for UI components, SEO, and navigation
   siteName: "EZZI Bearing Suppliers",
-  siteLegalName: "EZZI Bearing Suppliers (Stockist)",
+  siteLegalName: "EZZI Bearing Suppliers",
   shortName: "EZZI Bearings",
-  stockistSubtitle: "Stockist of SKF, TATA, XNO, DSF, Ball & Roller Taper Bearings, Hand Tools & more",
-  seoDescription: "Authorized stockist & supplier of SKF, TATA, XNO, DSF ball and tapered roller bearings in Manmad, Maharashtra. Same-day dispatch across India.",
+  stockistSubtitle: "Stockist of SKF, TATA, XNO, DSF. Ball & Roller Taper Bearings, Hand Tools etc.",
+  seoDescription: "EZZI Bearing Suppliers, Manmad. Stockist of SKF, TATA, XNO and DSF ball and roller bearings, tapered roller bearings and hand tools. Bulk orders and delivery across India. Get a quote on WhatsApp.",
   keywords: [
     "bearing stockist",
     "bearing supplier",
@@ -87,7 +100,7 @@ export const siteConfig = {
     "Maharashtra",
     "tapered roller bearing",
     "deep groove ball bearing",
-    "sugar mill bearings",
+    "industrial bearings",
     "automotive bearings",
     "hand tools"
   ],
@@ -97,69 +110,55 @@ export const siteConfig = {
   },
   businessHours: {
     days: "Monday - Saturday",
-    time: "09:00 AM - 08:30 PM",
-    emergencySupport: "24/7 Emergency Breakdown Support"
+    time: "09:00 AM - 08:30 PM"
   },
   stockistBrands: [
     {
       name: "XNO",
-      tier: "High Performance Industrial",
-      origin: "India / Global",
-      tagline: "Engineered deep groove ball & roller bearings",
-      certified: true
+      tagline: "Engineered deep groove ball and roller bearings."
     },
     {
       name: "DSF",
-      tier: "Precision Automotive & Machinery",
-      origin: "India",
-      tagline: "High reliability wheel hub & tapered roller assemblies",
-      certified: true
+      tagline: "Precision wheel hub and tapered roller bearing assemblies."
     },
     {
       name: "SKF",
-      tier: "Tier 1 Global Premium",
-      origin: "Sweden / India",
-      tagline: "World benchmark for precision & long service life",
-      certified: true
+      tagline: "Industrial benchmark for ball, roller, and precision bearings."
     },
     {
       name: "TATA",
-      tier: "Heavy Industry & Fleet OEM",
-      origin: "India",
-      tagline: "High-durability bearings for commercial vehicles & crushers",
-      certified: true
+      tagline: "High-durability bearings for industrial machinery and commercial applications."
     }
   ],
   valuePillars: [
     {
       title: "PREMIUM QUALITY",
-      subtitle: "100% Genuine Stock",
-      description: "Direct manufacturer pipeline for SKF, TATA, XNO, DSF. Zero counterfeit risk ensuring machine safety.",
+      subtitle: "Quality & Precision",
+      description: "Stockist of SKF, TATA, XNO, and DSF bearings for diverse industrial and machinery needs.",
       icon: "award"
     },
     {
       title: "TRUSTED BRANDS",
-      subtitle: "Industry Benchmarks",
-      description: "OEM approved brands providing proven durability, exact tolerances, and mill test certificates.",
+      subtitle: "Established Benchmarks",
+      description: "Reliable brands known for durability, precision fit, and dependable performance.",
       icon: "shield-check"
     },
     {
-      title: "WIDE RANGE IN STOCK",
-      subtitle: "193 Ready Product Series",
+      title: "WIDE RANGE",
+      subtitle: "Ball, Roller & Tools",
       description: "Ball bearings, tapered roller sets, clutch release units, wheel hub bearings, and hand tools.",
       icon: "package"
     },
     {
       title: "RELIABLE SERVICE",
-      subtitle: "Over 25 Years of Trust",
-      description: "Personalized trade assistance, same-day packing, and 24-48 hour dispatch across India.",
+      subtitle: "Delivery Across India",
+      description: "Personalized trade assistance, bulk orders welcome, and delivery across India.",
       icon: "truck"
     }
   ],
   logistics: {
-    dispatchTime: "Within 24 Hours",
-    railwayAdvantage: "Manmad Junction Central Railway Parcel Cargo Depot for rapid dispatch to Mumbai, Pune, Nagpur, MP & Gujarat",
-    partners: ["V-Trans", "TCI Freight", "Safexpress", "Delhivery", "Indian Railways Parcel Cargo", "Local Roadways"]
+    coverage: "Delivery across India",
+    dispatchNote: "Enquire for availability and dispatch details."
   },
   navigation: [
     { label: "Home", href: "/" },
@@ -201,9 +200,9 @@ export function getMultiItemWhatsAppUrl(items: {
   ).join("\n");
 
   const text = 
-`*BULK RFQ: EZZI BEARING SUPPLIERS (Manmad Depot)*
+`*BULK RFQ: EZZI BEARING SUPPLIERS (Manmad)*
 --------------------------------------
-*Bearing Bill of Materials (BOM):*
+*Bearing Enquiry / Bill of Materials (BOM):*
 
 ${itemsText}
 
@@ -211,10 +210,9 @@ ${itemsText}
 *Procurement Details:*
 • Company / Workshop Name: 
 • Delivery City & State: 
-• GSTIN (Optional): 
-• Urgency (Routine Stock / Breakdown Urgent): 
+• Quantity / Requirements: 
 
-Please provide wholesale quotation & dispatch ETA.`;
+Please provide quotation and availability.`;
 
   return `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(text)}`;
 }
@@ -223,6 +221,6 @@ Please provide wholesale quotation & dispatch ETA.`;
  * Generates an instant WhatsApp enquiry link for a bearing category
  */
 export function getCategoryWhatsAppUrl(categoryName: string): string {
-  const text = `Hello EZZI Bearing Suppliers, I would like to enquire about your ${categoryName} inventory. Required sizes/series: ___. Delivery city: ___.`;
+  const text = `Hello EZZI Bearing Suppliers, I would like to enquire about ${categoryName}. Required part numbers/sizes: ___. Delivery city: ___.`;
   return `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(text)}`;
 }

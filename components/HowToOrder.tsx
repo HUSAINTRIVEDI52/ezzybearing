@@ -20,7 +20,7 @@ export function HowToOrder() {
       num: "03",
       icon: <Truck className="w-6 h-6 text-[#C9962B]" />,
       title: "Receive Quote & Delivery",
-      desc: "Receive wholesale rates and availability confirmation with express parcel dispatch across India."
+      desc: "Receive quotation and availability confirmation with delivery arranged across India."
     }
   ];
 
@@ -44,7 +44,7 @@ export function HowToOrder() {
           </div>
 
           <p className="text-sm text-slate-600 font-sans">
-            Direct, simple bearing procurement for workshops, industrial plants, and commercial fleets.
+            Simple bearing procurement with delivery across India.
           </p>
         </div>
 

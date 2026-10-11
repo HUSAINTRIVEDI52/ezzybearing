@@ -45,8 +45,8 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const ammar = siteConfig.contacts[0];
-  const shabbir = siteConfig.contacts[1];
+  const shabbir = siteConfig.contacts.primary;
+  const ammar = siteConfig.contacts.secondary;
 
   const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14967.62569651532!2d74.520448!3d20.252445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc2c8f8b8e05cb%3A0xb2ce1e5138f71aa7!2sManmad%2C%20Maharashtra%20423104!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin";
 
@@ -70,12 +70,12 @@ export default function ContactPage() {
               Get in Touch with EZZI
             </h1>
             <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
-              Connect directly with our partners for instant stock availability, wholesale case rates, or emergency industrial breakdown dispatches.
+              Connect directly with our partners for product availability, quotations, and bulk order enquiries.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Ammar bhai, I want to inquire about bearing stock from your contact page.")}`}
+                href={`https://wa.me/${ammar.whatsappClean}?text=${encodeURIComponent("Hello Ammar bhai, I want to inquire about bearing stock from your contact page.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"
@@ -85,9 +85,9 @@ export default function ContactPage() {
                 <span>Chat on WhatsApp ({ammar.phone})</span>
               </a>
               <a
-                href={`tel:+91${ammar.phone}`}
+                href={`tel:${shabbir.phoneClean}`}
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-white/10 hover:bg-white/15 text-white font-medium text-sm border border-white/20 transition-all active:scale-95"
-                aria-label={`Call ${ammar.name} at ${ammar.phone}`}
+                aria-label={`Call ${shabbir.name} at ${shabbir.phone}`}
               >
                 <PhoneCall className="w-4 h-4 text-[#E4B94F]" />
                 <span>Call Trade Desk</span>
@@ -108,29 +108,29 @@ export default function ContactPage() {
                 <span>Direct Contact Personnel</span>
               </h2>
 
-              {/* Ammar Sakriwala (Primary POC) */}
+              {/* Shabbir Sakriwala (Managing Partner) */}
               <div className="p-4 rounded-xl bg-[#F4F6FA] border border-slate-200">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-heading font-bold text-lg text-[#0B1B3D] uppercase">
-                    {ammar.name}
+                    {shabbir.name}
                   </span>
                   <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-[#C9962B]/10 text-[#C9962B] border border-[#C9962B]/20">
-                    Primary POC &amp; Operations
+                    {shabbir.role}
                   </span>
                 </div>
                 <p className="text-xs text-slate-500 font-sans mb-3">
-                  Depot operations, packaging, railway parcel cargo dispatches, and tracking.
+                  Wholesale procurement, brands stocked, and trade enquiries.
                 </p>
                 <div className="flex items-center gap-2 font-mono text-xs">
                   <a
-                    href={`tel:${ammar.phone}`}
+                    href={`tel:${shabbir.phoneClean}`}
                     className="flex-1 py-2 px-3 rounded-lg bg-[#0B1B3D] hover:bg-slate-800 text-white font-bold flex items-center justify-center gap-1.5 transition-colors"
                   >
                     <PhoneCall className="w-3.5 h-3.5 text-[#E4B94F]" />
-                    <span>Call {ammar.phone}</span>
+                    <span>Call {shabbir.phone}</span>
                   </a>
                   <a
-                    href={`https://wa.me/91${ammar.phone}?text=Hello%20Ammar%20bhai,%20I%20have%20a%20dispatch%20enquiry.`}
+                    href={`https://wa.me/${shabbir.whatsappClean}?text=Hello%20Shabbir%20bhai,%20I%20have%20a%20bearing%20enquiry.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2 px-3 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
@@ -141,29 +141,29 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Shabbir Sakriwala */}
+              {/* Ammar Sakriwala (Partner & Operations) */}
               <div className="p-4 rounded-xl bg-[#F4F6FA] border border-slate-200">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-heading font-bold text-lg text-[#0B1B3D] uppercase">
-                    {shabbir.name}
+                    {ammar.name}
                   </span>
                   <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-[#C9962B]/10 text-[#C9962B] border border-[#C9962B]/20">
-                    Managing Partner
+                    {ammar.role}
                   </span>
                 </div>
                 <p className="text-xs text-slate-500 font-sans mb-3">
-                  Wholesale procurement, OEM brands, and mechanical technical guidance.
+                  Operations, packaging, delivery across India, and order enquiries.
                 </p>
                 <div className="flex items-center gap-2 font-mono text-xs">
                   <a
-                    href={`tel:${shabbir.phone}`}
+                    href={`tel:${ammar.phoneClean}`}
                     className="flex-1 py-2 px-3 rounded-lg bg-[#0B1B3D] hover:bg-slate-800 text-white font-bold flex items-center justify-center gap-1.5 transition-colors"
                   >
                     <PhoneCall className="w-3.5 h-3.5 text-[#E4B94F]" />
-                    <span>Call {shabbir.phone}</span>
+                    <span>Call {ammar.phone}</span>
                   </a>
                   <a
-                    href={`https://wa.me/91${shabbir.phone}?text=Hello%20Shabbir%20bhai,%20I%20have%20a%20bearing%20enquiry.`}
+                    href={`https://wa.me/${ammar.whatsappClean}?text=Hello%20Ammar%20bhai,%20I%20have%20a%20dispatch%20enquiry.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2 px-3 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
@@ -204,25 +204,22 @@ export default function ContactPage() {
                 <p>Maharashtra, India</p>
               </div>
 
-              {/* Business Hours with TODO placeholder */}
-              <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs font-mono space-y-2">
-                <div className="flex items-center gap-2 font-bold text-amber-950">
+              {/* Business Hours */}
+              <div className="p-4 rounded-xl bg-[#F4F6FA] border border-slate-200 text-slate-800 text-xs font-mono space-y-2">
+                <div className="flex items-center gap-2 font-bold text-[#0B1B3D]">
                   <Clock className="w-4 h-4 text-[#C9962B]" />
-                  <span>Depot Business Hours</span>
+                  <span>Business Hours</span>
                 </div>
-                <div className="space-y-1 text-amber-800">
+                <div className="space-y-1 text-slate-700">
                   <div className="flex justify-between">
                     <span>Monday – Saturday:</span>
-                    <span className="font-bold">9:30 AM – 8:00 PM</span>
+                    <span className="font-bold">09:00 AM – 08:30 PM</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Sunday:</span>
-                    <span className="font-bold">On-Call for Breakdowns</span>
+                    <span className="font-bold">Closed</span>
                   </div>
                 </div>
-                <p className="text-[10px] text-amber-700 font-sans pt-1 border-t border-amber-200">
-                  Emergency breakdown dispatch &amp; urgent parcel support active 24/7 on call.
-                </p>
               </div>
 
               {/* Google Maps External Direction Link */}
@@ -266,7 +263,7 @@ export default function ContactPage() {
                 />
               </div>
               <p className="text-[11px] font-mono text-slate-500 mt-3 px-2">
-                📍 Situated near Bohri Masjid and Opposite the Head Post Office in Manmad. Walking distance from Manmad Central Railway Junction.
+                📍 Situated near Bohri Masjid and Opposite the Post Office in Manmad.
               </p>
             </div>
 

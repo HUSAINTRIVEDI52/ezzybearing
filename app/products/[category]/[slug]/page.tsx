@@ -56,8 +56,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const fullPageTitle = `${product.name} | ${siteConfig.name}`;
   const canonicalUrl = `${siteConfig.siteUrl}/products/${product.category}/${product.slug || product.id}`;
   const description = product.dimensionsVerified
-    ? `Buy authentic ${product.name} (standard dimensions: ${product.d}x${product.D}x${product.B} mm). In stock at EZZI Bearing Suppliers, Manmad with all-India express delivery.`
-    : `Buy authentic ${product.name}. In stock at EZZI Bearing Suppliers, Manmad with all-India express delivery.`;
+    ? `${product.name} (standard dimensions: ${product.d}x${product.D}x${product.B} mm). Available at EZZI Bearing Suppliers, Manmad. Delivery across India. Enquire for availability.`
+    : `${product.name}. Available at EZZI Bearing Suppliers, Manmad. Delivery across India. Enquire for availability.`;
 
   return {
     title,
@@ -240,10 +240,10 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 Enquire for availability
               </div>
 
-              {/* Short original description paragraph per product (generated from type + article number) */}
+              {/* Short original description paragraph per product */}
               <div className="mt-6 p-4 rounded-xl bg-[#F4F6FA] border border-slate-200 text-slate-700 text-sm leading-relaxed font-sans">
                 {product.description || (
-                  `The ${product.partNumber} is an industrial-grade ${product.categoryName.toLowerCase()} engineered for demanding radial and axial load duties across automotive gearboxes, pumps, electric motors, and manufacturing machinery. Sourced through authentic distribution channels, it offers precision tolerances, low frictional torque, and dependable operating life under continuous production environments.`
+                  `${product.name}. Available at EZZI Bearing Suppliers, Manmad. Enquire for availability. Delivery across India.`
                 )}
               </div>
 
@@ -273,24 +273,11 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 </div>
               )}
 
-              {/* Stockist Brands Badges */}
+              {/* Availability & Delivery */}
               <div className="mt-6 pt-6 border-t border-slate-100">
-                <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 block mb-2">
-                  Stockist Brands Available:
-                </span>
-                <div className="flex flex-wrap items-center gap-2">
-                  {product.brands.map((brand) => (
-                    <span
-                      key={brand}
-                      className="px-3 py-1.5 rounded-lg bg-white border-2 border-slate-200 text-[#0B1B3D] font-mono text-xs font-extrabold shadow-sm"
-                    >
-                      {brand}
-                    </span>
-                  ))}
-                  <span className="text-xs font-mono text-slate-500 ml-2">
-                    (Inquire for preferred brand pricing)
-                  </span>
-                </div>
+                <p className="text-xs font-mono text-slate-600">
+                  Enquire for availability and delivery schedule across India.
+                </p>
               </div>
 
               {/* Action Buttons: Request a Quote & Call & Quote Sheet */}

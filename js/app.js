@@ -3,7 +3,7 @@
  * Handles Real-Time Part Search, Multi-Facet Filters, RFQ Basket,
  * WhatsApp Lead Automation, Modals, and Technical Specifications.
  * 
- * Stockist: SKF, TATA, XNO, DSF, TIMKEN, FAG, NBC, NSK, KOYO
+ * Stockist: SKF, TATA, XNO, DSF, DSF
  * Contacts: Shabbir Sakriwala (+91 92723 95247) | Ammar Sakriwala (+91 88307 21850)
  * Address: Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104
  */
@@ -17,7 +17,7 @@
     phoneAmmar: "+91 88307 21850",
     phoneShabbirClean: "919272395247",
     phoneAmmarClean: "918830721850",
-    whatsappPrimary: "918830721850", // Ammar Sakriwala (Default POC)
+    whatsappPrimary: "918830721850", // Ammar Sakriwala (Default WhatsApp)
     whatsappSecondary: "919272395247", // Shabbir Sakriwala
     email: "sales.ezzybearing@gmail.com",
     depotLocation: "Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104 (Maharashtra)",
@@ -255,13 +255,13 @@
 *Category / Type:* ${product.categoryName}
 *Dimensions (d x D x B):* ${product.d} x ${product.D} x ${product.B} mm
 *Available Brands:* ${product.brands.join(', ')}
-*Depot:* Burhani Complex, Manmad (Ready Stock)
+*Depot:* Burhani Complex, Manmad
 
 *Buyer Requisition:*
 • Company Name: 
 • Delivery Destination / City: 
 • Required Quantity: 
-• Preferred Brand (SKF/TATA/XNO/DSF/TIMKEN/FAG/NBC): 
+• Preferred Brand (SKF/TATA/XNO/DSF): 
 
 Please share availability & wholesale quotation. Thank you!`;
 
@@ -519,7 +519,7 @@ Please provide wholesale quotation & dispatch ETA from your Manmad depot.`;
             </svg>
             <h3 style="font-family: var(--font-heading); color: #fff; margin-bottom: 8px;">No Bearings Found Matching Filter</h3>
             <p style="color: var(--text-secondary); max-width: 460px; margin: 0 auto 20px; font-size: 0.875rem;">
-              We maintain ready stock at our Manmad depot for all standard and rare bearing numbers. Send us your requirement on WhatsApp for immediate verification.
+              We provide bearing solutions for standard and special part numbers. Delivery across India. Send us your requirement on WhatsApp for immediate verification.
             </p>
             <button class="btn-whatsapp" onclick="window.EZZI_APP.openCustomWhatsAppEnquiry()">
               Inquire Part on WhatsApp

@@ -31,10 +31,10 @@ export function WhatsAppRecipientSelector({
               : "text-slate-600 hover:text-black"
           }`}
           aria-pressed={selected === "ammar"}
-          aria-label={`Select ${ammar.name} as WhatsApp recipient`}
+          aria-label="Select Sales Desk as WhatsApp recipient"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-          <span>Ammar (Default)</span>
+          <span>Sales Desk (Default)</span>
         </button>
         <button
           type="button"
@@ -45,9 +45,9 @@ export function WhatsAppRecipientSelector({
               : "text-slate-600 hover:text-black"
           }`}
           aria-pressed={selected === "shabbir"}
-          aria-label={`Select ${shabbir.name} as WhatsApp recipient`}
+          aria-label="Select Wholesale Desk as WhatsApp recipient"
         >
-          <span>Shabbir</span>
+          <span>Wholesale Desk</span>
         </button>
       </div>
     );
@@ -59,7 +59,7 @@ export function WhatsAppRecipientSelector({
         Direct Trade Contact on WhatsApp:
       </label>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-        {/* Ammar Sakriwala (Default) */}
+        {/* Sales Desk (Default POC) */}
         <button
           type="button"
           onClick={() => onChange("ammar")}
@@ -69,22 +69,22 @@ export function WhatsAppRecipientSelector({
               : "border-slate-200 bg-white hover:border-slate-300"
           }`}
           aria-pressed={selected === "ammar"}
-          aria-label="Direct to Ammar Sakriwala (Default)"
+          aria-label="Direct to Sales Desk (Default POC)"
         >
           <div className="flex items-center gap-2.5">
             <div className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-xs ${
               selected === "ammar" ? "bg-[#25D366] text-slate-950" : "bg-slate-100 text-slate-700"
             }`}>
-              A
+              1
             </div>
             <div>
               <div className="font-heading font-extrabold text-sm text-[#0B1B3D] flex items-center gap-1.5">
-                <span>{ammar.name}</span>
+                <span>Sales Desk</span>
                 <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-200 text-emerald-900 uppercase">
                   Default
                 </span>
               </div>
-              <p className="text-[11px] font-mono text-slate-500">{ammar.role} • {ammar.phone}</p>
+              <p className="text-[11px] font-mono text-slate-500">Quotations &amp; Dispatches • +91 {ammar.phone}</p>
             </div>
           </div>
           <span className={`w-4 h-4 rounded-full border flex items-center justify-center ${
@@ -94,7 +94,7 @@ export function WhatsAppRecipientSelector({
           </span>
         </button>
 
-        {/* Shabbir Sakriwala */}
+        {/* Wholesale Desk */}
         <button
           type="button"
           onClick={() => onChange("shabbir")}
@@ -104,19 +104,19 @@ export function WhatsAppRecipientSelector({
               : "border-slate-200 bg-white hover:border-slate-300"
           }`}
           aria-pressed={selected === "shabbir"}
-          aria-label="Direct to Shabbir Sakriwala"
+          aria-label="Direct to Wholesale Desk"
         >
           <div className="flex items-center gap-2.5">
             <div className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-xs ${
               selected === "shabbir" ? "bg-[#25D366] text-slate-950" : "bg-slate-100 text-slate-700"
             }`}>
-              S
+              2
             </div>
             <div>
               <div className="font-heading font-extrabold text-sm text-[#0B1B3D]">
-                {shabbir.name}
+                <span>Wholesale Desk</span>
               </div>
-              <p className="text-[11px] font-mono text-slate-500">{shabbir.role} • {shabbir.phone}</p>
+              <p className="text-[11px] font-mono text-slate-500">Bulk &amp; Trade • +91 {shabbir.phone}</p>
             </div>
           </div>
           <span className={`w-4 h-4 rounded-full border flex items-center justify-center ${

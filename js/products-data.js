@@ -298,7 +298,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30203. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30203",
     "image": "/images/tapered-roller.jpg"
@@ -324,7 +324,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30204. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30204",
     "image": "/images/tapered-roller.jpg"
@@ -350,7 +350,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30206. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30206",
     "image": "/images/tapered-roller.jpg"
@@ -376,7 +376,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30207. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30207",
     "image": "/images/tapered-roller.jpg"
@@ -402,7 +402,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30208. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30208",
     "image": "/images/tapered-roller.jpg"
@@ -428,7 +428,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30209. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30209",
     "image": "/images/tapered-roller.jpg"
@@ -454,7 +454,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30210. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30210",
     "image": "/images/tapered-roller.jpg"
@@ -480,7 +480,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30211. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30211",
     "image": "/images/tapered-roller.jpg"
@@ -506,7 +506,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30212. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30212",
     "image": "/images/tapered-roller.jpg"
@@ -532,7 +532,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30213. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30213",
     "image": "/images/tapered-roller.jpg"
@@ -558,7 +558,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30214. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30214",
     "image": "/images/tapered-roller.jpg"
@@ -584,7 +584,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30215. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30215",
     "image": "/images/tapered-roller.jpg"
@@ -610,7 +610,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30205. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30205",
     "image": "/images/tapered-roller.jpg"
@@ -636,7 +636,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30304. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30304",
     "image": "/images/tapered-roller.jpg"
@@ -662,7 +662,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30302. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30302",
     "image": "/images/tapered-roller.jpg"
@@ -688,7 +688,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30305. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30305",
     "image": "/images/tapered-roller.jpg"
@@ -714,7 +714,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30306. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30306",
     "image": "/images/tapered-roller.jpg"
@@ -740,7 +740,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30307. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30307",
     "image": "/images/tapered-roller.jpg"
@@ -766,7 +766,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30308. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30308",
     "image": "/images/tapered-roller.jpg"
@@ -792,7 +792,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30309. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30309",
     "image": "/images/tapered-roller.jpg"
@@ -818,7 +818,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 30312. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "30312",
     "image": "/images/tapered-roller.jpg"
@@ -844,7 +844,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Double Row Angular Contact Bearing 33019. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "33019",
     "image": "/images/angular-contact.jpg"
@@ -870,7 +870,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Double Row Angular Contact Bearing 33111. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "33111",
     "image": "/images/angular-contact.jpg"
@@ -896,7 +896,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Double Row Angular Contact Bearing 33010. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "33010",
     "image": "/images/angular-contact.jpg"
@@ -922,7 +922,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Double Row Angular Contact Bearing 33214. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "33214",
     "image": "/images/angular-contact.jpg"
@@ -948,7 +948,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Double Row Angular Contact Bearing 33215. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "33215",
     "image": "/images/angular-contact.jpg"
@@ -974,7 +974,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Double Row Angular Contact Bearing 33013. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "33013",
     "image": "/images/angular-contact.jpg"
@@ -1000,7 +1000,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32305. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32305",
     "image": "/images/tapered-roller.jpg"
@@ -1026,7 +1026,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32306. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32306",
     "image": "/images/tapered-roller.jpg"
@@ -1052,7 +1052,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32307. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32307",
     "image": "/images/tapered-roller.jpg"
@@ -1078,7 +1078,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32308. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32308",
     "image": "/images/tapered-roller.jpg"
@@ -1104,7 +1104,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32309. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32309",
     "image": "/images/tapered-roller.jpg"
@@ -1130,7 +1130,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32311. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32311",
     "image": "/images/tapered-roller.jpg"
@@ -1156,7 +1156,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32206. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32206",
     "image": "/images/tapered-roller.jpg"
@@ -1182,7 +1182,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32207. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32207",
     "image": "/images/tapered-roller.jpg"
@@ -1208,7 +1208,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32208. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32208",
     "image": "/images/tapered-roller.jpg"
@@ -1234,7 +1234,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32209. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32209",
     "image": "/images/tapered-roller.jpg"
@@ -1260,7 +1260,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32210. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32210",
     "image": "/images/tapered-roller.jpg"
@@ -1286,7 +1286,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32211. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32211",
     "image": "/images/tapered-roller.jpg"
@@ -1312,7 +1312,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32212. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32212",
     "image": "/images/tapered-roller.jpg"
@@ -1338,7 +1338,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32213. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32213",
     "image": "/images/tapered-roller.jpg"
@@ -1364,7 +1364,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32214. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32214",
     "image": "/images/tapered-roller.jpg"
@@ -1390,7 +1390,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32215. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32215",
     "image": "/images/tapered-roller.jpg"
@@ -1416,7 +1416,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32216. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32216",
     "image": "/images/tapered-roller.jpg"
@@ -1442,7 +1442,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32217. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32217",
     "image": "/images/tapered-roller.jpg"
@@ -1468,7 +1468,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32218. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32218",
     "image": "/images/tapered-roller.jpg"
@@ -1494,7 +1494,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32220. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32220",
     "image": "/images/tapered-roller.jpg"
@@ -1520,7 +1520,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 3984/327. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "3984-327",
     "image": "/images/cone-cup-set.jpg"
@@ -1546,7 +1546,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 09067/09195. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "09067-09195",
     "image": "/images/cone-cup-set.jpg"
@@ -1572,7 +1572,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 6379/6320. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6379-6320",
     "image": "/images/cone-cup-set.jpg"
@@ -1598,7 +1598,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 50KW/3720. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "50kw-3720",
     "image": "/images/cone-cup-set.jpg"
@@ -1624,7 +1624,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Special Application Bearing 306497. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "306497",
     "image": "/images/deep-groove-ball.jpg"
@@ -1650,7 +1650,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Special Application Bearing 509043. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "509043",
     "image": "/images/deep-groove-ball.jpg"
@@ -1676,7 +1676,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 387/382. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "387-382",
     "image": "/images/cone-cup-set.jpg"
@@ -1702,7 +1702,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 399/394. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "399-394",
     "image": "/images/cone-cup-set.jpg"
@@ -1728,7 +1728,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 414/418. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "414-418",
     "image": "/images/cone-cup-set.jpg"
@@ -1754,7 +1754,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 462/453. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "462-453",
     "image": "/images/cone-cup-set.jpg"
@@ -1780,7 +1780,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 482/472. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "482-472",
     "image": "/images/cone-cup-set.jpg"
@@ -1806,7 +1806,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 535/532. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "535-532",
     "image": "/images/cone-cup-set.jpg"
@@ -1832,7 +1832,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 539/532. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "539-532",
     "image": "/images/cone-cup-set.jpg"
@@ -1858,7 +1858,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 566/563. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "566-563",
     "image": "/images/cone-cup-set.jpg"
@@ -1884,7 +1884,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 567/563. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "567-563",
     "image": "/images/cone-cup-set.jpg"
@@ -1910,7 +1910,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 580/572. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "580-572",
     "image": "/images/cone-cup-set.jpg"
@@ -1936,7 +1936,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 683/672. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "683-672",
     "image": "/images/cone-cup-set.jpg"
@@ -1962,7 +1962,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 3982/3920. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "3982-3920",
     "image": "/images/cone-cup-set.jpg"
@@ -1988,7 +1988,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 3585/3525. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "3585-3525",
     "image": "/images/cone-cup-set.jpg"
@@ -2014,7 +2014,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 11590/11520. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "11590-11520",
     "image": "/images/cone-cup-set.jpg"
@@ -2040,7 +2040,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 11949/910. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "11949-910",
     "image": "/images/cone-cup-set.jpg"
@@ -2066,7 +2066,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 12649/12610. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "12649-12610",
     "image": "/images/cone-cup-set.jpg"
@@ -2092,7 +2092,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 15123/15245. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "15123-15245",
     "image": "/images/cone-cup-set.jpg"
@@ -2118,7 +2118,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 24780/24720. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "24780-24720",
     "image": "/images/cone-cup-set.jpg"
@@ -2144,7 +2144,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 25577/25523. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "25577-25523",
     "image": "/images/cone-cup-set.jpg"
@@ -2170,7 +2170,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 25877/25821. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "25877-25821",
     "image": "/images/cone-cup-set.jpg"
@@ -2196,7 +2196,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 48548/10. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "48548-10",
     "image": "/images/cone-cup-set.jpg"
@@ -2222,7 +2222,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 501349/10. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "501349-10",
     "image": "/images/cone-cup-set.jpg"
@@ -2248,7 +2248,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 603049/11. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "603049-11",
     "image": "/images/cone-cup-set.jpg"
@@ -2274,7 +2274,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 1988/1922. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "1988-1922",
     "image": "/images/cone-cup-set.jpg"
@@ -2300,7 +2300,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 67048/10. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "67048-10",
     "image": "/images/cone-cup-set.jpg"
@@ -2326,7 +2326,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set 603249/10. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "603249-10",
     "image": "/images/cone-cup-set.jpg"
@@ -2352,7 +2352,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 626. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "626",
     "image": "/images/deep-groove-ball.jpg"
@@ -2378,7 +2378,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 629. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "629",
     "image": "/images/deep-groove-ball.jpg"
@@ -2404,7 +2404,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 606. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "606",
     "image": "/images/deep-groove-ball.jpg"
@@ -2430,7 +2430,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 607. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "607",
     "image": "/images/deep-groove-ball.jpg"
@@ -2456,7 +2456,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 608. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "608",
     "image": "/images/deep-groove-ball.jpg"
@@ -2482,7 +2482,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 609. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "609",
     "image": "/images/deep-groove-ball.jpg"
@@ -2508,7 +2508,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 698. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "698",
     "image": "/images/deep-groove-ball.jpg"
@@ -2534,7 +2534,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6000. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6000",
     "image": "/images/deep-groove-ball.jpg"
@@ -2560,7 +2560,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6001. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6001",
     "image": "/images/deep-groove-ball.jpg"
@@ -2586,7 +2586,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6002. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6002",
     "image": "/images/deep-groove-ball.jpg"
@@ -2612,7 +2612,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6003. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6003",
     "image": "/images/deep-groove-ball.jpg"
@@ -2638,7 +2638,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6004. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6004",
     "image": "/images/deep-groove-ball.jpg"
@@ -2664,7 +2664,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6005. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6005",
     "image": "/images/deep-groove-ball.jpg"
@@ -2690,7 +2690,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6006. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6006",
     "image": "/images/deep-groove-ball.jpg"
@@ -2716,7 +2716,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6007. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6007",
     "image": "/images/deep-groove-ball.jpg"
@@ -2742,7 +2742,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6008. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6008",
     "image": "/images/deep-groove-ball.jpg"
@@ -2768,7 +2768,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6009. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6009",
     "image": "/images/deep-groove-ball.jpg"
@@ -2794,7 +2794,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6010. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6010",
     "image": "/images/deep-groove-ball.jpg"
@@ -2820,7 +2820,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6011. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6011",
     "image": "/images/deep-groove-ball.jpg"
@@ -2846,7 +2846,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6200. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6200",
     "image": "/images/deep-groove-ball.jpg"
@@ -2872,7 +2872,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6201. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6201",
     "image": "/images/deep-groove-ball.jpg"
@@ -2898,7 +2898,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6202. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6202",
     "image": "/images/deep-groove-ball.jpg"
@@ -2924,7 +2924,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6203. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6203",
     "image": "/images/deep-groove-ball.jpg"
@@ -2950,7 +2950,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6204. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6204",
     "image": "/images/deep-groove-ball.jpg"
@@ -2976,7 +2976,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6205. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6205",
     "image": "/images/deep-groove-ball.jpg"
@@ -3002,7 +3002,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6206. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6206",
     "image": "/images/deep-groove-ball.jpg"
@@ -3028,7 +3028,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6207. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6207",
     "image": "/images/deep-groove-ball.jpg"
@@ -3054,7 +3054,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6208. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6208",
     "image": "/images/deep-groove-ball.jpg"
@@ -3080,7 +3080,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6209. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6209",
     "image": "/images/deep-groove-ball.jpg"
@@ -3106,7 +3106,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6210. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6210",
     "image": "/images/deep-groove-ball.jpg"
@@ -3132,7 +3132,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6211. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6211",
     "image": "/images/deep-groove-ball.jpg"
@@ -3158,7 +3158,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6212. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6212",
     "image": "/images/deep-groove-ball.jpg"
@@ -3184,7 +3184,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6213. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6213",
     "image": "/images/deep-groove-ball.jpg"
@@ -3210,7 +3210,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6214. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6214",
     "image": "/images/deep-groove-ball.jpg"
@@ -3236,7 +3236,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6215. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6215",
     "image": "/images/deep-groove-ball.jpg"
@@ -3262,7 +3262,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6300. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6300",
     "image": "/images/deep-groove-ball.jpg"
@@ -3288,7 +3288,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6301. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6301",
     "image": "/images/deep-groove-ball.jpg"
@@ -3314,7 +3314,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6302. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6302",
     "image": "/images/deep-groove-ball.jpg"
@@ -3340,7 +3340,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6303. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6303",
     "image": "/images/deep-groove-ball.jpg"
@@ -3366,7 +3366,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6304. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6304",
     "image": "/images/deep-groove-ball.jpg"
@@ -3392,7 +3392,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6305. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6305",
     "image": "/images/deep-groove-ball.jpg"
@@ -3418,7 +3418,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6306. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6306",
     "image": "/images/deep-groove-ball.jpg"
@@ -3444,7 +3444,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6307. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6307",
     "image": "/images/deep-groove-ball.jpg"
@@ -3470,7 +3470,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6308. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6308",
     "image": "/images/deep-groove-ball.jpg"
@@ -3496,7 +3496,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6309. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6309",
     "image": "/images/deep-groove-ball.jpg"
@@ -3522,7 +3522,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6310. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6310",
     "image": "/images/deep-groove-ball.jpg"
@@ -3548,7 +3548,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6311. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6311",
     "image": "/images/deep-groove-ball.jpg"
@@ -3574,7 +3574,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6312. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6312",
     "image": "/images/deep-groove-ball.jpg"
@@ -3600,7 +3600,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6313. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6313",
     "image": "/images/deep-groove-ball.jpg"
@@ -3626,7 +3626,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6314. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6314",
     "image": "/images/deep-groove-ball.jpg"
@@ -3652,7 +3652,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 6315. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6315",
     "image": "/images/deep-groove-ball.jpg"
@@ -3678,7 +3678,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing (Snap Ring) 6305-2N. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6305-2n",
     "image": "/images/deep-groove-ball.jpg"
@@ -3704,7 +3704,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing (Snap Ring) 6307-2N. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6307-2n",
     "image": "/images/deep-groove-ball.jpg"
@@ -3730,7 +3730,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing (Snap Ring) 6308-2N. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6308-2n",
     "image": "/images/deep-groove-ball.jpg"
@@ -3756,7 +3756,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing (Snap Ring) 6208-2N. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6208-2n",
     "image": "/images/deep-groove-ball.jpg"
@@ -3782,7 +3782,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing (Snap Ring) 6306N. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6306n",
     "image": "/images/deep-groove-ball.jpg"
@@ -3808,7 +3808,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing (Snap Ring) 6310N. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6310n",
     "image": "/images/deep-groove-ball.jpg"
@@ -3834,7 +3834,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing (Snap Ring) 6309N. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6309n",
     "image": "/images/deep-groove-ball.jpg"
@@ -3860,7 +3860,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing (Snap Ring) 6210N. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6210n",
     "image": "/images/deep-groove-ball.jpg"
@@ -3886,7 +3886,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing (Snap Ring) 6212N. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "6212n",
     "image": "/images/deep-groove-ball.jpg"
@@ -3912,7 +3912,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Four-Point Contact Ball Bearing QJ 209. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "qj-209",
     "image": "/images/angular-contact.jpg"
@@ -3938,7 +3938,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Four-Point Contact Ball Bearing QJ 309. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "qj-309",
     "image": "/images/angular-contact.jpg"
@@ -3964,7 +3964,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Cylindrical Roller Bearing NU 309. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "nu-309",
     "image": "/images/cylindrical-roller.jpg"
@@ -3990,7 +3990,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Cylindrical Roller Bearing NU 209. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "nu-209",
     "image": "/images/cylindrical-roller.jpg"
@@ -4016,7 +4016,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Cylindrical Roller Bearing NU 2209. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "nu-2209",
     "image": "/images/cylindrical-roller.jpg"
@@ -4042,7 +4042,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Four-Point Contact Ball Bearing QJ 308. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "qj-308",
     "image": "/images/angular-contact.jpg"
@@ -4068,7 +4068,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Special Application Bearing WJ 209. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "wj-209",
     "image": "/images/deep-groove-ball.jpg"
@@ -4094,7 +4094,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Special Application Bearing WJ 309. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "wj-309",
     "image": "/images/deep-groove-ball.jpg"
@@ -4120,7 +4120,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Automotive Hub Bearing BAH0031. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "bah0031",
     "image": "/images/wheel-hub.jpg"
@@ -4146,7 +4146,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Automotive Hub Bearing BAH0036. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "bah0036",
     "image": "/images/wheel-hub.jpg"
@@ -4172,7 +4172,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Automotive Hub Bearing BAH0052. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "bah0052",
     "image": "/images/wheel-hub.jpg"
@@ -4198,7 +4198,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Automotive Hub Bearing BAH0087. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "bah0087",
     "image": "/images/wheel-hub.jpg"
@@ -4224,7 +4224,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Automotive Hub Bearing BAH0104. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "bah0104",
     "image": "/images/wheel-hub.jpg"
@@ -4250,7 +4250,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 62/28. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "62-28",
     "image": "/images/deep-groove-ball.jpg"
@@ -4276,7 +4276,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 62/22. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "62-22",
     "image": "/images/deep-groove-ball.jpg"
@@ -4302,7 +4302,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Deep Groove Ball Bearing 63/22. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "63-22",
     "image": "/images/deep-groove-ball.jpg"
@@ -4328,7 +4328,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32005. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32005",
     "image": "/images/tapered-roller.jpg"
@@ -4354,7 +4354,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 320/32. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "320-32",
     "image": "/images/tapered-roller.jpg"
@@ -4380,7 +4380,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32204. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32204",
     "image": "/images/tapered-roller.jpg"
@@ -4406,7 +4406,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Needle Roller Bearing TX 44SC. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "tx-44sc",
     "image": "/images/needle-roller.jpg"
@@ -4432,7 +4432,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Needle Roller Bearing TX 2143SC. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "tx-2143sc",
     "image": "/images/needle-roller.jpg"
@@ -4458,7 +4458,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Needle Roller Bearing TX 53INT. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "tx-53int",
     "image": "/images/needle-roller.jpg"
@@ -4484,7 +4484,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Spherical Roller Bearing OC 2207. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "oc-2207",
     "image": "/images/spherical-roller.jpg"
@@ -4510,7 +4510,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing BTH-1238 (296045). Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "bth-1238-296045",
     "image": "/images/tapered-roller.jpg"
@@ -4536,7 +4536,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing 32004. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "32004",
     "image": "/images/tapered-roller.jpg"
@@ -4562,7 +4562,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Double Row Angular Contact Bearing 33005. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "33005",
     "image": "/images/angular-contact.jpg"
@@ -4588,7 +4588,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Wheel / Roller Bearing 98205  WRB. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "98205-wrb",
     "image": "/images/wheel-hub.jpg"
@@ -4614,7 +4614,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Wheel / Roller Bearing 16007  WRB. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "16007-wrb",
     "image": "/images/wheel-hub.jpg"
@@ -4640,7 +4640,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Wheel / Roller Bearing 1838001  WRB. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "1838001-wrb",
     "image": "/images/wheel-hub.jpg"
@@ -4666,7 +4666,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Wheel / Roller Bearing 1838002  WRB. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "1838002-wrb",
     "image": "/images/wheel-hub.jpg"
@@ -4692,7 +4692,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Wheel / Roller Bearing 3520 WRB. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "3520-wrb",
     "image": "/images/wheel-hub.jpg"
@@ -4718,7 +4718,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Wheel / Roller Bearing 1005  WRB. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "1005-wrb",
     "image": "/images/wheel-hub.jpg"
@@ -4744,7 +4744,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Wheel / Roller Bearing 613963  WRB. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "613963-wrb",
     "image": "/images/wheel-hub.jpg"
@@ -4770,7 +4770,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Wheel / Roller Bearing 253815  WRB. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "253815-wrb",
     "image": "/images/wheel-hub.jpg"
@@ -4796,7 +4796,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Belt Tensioner / Idler Bearing VKM 76870. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "vkm-76870",
     "image": "/images/deep-groove-ball.jpg"
@@ -4822,7 +4822,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Belt Tensioner / Idler Bearing VKM 76871. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "vkm-76871",
     "image": "/images/deep-groove-ball.jpg"
@@ -4848,7 +4848,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Double Row Angular Contact Wheel Bearing DAC 3668. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "dac-3668",
     "image": "/images/wheel-hub.jpg"
@@ -4874,7 +4874,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Special Application Bearing 57410. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "57410",
     "image": "/images/deep-groove-ball.jpg"
@@ -4900,7 +4900,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set LM 44649/10. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "lm-44649-10",
     "image": "/images/cone-cup-set.jpg"
@@ -4926,7 +4926,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Tapered Roller Bearing Cone & Cup Set LM 11749/10. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "lm-11749-10",
     "image": "/images/cone-cup-set.jpg"
@@ -4952,7 +4952,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Thrust Ball Bearing 51107. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "51107",
     "image": "/images/thrust-bearing.jpg"
@@ -4978,7 +4978,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Thrust Ball Bearing 51108. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "51108",
     "image": "/images/thrust-bearing.jpg"
@@ -5004,7 +5004,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Thrust Ball Bearing 51207. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "51207",
     "image": "/images/thrust-bearing.jpg"
@@ -5030,7 +5030,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Thrust Ball Bearing 51208. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "51208",
     "image": "/images/thrust-bearing.jpg"
@@ -5056,7 +5056,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T126. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t126",
     "image": "/images/clutch-release.jpg"
@@ -5082,7 +5082,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T138(TR). Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t138-tr",
     "image": "/images/clutch-release.jpg"
@@ -5108,7 +5108,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T138(OS). Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t138-os",
     "image": "/images/clutch-release.jpg"
@@ -5134,7 +5134,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T144(TR). Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t144-tr",
     "image": "/images/clutch-release.jpg"
@@ -5160,7 +5160,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T144(OS). Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t144-os",
     "image": "/images/clutch-release.jpg"
@@ -5186,7 +5186,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T151(TR). Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t151-tr",
     "image": "/images/clutch-release.jpg"
@@ -5212,7 +5212,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T151(OS). Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t151-os",
     "image": "/images/clutch-release.jpg"
@@ -5238,7 +5238,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T101. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t101",
     "image": "/images/clutch-release.jpg"
@@ -5264,7 +5264,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T119. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t119",
     "image": "/images/clutch-release.jpg"
@@ -5290,7 +5290,7 @@ const BEARING_PRODUCTS = [
       "Automotive & Industrial Machinery"
     ],
     "stockLocation": "Manmad Depot (Warehouse Ready)",
-    "badge": "DEPOT READY",
+    "badge": "",
     "description": "Clutch Release / Thrust Bearing T149. Authentic industrial stock available at EZZI Bearing Suppliers, Manmad depot. Direct wholesale supply across Maharashtra and pan-India with express dispatch.",
     "slug": "t149",
     "image": "/images/clutch-release.jpg"

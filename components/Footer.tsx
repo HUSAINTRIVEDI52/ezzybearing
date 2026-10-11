@@ -14,8 +14,8 @@ import {
 } from "lucide-react";
 
 export function Footer() {
-  const ammar = siteConfig.contacts[0];
-  const shabbir = siteConfig.contacts[1];
+  const shabbir = siteConfig.contacts.primary;
+  const ammar = siteConfig.contacts.secondary;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -43,7 +43,7 @@ export function Footer() {
             </Link>
 
             <p className="text-xs text-slate-300 leading-relaxed font-sans">
-              Authorised stockist of SKF, TATA, XNO, and DSF ball and roller bearings supplying industrial machinery, automotive fleets, and manufacturing plants across India.
+              Stockist of SKF, TATA, XNO, and DSF ball and roller bearings, tapered roller bearings, and hand tools. Delivery across India.
             </p>
           </div>
 
@@ -87,7 +87,7 @@ export function Footer() {
                 <Link href="/about" className="hover:text-[#E4B94F] transition-colors">About EZZI</Link>
               </li>
               <li>
-                <Link href="/industries" className="hover:text-[#E4B94F] transition-colors">Industries Served</Link>
+                <Link href="/industries" className="hover:text-[#E4B94F] transition-colors">Industry Applications</Link>
               </li>
               <li>
                 <Link href="/bulk-orders" className="hover:text-[#E4B94F] transition-colors">Bulk Orders &amp; Delivery</Link>
@@ -128,11 +128,11 @@ export function Footer() {
               <div className="flex items-center gap-2 pt-1 font-mono">
                 <Phone className="w-4 h-4 text-[#E4B94F] shrink-0" />
                 <div>
-                  <a href={`tel:+91${ammar.phone}`} className="text-white hover:text-[#E4B94F] block font-bold">
-                    Ammar: +91 {ammar.phone}
+                  <a href={`tel:${shabbir.phoneClean}`} className="text-white hover:text-[#E4B94F] block font-bold">
+                    {shabbir.phone}
                   </a>
-                  <a href={`tel:+91${shabbir.phone}`} className="text-slate-300 hover:text-[#E4B94F] block font-bold">
-                    Shabbir: +91 {shabbir.phone}
+                  <a href={`tel:${ammar.phoneClean}`} className="text-slate-300 hover:text-[#E4B94F] block font-bold">
+                    {ammar.phone}
                   </a>
                 </div>
               </div>
