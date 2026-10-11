@@ -29,6 +29,17 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
   return (
     <>
       <header
@@ -88,7 +99,7 @@ export function Header() {
               href={`tel:+91${ammar.phone}`}
               className="lg:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl bg-[#132752] text-[#E4B94F] border border-[#C9962B]/30 hover:bg-[#183060] transition-colors focus-visible:ring-2 focus-visible:ring-[#C9962B]"
               title={`Call ${ammar.name}`}
-              aria-label={`Call EZZI Bearings at ${ammar.phone}`}
+              aria-label="Call Ammar"
             >
               <Phone className="w-4 h-4" />
             </a>

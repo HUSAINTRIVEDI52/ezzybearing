@@ -43,7 +43,7 @@ export function Hero() {
             </div>
 
             <p className="text-slate-200 text-sm sm:text-base max-w-2xl leading-relaxed mb-8 font-sans">
-              Authorised stockist of SKF, TATA, XNO, and DSF ball &amp; roller bearings with all-India express delivery. Direct depot supply for sugar factories, automotive fleets, agricultural machinery, and industrial plants from Manmad, Maharashtra.
+              Authorised stockist of SKF, TATA, XNO, and DSF ball &amp; roller bearings with all-India express delivery.
             </p>
 
             {/* Action CTAs */}
@@ -64,13 +64,13 @@ export function Hero() {
                 href="/products"
                 className="py-3.5 px-6 rounded-xl bg-[#132752] hover:bg-[#183060] border border-[#C9962B]/50 text-white font-heading font-bold text-sm uppercase tracking-wider flex items-center gap-2 transition-all hover-lift"
               >
-                <span>Browse Products (193)</span>
+                <span>Browse Products</span>
                 <ArrowRight className="w-4 h-4 text-[#E4B94F]" />
               </Link>
             </div>
           </div>
 
-          {/* Hero Right Visual: Alongside is a premium bearing image */}
+          {/* Hero Right Visual: One large clean bearing image */}
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden border-2 border-[#C9962B]/40 shadow-2xl group bg-[#132752]">
               <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] overflow-hidden">
@@ -82,30 +82,14 @@ export function Hero() {
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B3D] via-transparent to-transparent opacity-70" />
-              </div>
-
-              {/* Floating Badge on Image */}
-              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#0B1B3D]/85 backdrop-blur-md border border-[#C9962B]/40 flex items-center justify-between">
-                <div>
-                  <span className="text-[10px] font-mono uppercase tracking-wider text-[#E4B94F] block">
-                    Certified Industrial Stock
-                  </span>
-                  <span className="font-heading font-extrabold text-sm text-white uppercase block">
-                    SKF • TATA • XNO • DSF
-                  </span>
-                </div>
-                <div className="shrink-0 flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#25D366]/20 border border-[#25D366]/50 text-emerald-400 text-xs font-mono font-bold">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span>Ready Stock</span>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B3D] via-transparent to-transparent opacity-50" />
               </div>
             </div>
           </div>
         </div>
 
-        {/* Trust Strip Below with Four Items: Premium Quality, Trusted Brands, Wide Range in Stock, Reliable Service */}
-        <div className="mt-14 pt-8 border-t border-[#C9962B]/20">
+        {/* Trust Strip: Premium Quality, Trusted Brands, Wide Range of Bearings, Reliable Service */}
+        <div className="mt-12 pt-8 border-t border-[#C9962B]/20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="p-4 rounded-xl bg-[#132752]/70 border border-[#C9962B]/25 flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-[#C9962B]/15 border border-[#C9962B]/40 flex items-center justify-center text-[#E4B94F] shrink-0">
@@ -116,7 +100,7 @@ export function Hero() {
                   Premium Quality
                 </h4>
                 <p className="text-[11px] text-slate-300 font-sans">
-                  Inspected metallurgy &amp; zero risk
+                  Genuine industrial-grade bearings
                 </p>
               </div>
             </div>
@@ -141,10 +125,10 @@ export function Hero() {
               </div>
               <div>
                 <h4 className="font-heading font-bold text-sm text-white uppercase tracking-wider">
-                  Wide Range in Stock
+                  Wide Range of Bearings
                 </h4>
                 <p className="text-[11px] text-slate-300 font-sans">
-                  193 ready series in Manmad
+                  Deep groove, tapered, spherical &amp; more
                 </p>
               </div>
             </div>
@@ -158,7 +142,7 @@ export function Hero() {
                   Reliable Service
                 </h4>
                 <p className="text-[11px] text-slate-300 font-sans">
-                  All-India 24hr express packing
+                  Prompt support &amp; pan-India dispatch
                 </p>
               </div>
             </div>

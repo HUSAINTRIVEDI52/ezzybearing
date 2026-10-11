@@ -9,7 +9,6 @@ import {
   buildWhatsAppLink, 
   buildProductQuoteMessage 
 } from "@/lib/whatsapp";
-import { WhatsAppRecipientSelector } from "@/components/WhatsAppRecipientSelector";
 import { MessageSquare, Plus, Check, Phone, Share2 } from "lucide-react";
 
 interface ProductDetailActionsProps {
@@ -19,53 +18,60 @@ interface ProductDetailActionsProps {
 export function ProductDetailActions({ product }: ProductDetailActionsProps) {
   const { addItem, isInRfq, openDrawer } = useRfq();
   const inRfq = isInRfq(product.id);
-  const [recipient, setRecipient] = useState<WhatsAppRecipient>("ammar");
-  const shabbir = siteConfig.contacts[0];
+  const [copied, setCopied] = useState(false);
+  const contact = siteConfig.contacts[0]; // Ammar
 
   const whatsappUrl = buildWhatsAppLink(
     buildProductQuoteMessage(product, "Product Detail Page"),
-    recipient
+    "ammar"
   );
 
-  const handleShare = () => {
-    if (typeof navigator !== "undefined" && navigator.share) {
-      navigator.share({
-        title: `${product.partNumber} Bearing Specification`,
-        text: `Check out ${product.partNumber} bearing specification from EZZI Bearing Suppliers, Manmad`,
-        url: window.location.href,
-      }).catch(() => {});
-    } else {
+  const handleShare = async () => {
+    if (typeof window === "undefined") return;
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: `${product.partNumber} Bearing | ${siteConfig.name}`,
+          url: window.location.href,
+        });
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2500);
+      }
+    } catch {
+      // Fallback
       navigator.clipboard.writeText(window.location.href);
-      alert("Product link copied to clipboard!");
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
     }
   };
 
   return (
     <div className="space-y-3.5">
-      {/* Recipient Number Selector (Ammar Default vs Shabbir) */}
-      <div className="flex items-center justify-between bg-slate-50 border border-slate-200 rounded-xl p-2 px-3">
-        <span className="text-xs font-mono font-bold text-slate-700">Message Representative:</span>
-        <WhatsAppRecipientSelector
-          selected={recipient}
-          onChange={setRecipient}
-          compact
-        />
-      </div>
-
       {/* Primary WhatsApp RFQ Button */}
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full min-h-[48px] py-4 px-6 rounded-xl font-heading font-extrabold text-sm uppercase tracking-wider bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 flex items-center justify-center gap-3 transition-all shadow-md active:scale-95 focus-visible:ring-2 focus-visible:ring-[#C9962B]"
-        aria-label={`Get instant WhatsApp price quote for ${product.partNumber}`}
+        className="w-full min-h-[48px] py-4 px-6 rounded-xl font-heading font-extrabold text-sm uppercase tracking-wider bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 flex items-center justify-center gap-2.5 transition-all shadow-md active:scale-95 focus-visible:ring-2 focus-visible:ring-[#C9962B]"
+        aria-label={`Request Quote on WhatsApp for ${product.partNumber}`}
       >
         <MessageSquare className="w-5 h-5 fill-slate-950 stroke-none" />
-        <span>Instant WhatsApp Price &amp; Stock Quote</span>
+        <span>Request Quote on WhatsApp</span>
       </a>
 
-      {/* Secondary Actions Row */}
+      {/* Secondary Actions: Call & Enquiry List */}
       <div className="grid grid-cols-2 gap-3">
+        <a
+          href={`tel:+91${contact.phone}`}
+          className="min-h-[44px] py-3 px-4 rounded-xl font-mono text-xs text-[#0B1B3D] bg-white border border-slate-300 hover:border-[#0B1B3D] flex items-center justify-center gap-2 transition-colors font-bold focus-visible:ring-2 focus-visible:ring-[#C9962B]"
+          aria-label={`Call trade desk at +91 ${contact.phone}`}
+        >
+          <Phone className="w-4 h-4 text-[#C9962B]" />
+          <span>Call Trade Desk</span>
+        </a>
+
         <button
           onClick={() => {
             addItem(product);
@@ -73,42 +79,41 @@ export function ProductDetailActions({ product }: ProductDetailActionsProps) {
           }}
           className={`min-h-[44px] py-3 px-4 rounded-xl font-mono text-xs font-bold flex items-center justify-center gap-2 border transition-all focus-visible:ring-2 focus-visible:ring-[#C9962B] ${
             inRfq
-              ? "bg-emerald-600 text-white border-emerald-600"
-              : "bg-white border-slate-300 text-[#0B1B3D] hover:border-[#C9962B]"
+              ? "bg-[#0B1B3D] text-[#E4B94F] border-[#0B1B3D]"
+              : "bg-white border-slate-300 text-slate-700 hover:border-[#0B1B3D]"
           }`}
-          aria-label={inRfq ? `${product.partNumber} is in Quote Sheet. Click to view.` : `Add ${product.partNumber} to Quote Sheet`}
+          aria-label={inRfq ? `${product.partNumber} added to enquiry list` : `Add ${product.partNumber} to enquiry list`}
         >
           {inRfq ? (
             <>
-              <Check className="w-4 h-4" />
-              <span>In Quote Sheet (View)</span>
+              <Check className="w-4 h-4 text-[#E4B94F]" />
+              <span>In Enquiry List</span>
             </>
           ) : (
             <>
               <Plus className="w-4 h-4" />
-              <span>Add to Quote Sheet</span>
+              <span>+ Add to Enquiry</span>
             </>
           )}
         </button>
-
-        <a
-          href={`tel:+91${shabbir.phone}`}
-          className="min-h-[44px] py-3 px-4 rounded-xl font-mono text-xs text-[#0B1B3D] bg-white border border-slate-300 hover:border-[#C9962B] flex items-center justify-center gap-2 transition-colors font-bold focus-visible:ring-2 focus-visible:ring-[#C9962B]"
-          aria-label={`Call trade desk at ${shabbir.phone}`}
-        >
-          <Phone className="w-4 h-4 text-[#C9962B]" />
-          <span>Call Trade Desk</span>
-        </a>
       </div>
 
-      <button
-        onClick={handleShare}
-        className="w-full min-h-[44px] py-2.5 rounded-xl text-xs font-mono text-slate-600 hover:text-black flex items-center justify-center gap-1.5 transition-colors focus-visible:ring-2 focus-visible:ring-[#C9962B]"
-        aria-label={`Share ${product.partNumber} bearing specification link`}
-      >
-        <Share2 className="w-3.5 h-3.5" />
-        <span>Share Bearing Spec Sheet</span>
-      </button>
+      {/* Quantity & City Note */}
+      <p className="text-xs text-slate-500 font-mono text-center pt-1">
+        Mention required quantity and delivery city on WhatsApp for an accurate quote.
+      </p>
+
+      {/* Share Page URL */}
+      <div className="text-center pt-1">
+        <button
+          onClick={handleShare}
+          className="inline-flex items-center gap-1.5 text-xs font-mono text-slate-500 hover:text-[#0B1B3D] transition-colors"
+          aria-label="Share page URL"
+        >
+          <Share2 className="w-3.5 h-3.5" />
+          <span>{copied ? "Page URL copied to clipboard!" : "Share Page URL"}</span>
+        </button>
+      </div>
     </div>
   );
 }

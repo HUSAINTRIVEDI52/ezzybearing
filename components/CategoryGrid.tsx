@@ -12,7 +12,7 @@ interface CategoryGridProps {
 
 export function CategoryGrid({ onSelectCategory, categories = CATEGORIES }: CategoryGridProps) {
   return (
-    <section id="categories" className="py-16 bg-[#F4F6FA] relative scroll-mt-20">
+    <section id="categories" className="py-14 lg:py-20 bg-white relative scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header with Diamond Motif */}
         <div className="text-center max-w-2xl mx-auto mb-12">
@@ -37,54 +37,55 @@ export function CategoryGrid({ onSelectCategory, categories = CATEGORIES }: Cate
           </p>
         </div>
 
-        {/* Category Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Category Cards Grid: 2 columns on mobile */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {categories.map((cat) => {
             const cardContent = (
               <>
                 <div>
                   {/* Category Image Thumbnail */}
-                  <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden mb-4 bg-[#F4F6FA] border border-slate-200 group-hover:border-[#C9962B]/50 transition-colors">
+                  <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden mb-2 sm:mb-4 bg-[#F4F6FA] border border-slate-200 group-hover:border-[#C9962B]/50 transition-colors">
                     <Image
                       src={getImagePath(cat.id)}
                       alt={getBearingAltText({ categoryName: cat.name })}
                       fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      sizes="(max-width: 640px) 50vw, 25vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
 
                   {/* Header: Short Code & Count Badge */}
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="font-mono text-xs font-bold text-[#8F6510] bg-[#C9962B]/10 px-2.5 py-1 rounded-md border border-[#C9962B]/20">
+                  <div className="flex items-center justify-between mb-1.5 sm:mb-3">
+                    <span className="font-mono text-[10px] sm:text-xs font-bold text-[#8F6510] bg-[#C9962B]/10 px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md border border-[#C9962B]/20">
                       {cat.code}
                     </span>
-                    <span className="text-xs font-mono font-semibold text-slate-600">
-                      {cat.enquiryOnly || cat.count === 0 ? "Enquiry Only" : `${cat.count} items`}
+                    <span className="text-[10px] sm:text-xs font-mono font-semibold text-slate-500">
+                      {cat.enquiryOnly || cat.count === 0 ? "Enquiry" : `${cat.count} items`}
                     </span>
                   </div>
 
-                  {/* Category Title */}
-                  <h3 className="font-heading font-extrabold text-xl text-[#0B1B3D] group-hover:text-[#8F6510] transition-colors uppercase leading-tight mb-2">
-                    {cat.name}
+                  {/* Category Title: Short name on mobile */}
+                  <h3 className="font-heading font-extrabold text-sm sm:text-xl text-[#0B1B3D] group-hover:text-[#8F6510] transition-colors uppercase leading-tight mb-1 sm:mb-2 line-clamp-2">
+                    <span className="sm:hidden">{cat.shortName || cat.name}</span>
+                    <span className="hidden sm:inline">{cat.name}</span>
                   </h3>
 
-                  {/* Description */}
-                  <p className="text-xs text-slate-600 leading-relaxed mb-4 line-clamp-2">
+                  {/* Description: Hidden on mobile */}
+                  <p className="hidden sm:block text-xs text-slate-600 leading-relaxed mb-4 line-clamp-2">
                     {cat.description}
                   </p>
 
-                  {/* Common Series */}
-                  <div className="text-[11px] font-mono text-slate-600 bg-[#F4F6FA] p-2.5 rounded-lg border border-slate-200">
+                  {/* Common Series: Hidden on mobile */}
+                  <div className="hidden sm:block text-[11px] font-mono text-slate-600 bg-[#F4F6FA] p-2.5 rounded-lg border border-slate-200">
                     <span className="font-bold text-[#0B1B3D] block mb-0.5">Key Series:</span>
                     <span className="line-clamp-1">{cat.commonSeries}</span>
                   </div>
                 </div>
 
                 {/* Card Footer Link */}
-                <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-bold text-[#0B1B3D] group-hover:text-[#8F6510] uppercase tracking-wider">
-                  <span>{cat.enquiryOnly ? "Enquire Now" : "Browse Category"}</span>
-                  <ArrowRight className="w-4 h-4 text-[#8F6510] group-hover:translate-x-1 transition-transform" />
+                <div className="mt-3 sm:mt-5 pt-2 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] sm:text-xs font-heading font-bold text-[#0B1B3D] group-hover:text-[#8F6510] uppercase tracking-wider">
+                  <span>{cat.enquiryOnly ? "Enquire" : "Browse"}</span>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#8F6510] group-hover:translate-x-1 transition-transform" />
                 </div>
               </>
             );
@@ -94,7 +95,7 @@ export function CategoryGrid({ onSelectCategory, categories = CATEGORIES }: Cate
                 <button
                   key={cat.id}
                   onClick={() => onSelectCategory(cat.id)}
-                  className="text-left bg-white border border-slate-200/90 hover:border-[#C9962B] rounded-xl p-6 shadow-soft hover-lift transition-all group flex flex-col justify-between focus-visible:ring-2 focus-visible:ring-[#C9962B]"
+                  className="text-left bg-white border border-slate-200/90 hover:border-[#C9962B] rounded-xl p-3 sm:p-6 shadow-soft hover-lift transition-all group flex flex-col justify-between focus-visible:ring-2 focus-visible:ring-[#C9962B]"
                 >
                   {cardContent}
                 </button>
@@ -105,7 +106,7 @@ export function CategoryGrid({ onSelectCategory, categories = CATEGORIES }: Cate
               <Link
                 key={cat.id}
                 href={cat.enquiryOnly ? "/contact" : `/products/${cat.id}`}
-                className="bg-white border border-slate-200/90 hover:border-[#C9962B] rounded-xl p-6 shadow-soft hover-lift transition-all group flex flex-col justify-between focus-visible:ring-2 focus-visible:ring-[#C9962B]"
+                className="bg-white border border-slate-200/90 hover:border-[#C9962B] rounded-xl p-3 sm:p-6 shadow-soft hover-lift transition-all group flex flex-col justify-between focus-visible:ring-2 focus-visible:ring-[#C9962B]"
               >
                 {cardContent}
               </Link>

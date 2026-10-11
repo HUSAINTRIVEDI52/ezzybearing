@@ -111,7 +111,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": product.name,
-    "image": `${siteConfig.siteUrl}/logo.svg`,
+    "image": `${siteConfig.siteUrl}/images/hero-bearing.jpg`,
     "description": product.description || `Industrial ${product.categoryName} part number ${product.partNumber}.`,
     "sku": product.partNumber,
     "mpn": product.partNumber,
@@ -119,17 +119,6 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
       "@type": "Brand",
       "name": b,
     })),
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "INR",
-      "lowPrice": "100",
-      "offerCount": "193",
-      "availability": "https://schema.org/InStock",
-      "seller": {
-        "@type": "Organization",
-        "name": siteConfig.name,
-      },
-    },
   };
 
   return (
@@ -180,15 +169,9 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 Representative image
               </span>
 
-              {/* Status Badges */}
-              <div className="mt-3.5 flex items-center justify-between">
-                <span className="px-2.5 py-1 rounded-md bg-[#C9962B]/10 text-[#C9962B] border border-[#C9962B]/30 text-xs font-mono font-bold">
-                  {product.badge || "DEPOT READY"}
-                </span>
-                <span className="flex items-center gap-1.5 text-xs font-mono text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span>In stock, enquire for availability</span>
-                </span>
+              {/* Stock status */}
+              <div className="mt-3.5 text-center text-xs font-mono text-slate-600">
+                Enquire for availability
               </div>
             </div>
 
@@ -200,10 +183,10 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 </span>
 
                 {/* Geometric Engineering Schematic Graphic */}
-                <div className="my-10 relative flex items-center justify-center">
-                  <div className="w-52 h-52 rounded-full border-4 border-dashed border-slate-300 flex items-center justify-center bg-[#F4F6FA] shadow-inner">
-                    <div className="w-40 h-40 rounded-full border-2 border-[#0B1B3D]/30 flex items-center justify-center bg-white">
-                      <div className="w-24 h-24 rounded-full border-2 border-[#C9962B]/60 flex items-center justify-center bg-[#F4F6FA]">
+                <div className="my-8 relative flex items-center justify-center">
+                  <div className="w-48 h-48 rounded-full border-4 border-dashed border-slate-300 flex items-center justify-center bg-[#F4F6FA] shadow-inner">
+                    <div className="w-36 h-36 rounded-full border-2 border-[#0B1B3D]/30 flex items-center justify-center bg-white">
+                      <div className="w-20 h-20 rounded-full border-2 border-[#C9962B]/60 flex items-center justify-center bg-[#F4F6FA]">
                         <div className="text-center">
                           <span className="text-[10px] font-mono text-slate-500 block">Bore (d)</span>
                           <span className="text-sm font-mono font-bold text-[#0B1B3D]">
@@ -224,49 +207,11 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 </div>
 
                 {/* Schematic Caption */}
-                <p className="text-xs font-mono text-slate-500 mt-2">
+                <p className="text-xs font-mono text-slate-500 mt-1">
                   Standard dimensions: {product.d} × {product.D} × {product.B} mm
                 </p>
-
-                {/* Verified Depot Stocking Badge */}
-                <div className="mt-4 pt-4 border-t border-slate-100 w-full flex items-center justify-between text-xs font-mono text-slate-600">
-                  <span className="flex items-center gap-1.5">
-                    <MapPin className="w-3.5 h-3.5 text-[#C9962B]" />
-                    <span>Manmad Warehouse</span>
-                  </span>
-                  <span className="text-emerald-600 font-semibold flex items-center gap-1">
-                    <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>Ready Dispatch</span>
-                  </span>
-                </div>
               </div>
             )}
-
-            {/* Quick Dispatch Guarantee Card */}
-            <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft space-y-3 font-mono text-xs">
-              <h4 className="font-heading font-extrabold text-sm uppercase text-[#0B1B3D] tracking-wider flex items-center gap-2">
-                <Truck className="w-4 h-4 text-[#C9962B]" />
-                <span>Supply Chain Details</span>
-              </h4>
-              <div className="space-y-2 text-slate-600">
-                <div className="flex justify-between py-1 border-b border-slate-100">
-                  <span className="text-slate-400">Packaging:</span>
-                  <span className="font-bold text-[#0B1B3D]">Factory Sealed Box / Poly Wrap</span>
-                </div>
-                <div className="flex justify-between py-1 border-b border-slate-100">
-                  <span className="text-slate-400">Dispatch Window:</span>
-                  <span className="font-bold text-[#0B1B3D]">Within 24 Hours</span>
-                </div>
-                <div className="flex justify-between py-1 border-b border-slate-100">
-                  <span className="text-slate-400">Transit Node:</span>
-                  <span className="font-bold text-[#0B1B3D]">Central Railway Parcel / V-Trans / TCI</span>
-                </div>
-                <div className="flex justify-between py-1">
-                  <span className="text-slate-400">Coverage:</span>
-                  <span className="font-bold text-[#0B1B3D]">Maharashtra &amp; Pan-India</span>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Column: Title, Specs, Description & Action Buttons */}
@@ -291,11 +236,8 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
               </h1>
 
               {/* Availability Note */}
-              <div className="mt-3 flex items-center gap-2 text-xs font-mono text-slate-600">
-                <span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />
-                <span className="font-bold text-slate-800">In stock, enquire for availability.</span>
-                <span className="text-slate-400">•</span>
-                <span>Immediate wholesale and retail quoting.</span>
+              <div className="mt-3 text-xs font-mono text-slate-600">
+                Enquire for availability
               </div>
 
               {/* Short original description paragraph per product (generated from type + article number) */}
@@ -355,28 +297,6 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
               <div className="mt-8 pt-6 border-t border-slate-100">
                 <ProductDetailActions product={product} />
               </div>
-            </div>
-
-            {/* Direct Phone Assistance Strip */}
-            <div className="bg-[#0B1B3D] text-white rounded-2xl p-6 shadow-soft flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div>
-                <span className="text-xs font-mono text-[#E4B94F] uppercase tracking-wider block">
-                  Need Immediate Technical Support?
-                </span>
-                <h4 className="font-heading font-extrabold text-xl text-white mt-1">
-                  Speak Directly with our Partners in Manmad
-                </h4>
-                <p className="text-xs text-slate-300 mt-1 font-sans">
-                  Shabbir Sakriwala ({siteConfig.contacts[0].phone}) • Ammar Sakriwala ({siteConfig.contacts[1].phone})
-                </p>
-              </div>
-              <a
-                href={`tel:${siteConfig.contacts[0].phone}`}
-                className="shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#C9962B] hover:bg-[#E4B94F] text-[#0B1B3D] font-bold text-xs uppercase tracking-wider transition-all shadow-md"
-              >
-                <PhoneCall className="w-4 h-4" />
-                <span>Call Ammar Bhai</span>
-              </a>
             </div>
           </div>
         </div>

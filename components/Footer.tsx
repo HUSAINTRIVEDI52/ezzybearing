@@ -27,39 +27,30 @@ export function Footer() {
 
   return (
     <footer className="bg-[#0B1B3D] text-slate-300 font-sans border-t-2 border-[#C9962B] watermark-pattern">
-      {/* Main Footer Links */}
+      {/* Main 4-Column Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-          {/* Col 1: About & Stockist Credentials (Span 2) */}
-          <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Col 1: Brand + short line */}
+          <div className="space-y-4">
+            <Link href="/" className="inline-block">
               <Image
                 src="/logo-white.svg"
                 alt={siteConfig.name}
-                width={240}
-                height={56}
-                className="h-12 w-auto object-contain"
+                width={200}
+                height={48}
+                className="h-10 w-auto object-contain"
               />
-            </div>
+            </Link>
 
-            <p className="text-xs text-slate-300 leading-relaxed font-sans max-w-sm">
-              All types of bearing solutions under one roof. Authorized stockist of SKF, TATA, XNO, DSF, and world-class bearings for sugar factories, automotive fleets, commercial trucks, agricultural machinery, and industrial plants across India.
+            <p className="text-xs text-slate-300 leading-relaxed font-sans">
+              Authorised stockist of SKF, TATA, XNO, and DSF ball and roller bearings supplying industrial machinery, automotive fleets, and manufacturing plants across India.
             </p>
-
-            <div className="p-3.5 rounded-xl bg-[#132752] border border-[#C9962B]/30 space-y-1">
-              <span className="text-[10px] font-mono uppercase text-[#E4B94F] block font-bold">
-                Official Stockist Brands:
-              </span>
-              <p className="text-xs font-mono font-bold text-white">
-                {siteConfig.brands.join(" • ")}
-              </p>
-            </div>
           </div>
 
-          {/* Col 2: Bearing Types */}
+          {/* Col 2: Categories */}
           <div className="space-y-3">
             <h4 className="text-sm font-heading font-extrabold uppercase tracking-wider text-[#E4B94F]">
-              Bearing Categories
+              Categories
             </h4>
             <ul className="space-y-2 text-xs font-mono">
               {CATEGORIES.slice(0, 6).map((cat) => (
@@ -71,13 +62,13 @@ export function Footer() {
               ))}
               <li>
                 <Link href="/products" className="text-[#E4B94F] hover:underline">
-                  View All Categories &rarr;
+                  View All Products &rarr;
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 3: Direct Navigation */}
+          {/* Col 3: Quick Links */}
           <div className="space-y-3">
             <h4 className="text-sm font-heading font-extrabold uppercase tracking-wider text-[#E4B94F]">
               Quick Links
@@ -105,18 +96,15 @@ export function Footer() {
                 <Link href="/request-quote" className="hover:text-[#E4B94F] transition-colors">Request a Quote</Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-[#E4B94F] transition-colors">Technical Articles</Link>
-              </li>
-              <li>
                 <Link href="/privacy-policy" className="hover:text-[#E4B94F] transition-colors">Privacy Policy</Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: Depot Contacts & Map Link */}
+          {/* Col 4: Contact */}
           <div className="space-y-3">
             <h4 className="text-sm font-heading font-extrabold uppercase tracking-wider text-[#E4B94F]">
-              Trade Desk &amp; Depot
+              Contact
             </h4>
             <div className="space-y-2.5 text-xs font-sans">
               <div className="flex items-start gap-2">
