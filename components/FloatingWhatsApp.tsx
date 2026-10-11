@@ -100,7 +100,7 @@ export function FloatingWhatsApp() {
           aria-expanded={showMenu}
         >
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span>Chat with {activeContact.name.split(" ")[0]}</span>
+          <span>Chat on WhatsApp</span>
           <ChevronUp className={`w-3.5 h-3.5 transition-transform ${showMenu ? "rotate-180" : ""}`} />
         </button>
 
@@ -110,7 +110,7 @@ export function FloatingWhatsApp() {
           target="_blank"
           rel="noopener noreferrer"
           className="group relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 flex items-center justify-center shadow-lift hover:scale-105 active:scale-95 transition-all min-h-[44px] min-w-[44px] focus-visible:ring-2 focus-visible:ring-[#C9962B]"
-          aria-label={`Chat on WhatsApp with ${activeContact.name}`}
+          aria-label="Chat on WhatsApp"
         >
           <span className="absolute -inset-1 rounded-full bg-[#25D366]/40 animate-ping opacity-75 group-hover:opacity-100" />
           <MessageSquare className="relative z-10 w-7 h-7 fill-slate-950 stroke-none" />

@@ -11,7 +11,6 @@ export function QuickPartFinder() {
   const router = useRouter();
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("all");
-  const [brand, setBrand] = useState("all");
   const [showSuggestions, setShowSuggestions] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -48,7 +47,6 @@ export function QuickPartFinder() {
     const params = new URLSearchParams();
     if (query.trim()) params.set("q", query.trim());
     if (category !== "all") params.set("category", category);
-    if (brand !== "all") params.set("brand", brand);
     router.push(`/products?${params.toString()}`);
   };
 
@@ -82,7 +80,7 @@ export function QuickPartFinder() {
 
           <form onSubmit={handleSearchSubmit} className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3.5">
             {/* Search Input with Live Suggestions */}
-            <div className="lg:col-span-6 relative">
+            <div className="lg:col-span-7 relative">
               <div className="relative flex items-center">
                 <Search className="absolute left-4 w-4 h-4 text-slate-400 pointer-events-none" />
                 <input
@@ -122,8 +120,8 @@ export function QuickPartFinder() {
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C9962B]/10 text-[#C9962B] font-bold">
-                          {p.brands.join('/')}
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-bold">
+                          Ready Stock
                         </span>
                         <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#C9962B] group-hover:translate-x-0.5 transition-all" />
                       </div>
@@ -134,7 +132,7 @@ export function QuickPartFinder() {
             </div>
 
             {/* Category Select */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-4">
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
@@ -145,20 +143,6 @@ export function QuickPartFinder() {
                   <option key={cat.id} value={cat.id}>
                     {cat.name} ({cat.count})
                   </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Brand Select */}
-            <div className="lg:col-span-2">
-              <select
-                value={brand}
-                onChange={(e) => setBrand(e.target.value)}
-                className="w-full h-12 bg-[#F4F6FA] border border-slate-300 rounded-xl px-4 text-sm text-[#0B1B3D] focus:outline-none focus:border-[#C9962B] transition-colors font-semibold"
-              >
-                <option value="all">All Brands</option>
-                {siteConfig.brands.map((b) => (
-                  <option key={b} value={b}>{b}</option>
                 ))}
               </select>
             </div>

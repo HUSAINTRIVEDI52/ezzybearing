@@ -34,7 +34,6 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
   // State
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [selectedBrand, setSelectedBrand] = useState("all");
   const [selectedClearance, setSelectedClearance] = useState("all");
   const [minBore, setMinBore] = useState("");
   const [maxBore, setMaxBore] = useState("");
@@ -42,11 +41,6 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
   const [displayCount, setDisplayCount] = useState(ITEMS_PER_PAGE);
   const [selectedProductForModal, setSelectedProductForModal] = useState<Product | null>(null);
   const [showFiltersMobile, setShowFiltersMobile] = useState(false);
-
-  // Available brands in catalogue
-  const availableBrands = useMemo(() => {
-    return siteConfig.brands || ["SKF", "TATA", "XNO", "DSF"];
-  }, []);
 
   // Filtered products calculation
   const filteredProducts = useMemo(() => {
@@ -70,11 +64,6 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
         return false;
       }
 
-      // Brand
-      if (selectedBrand !== "all" && !p.brands.includes(selectedBrand)) {
-        return false;
-      }
-
       // Clearance
       if (selectedClearance !== "all") {
         if (!p.clearance) return false;
@@ -94,12 +83,12 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
 
       return true;
     });
-  }, [initialProducts, searchQuery, selectedCategory, selectedBrand, selectedClearance, minBore, maxBore]);
+  }, [initialProducts, searchQuery, selectedCategory, selectedClearance, minBore, maxBore]);
 
   // Reset pagination when filter changes
   useEffect(() => {
     setDisplayCount(ITEMS_PER_PAGE);
-  }, [searchQuery, selectedCategory, selectedBrand, selectedClearance, minBore, maxBore]);
+  }, [searchQuery, selectedCategory, selectedClearance, minBore, maxBore]);
 
   const visibleProducts = useMemo(() => {
     return filteredProducts.slice(0, displayCount);
@@ -108,7 +97,6 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
   const handleResetFilters = () => {
     setSearchQuery("");
     setSelectedCategory("all");
-    setSelectedBrand("all");
     setSelectedClearance("all");
     setMinBore("");
     setMaxBore("");
@@ -117,7 +105,6 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
 
   const hasActiveFilters = searchQuery !== "" || 
     selectedCategory !== "all" || 
-    selectedBrand !== "all" || 
     selectedClearance !== "all" || 
     minBore !== "" || 
     maxBore !== "";
@@ -263,23 +250,8 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
               </div>
             </div>
 
-            {/* Brand, Clearance, and Bore Dimension Range */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
-              <div>
-                <label className="block text-xs font-mono text-slate-600 font-semibold mb-1">
-                  Brand Stockist
-                </label>
-                <select
-                  value={selectedBrand}
-                  onChange={(e) => setSelectedBrand(e.target.value)}
-                  className="w-full px-3 py-2 rounded-lg bg-[#F4F6FA] border border-slate-300 text-xs font-mono text-[#0B1B3D] focus:outline-none focus:border-[#C9962B]"
-                >
-                  <option value="all">All Stockist Brands</option>
-                  {availableBrands.map((b) => (
-                    <option key={b} value={b}>{b}</option>
-                  ))}
-                </select>
-              </div>
+            {/* Clearance and Bore Dimension Range */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
 
               <div>
                 <label className="block text-xs font-mono text-slate-600 font-semibold mb-1">

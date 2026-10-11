@@ -32,12 +32,10 @@ export function ProductsDirectory({
   // URL state initialization
   const urlQuery = searchParams.get("q") || "";
   const urlCategory = searchParams.get("category") || "all";
-  const urlBrand = searchParams.get("brand") || "all";
   const urlSort = searchParams.get("sort") || "az";
 
   const [searchQuery, setSearchQuery] = useState(urlQuery);
   const [selectedCategory, setSelectedCategory] = useState(urlCategory);
-  const [selectedBrand, setSelectedBrand] = useState(urlBrand);
   const [sortBy, setSortBy] = useState(urlSort);
   const [displayCount, setDisplayCount] = useState(ITEMS_PER_PAGE);
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
@@ -47,9 +45,8 @@ export function ProductsDirectory({
     let count = 0;
     if (searchQuery.trim()) count++;
     if (selectedCategory !== "all") count++;
-    if (selectedBrand !== "all") count++;
     return count;
-  }, [searchQuery, selectedCategory, selectedBrand]);
+  }, [searchQuery, selectedCategory]);
 
   const hasActiveFilters = activeFilterCount > 0;
 
@@ -77,11 +74,6 @@ export function ProductsDirectory({
     updateUrlParams({ category: catId });
   };
 
-  const handleBrandChange = (br: string) => {
-    setSelectedBrand(br);
-    updateUrlParams({ brand: br });
-  };
-
   const handleSortChange = (sort: string) => {
     setSortBy(sort);
     updateUrlParams({ sort });
@@ -91,7 +83,6 @@ export function ProductsDirectory({
   const handleResetFilters = () => {
     setSearchQuery("");
     setSelectedCategory("all");
-    setSelectedBrand("all");
     setSortBy("az");
     setDisplayCount(ITEMS_PER_PAGE);
     router.replace(pathname, { scroll: false });
@@ -109,7 +100,6 @@ export function ProductsDirectory({
       }
 
       if (selectedCategory !== "all" && p.category !== selectedCategory) return false;
-      if (selectedBrand !== "all" && !p.brands.includes(selectedBrand)) return false;
 
       return true;
     });
@@ -129,11 +119,11 @@ export function ProductsDirectory({
     });
 
     return result;
-  }, [initialProducts, searchQuery, selectedCategory, selectedBrand, sortBy]);
+  }, [initialProducts, searchQuery, selectedCategory, sortBy]);
 
   useEffect(() => {
     setDisplayCount(ITEMS_PER_PAGE);
-  }, [searchQuery, selectedCategory, selectedBrand, sortBy]);
+  }, [searchQuery, selectedCategory, sortBy]);
 
   const visibleProducts = useMemo(() => {
     return filteredProducts.slice(0, displayCount);
@@ -278,38 +268,6 @@ export function ProductsDirectory({
                 ))}
               </div>
             </div>
-
-            {/* Brand Filter */}
-            <div>
-              <label className="block text-xs font-mono uppercase tracking-wider text-slate-500 font-bold mb-2">
-                Stockist Brands
-              </label>
-              <div className="space-y-1">
-                <button
-                  onClick={() => handleBrandChange("all")}
-                  className={`w-full text-left px-3 py-2 rounded-lg text-xs font-mono flex items-center justify-between transition-colors min-h-[36px] ${
-                    selectedBrand === "all"
-                      ? "bg-[#0B1B3D] text-[#E4B94F] font-bold"
-                      : "text-slate-700 hover:bg-[#F4F6FA]"
-                  }`}
-                >
-                  <span>All Brands</span>
-                </button>
-                {siteConfig.brands.map((b) => (
-                  <button
-                    key={b}
-                    onClick={() => handleBrandChange(b)}
-                    className={`w-full text-left px-3 py-2 rounded-lg text-xs font-mono flex items-center justify-between transition-colors min-h-[36px] ${
-                      selectedBrand === b
-                        ? "bg-[#C9962B] text-white font-bold"
-                        : "text-slate-700 hover:bg-[#F4F6FA]"
-                    }`}
-                  >
-                    <span>{b}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
           </aside>
 
           {/* MAIN PRODUCT LISTING AREA */}
@@ -429,34 +387,6 @@ export function ProductsDirectory({
                     >
                       <span className="truncate pr-2">{c.name}</span>
                       <span>{c.count}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Brand */}
-              <div>
-                <label className="block text-xs font-mono uppercase font-bold text-slate-600 mb-2">
-                  Stockist Brand
-                </label>
-                <div className="grid grid-cols-2 gap-2">
-                  <button
-                    onClick={() => handleBrandChange("all")}
-                    className={`min-h-[44px] px-3 py-2 rounded-lg text-xs font-mono text-center font-bold ${
-                      selectedBrand === "all" ? "bg-[#0B1B3D] text-[#E4B94F]" : "text-slate-700 bg-slate-50 border border-slate-200"
-                    }`}
-                  >
-                    All Brands
-                  </button>
-                  {siteConfig.brands.map((b) => (
-                    <button
-                      key={b}
-                      onClick={() => handleBrandChange(b)}
-                      className={`min-h-[44px] px-3 py-2 rounded-lg text-xs font-mono text-center font-bold ${
-                        selectedBrand === b ? "bg-[#C9962B] text-white" : "text-slate-700 bg-slate-50 border border-slate-200"
-                      }`}
-                    >
-                      {b}
                     </button>
                   ))}
                 </div>

@@ -8,11 +8,11 @@ import { MessageSquare } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Industrial Bearing Catalogue & Part Number Finder | Ready Stock Manmad",
-  description: "Browse 193 verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units. SKF, TATA, XNO, DSF stockist shipping across India from Manmad.",
+  description: "Browse 193 verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units with same-day dispatch from Manmad across India.",
   keywords: [
     "bearing catalogue india",
     "bearing part number search",
-    "skf tata xno dsf stockist",
+    "industrial bearing stockist",
     "manmad bearing supplier",
     "tapered roller bearing catalogue",
     "deep groove ball bearing stockist"
@@ -86,11 +86,6 @@ export default function ProductsPage() {
                 <div>
                   <span className="text-[#E4B94F] font-bold block text-base font-heading">10</span>
                   <span>Categories</span>
-                </div>
-                <div className="h-8 w-px bg-slate-700" />
-                <div>
-                  <span className="text-emerald-400 font-bold block text-base font-heading">4 Brands</span>
-                  <span>SKF • TATA • XNO • DSF</span>
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@ export function MobileBottomDock() {
         <a
           href={`tel:+91${contact.phone}`}
           className="flex flex-col items-center justify-center min-h-[48px] py-1 text-slate-200 hover:text-[#E4B94F] transition-colors rounded-xl active:bg-white/10 touch-manipulation"
-          aria-label="Call Ammar"
+          aria-label="Call Depot Desk"
         >
           <div className="w-8 h-8 rounded-full bg-[#132752] border border-[#C9962B]/40 flex items-center justify-center text-[#E4B94F]">
             <Phone className="w-4 h-4" />

@@ -98,8 +98,8 @@ export function Header() {
             <a
               href={`tel:+91${ammar.phone}`}
               className="lg:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl bg-[#132752] text-[#E4B94F] border border-[#C9962B]/30 hover:bg-[#183060] transition-colors focus-visible:ring-2 focus-visible:ring-[#C9962B]"
-              title={`Call ${ammar.name}`}
-              aria-label="Call Ammar"
+              title="Call Depot Desk"
+              aria-label="Call Depot Desk"
             >
               <Phone className="w-4 h-4" />
             </a>
