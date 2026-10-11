@@ -141,8 +141,7 @@ export function ProductsDirectory({
         const matchesPart = p.partNumber.toLowerCase().includes(q);
         const matchesName = p.name.toLowerCase().includes(q);
         const matchesCategory = p.categoryName.toLowerCase().includes(q);
-        const matchesDimensions = `${p.d}x${p.D}x${p.B}`.includes(q) || `${p.d}` === q;
-        if (!matchesPart && !matchesName && !matchesCategory && !matchesDimensions) return false;
+        if (!matchesPart && !matchesName && !matchesCategory) return false;
       }
 
       if (selectedCategory !== "all" && p.category !== selectedCategory) return false;
@@ -482,7 +481,7 @@ export function ProductsDirectory({
                         {/* Product Category Image Thumbnail */}
                         <Link href={`/products/${p.category}/${p.slug}`} className="block relative w-full aspect-[16/10] rounded-lg overflow-hidden my-2 bg-[#F4F6FA] border border-slate-200 group-hover:border-[#C9962B]/50 transition-colors">
                           <Image
-                            src={getImagePath(p.category)}
+                            src={p.image || getImagePath(p.category)}
                             alt={getBearingAltText({ partNumber: p.partNumber, name: p.name, categoryName: p.categoryName })}
                             fill
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -502,15 +501,7 @@ export function ProductsDirectory({
                           </span>
                         </div>
 
-                        {/* Dimensions & Description */}
-                        <div className="bg-[#F4F6FA] border border-slate-200 rounded-lg p-2.5 text-center font-mono text-xs my-3">
-                          <span className="text-slate-400 block text-[10px]">d x D x B</span>
-                          <span className="font-bold text-[#0B1B3D]">
-                            {p.d} x {p.D} x {p.B} mm
-                          </span>
-                        </div>
-
-                        <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-4">
+                        <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed my-3 mb-4">
                           {p.description}
                         </p>
                       </div>
@@ -577,7 +568,7 @@ export function ProductsDirectory({
                           {/* Mini List Image Thumbnail */}
                           <div className="relative w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-[#F4F6FA] border border-slate-200 hidden sm:block">
                             <Image
-                              src={getImagePath(p.category)}
+                              src={p.image || getImagePath(p.category)}
                               alt={getBearingAltText({ partNumber: p.partNumber, name: p.name, categoryName: p.categoryName })}
                               fill
                               sizes="48px"
@@ -590,9 +581,6 @@ export function ProductsDirectory({
                               <Link href={`/products/${p.category}/${p.slug}`} className="font-heading font-extrabold text-xl text-[#0B1B3D] hover:text-[#C9962B] uppercase">
                                 {p.partNumber}
                               </Link>
-                              <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-slate-100 text-slate-600">
-                                {p.d}x{p.D}x{p.B} mm
-                              </span>
                             </div>
                             <p className="text-xs text-slate-500 font-sans line-clamp-1">
                               {p.name} • {p.categoryName}

@@ -59,7 +59,7 @@ export function QuickPartFinder() {
           <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
             <h2 className="font-heading font-extrabold text-2xl text-[#0B1B3D] uppercase tracking-wide flex items-center gap-2">
               <Search className="w-5 h-5 text-[#C9962B]" />
-              <span>Quick Bearing Finder (198+ Ready Products)</span>
+              <span>Quick Bearing Finder (193 Ready Products)</span>
             </h2>
 
             <div className="text-xs text-slate-500 font-sans">
@@ -118,7 +118,7 @@ export function QuickPartFinder() {
                           {p.partNumber}
                         </span>
                         <span className="text-xs text-slate-500 font-sans line-clamp-1">
-                          {p.categoryName} • {p.d}x{p.D}x{p.B} mm
+                          {p.categoryName}
                         </span>
                       </div>
                       <div className="flex items-center gap-2">

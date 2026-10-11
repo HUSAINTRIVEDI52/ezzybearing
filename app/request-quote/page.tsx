@@ -213,7 +213,7 @@ export default function RequestQuotePage() {
                     required
                     value={formData.bearingNumbers}
                     onChange={(e) => setFormData({ ...formData, bearingNumbers: e.target.value })}
-                    placeholder="e.g. 6205-2RS, 32208, UCP 205, or bore 25mm OD 52mm"
+                    placeholder="e.g. 6205, 32208, LM 44649/10, T138(TR), or NU 309"
                     className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-mono"
                   />
                   <span className="text-[11px] font-mono text-slate-400 mt-1 block">

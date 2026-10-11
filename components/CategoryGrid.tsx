@@ -60,7 +60,7 @@ export function CategoryGrid({ onSelectCategory, categories = CATEGORIES }: Cate
                       {cat.code}
                     </span>
                     <span className="text-xs font-mono font-semibold text-slate-600">
-                      {cat.count} items
+                      {cat.enquiryOnly || cat.count === 0 ? "Enquiry Only" : `${cat.count} items`}
                     </span>
                   </div>
 
@@ -83,7 +83,7 @@ export function CategoryGrid({ onSelectCategory, categories = CATEGORIES }: Cate
 
                 {/* Card Footer Link */}
                 <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-heading font-bold text-[#0B1B3D] group-hover:text-[#8F6510] uppercase tracking-wider">
-                  <span>Browse Category</span>
+                  <span>{cat.enquiryOnly ? "Enquire Now" : "Browse Category"}</span>
                   <ArrowRight className="w-4 h-4 text-[#8F6510] group-hover:translate-x-1 transition-transform" />
                 </div>
               </>
@@ -104,7 +104,7 @@ export function CategoryGrid({ onSelectCategory, categories = CATEGORIES }: Cate
             return (
               <Link
                 key={cat.id}
-                href={`/products/${cat.id}`}
+                href={cat.enquiryOnly ? "/contact" : `/products/${cat.id}`}
                 className="bg-white border border-slate-200/90 hover:border-[#C9962B] rounded-xl p-6 shadow-soft hover-lift transition-all group flex flex-col justify-between focus-visible:ring-2 focus-visible:ring-[#C9962B]"
               >
                 {cardContent}

@@ -31,7 +31,7 @@ export function ProductCard({ product, onOpenQuickView, onQuickView }: ProductCa
         {/* Product Image Thumbnail */}
         <Link href={`/products/${product.category}/${product.slug || product.id}`} className="block relative w-full aspect-[16/10] rounded-lg overflow-hidden mb-3 bg-[#F4F6FA] border border-slate-200 group-hover:border-[#C9962B]/50 transition-colors">
           <Image
-            src={getImagePath(product.category)}
+            src={product.image || getImagePath(product.category)}
             alt={getBearingAltText({ partNumber: product.partNumber, name: product.name, categoryName: product.categoryName })}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -60,24 +60,6 @@ export function ProductCard({ product, onOpenQuickView, onQuickView }: ProductCa
           <span className="text-xs font-semibold text-slate-500 block mt-0.5">
             {product.categoryName}
           </span>
-        </div>
-
-        {/* Dimensional Engineering Blueprint */}
-        <div className="bg-[#F4F6FA] border border-slate-200 rounded-lg p-3 mb-4 font-mono text-center">
-          <div className="grid grid-cols-3 gap-1 divide-x divide-slate-200">
-            <div>
-              <span className="text-[10px] text-slate-500 block">Bore (d)</span>
-              <span className="text-sm font-bold text-[#0B1B3D]">{product.d} <span className="text-[10px] font-normal text-slate-500">mm</span></span>
-            </div>
-            <div>
-              <span className="text-[10px] text-slate-500 block">OD (D)</span>
-              <span className="text-sm font-bold text-[#0B1B3D]">{product.D} <span className="text-[10px] font-normal text-slate-500">mm</span></span>
-            </div>
-            <div>
-              <span className="text-[10px] text-slate-500 block">Width (B)</span>
-              <span className="text-sm font-bold text-[#0B1B3D]">{product.B} <span className="text-[10px] font-normal text-slate-500">mm</span></span>
-            </div>
-          </div>
         </div>
 
         {/* Brands Available */}

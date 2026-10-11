@@ -77,6 +77,7 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
 
       // Clearance
       if (selectedClearance !== "all") {
+        if (!p.clearance) return false;
         if (selectedClearance === "C3" && !p.clearance.includes("C3")) return false;
         if (selectedClearance === "CN" && !p.clearance.includes("CN") && !p.clearance.includes("Normal")) return false;
       }
@@ -129,7 +130,7 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#C9962B] font-mono text-xs font-semibold mb-3">
               <Layers className="w-3.5 h-3.5" />
-              <span>LIVE READY STOCK INVENTORY • 198+ PRODUCT SERIES</span>
+              <span>LIVE READY STOCK INVENTORY • 193 PRODUCT SERIES</span>
             </div>
 
             <h2 className="text-4xl sm:text-5xl font-heading font-extrabold text-[#0B1B3D] uppercase tracking-tight">
@@ -143,7 +144,7 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
             </div>
 
             <p className="text-sm sm:text-base text-slate-600 max-w-2xl font-sans">
-              Search by part number (e.g. <strong className="text-[#0B1B3D] font-mono">30208</strong>, <strong className="text-[#0B1B3D] font-mono">6205</strong>, <strong className="text-[#0B1B3D] font-mono">22220</strong>) or filter by bore diameter, category, and brand for instant WhatsApp wholesale quotations.
+              Search by part number (e.g. <strong className="text-[#0B1B3D] font-mono">30208</strong>, <strong className="text-[#0B1B3D] font-mono">6205</strong>, <strong className="text-[#0B1B3D] font-mono">32220</strong>) or filter by category and brand for instant WhatsApp wholesale quotations.
             </p>
           </div>
 
@@ -424,9 +425,9 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
                         <td className="py-3.5 px-4 text-slate-600 whitespace-nowrap">
                           {p.categoryName}
                         </td>
-                        <td className="py-3.5 px-4 text-slate-800 font-semibold">{p.d} mm</td>
-                        <td className="py-3.5 px-4 text-slate-800 font-semibold">{p.D} mm</td>
-                        <td className="py-3.5 px-4 text-slate-800 font-semibold">{p.B} mm</td>
+                        <td className="py-3.5 px-4 text-slate-800 font-semibold">{p.dimensionsVerified ? `${p.d} mm` : "—"}</td>
+                        <td className="py-3.5 px-4 text-slate-800 font-semibold">{p.dimensionsVerified ? `${p.D} mm` : "—"}</td>
+                        <td className="py-3.5 px-4 text-slate-800 font-semibold">{p.dimensionsVerified ? `${p.B} mm` : "—"}</td>
                         <td className="py-3.5 px-4 whitespace-nowrap">
                           <span className="font-bold text-[#0B1B3D]">{p.brands.join(", ")}</span>
                         </td>

@@ -33,7 +33,7 @@ export default function NotFound() {
             className="w-full py-3.5 px-4 rounded-xl bg-[#0B1B3D] hover:bg-slate-800 text-white font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-sm"
           >
             <ArrowLeft className="w-4 h-4 text-[#E4B94F]" />
-            <span>Search 198+ Ready Bearing Catalog</span>
+            <span>Browse Full 193 Product Catalog</span>
           </Link>
 
           <a

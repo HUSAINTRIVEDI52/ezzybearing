@@ -145,8 +145,8 @@ export const siteConfig = {
     },
     {
       title: "WIDE RANGE IN STOCK",
-      subtitle: "198+ Ready Product Series",
-      description: "Ball bearings, tapered roller sets, clutch release units, snap ring series, and hand tools.",
+      subtitle: "193 Ready Product Series",
+      description: "Ball bearings, tapered roller sets, clutch release units, wheel hub bearings, and hand tools.",
       icon: "package"
     },
     {

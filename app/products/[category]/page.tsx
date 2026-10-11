@@ -203,7 +203,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
             href="/products"
             className="text-xs font-mono font-bold text-[#0B1B3D] hover:text-[#C9962B] inline-flex items-center gap-1.5 transition-colors"
           >
-            <span>View All 198+ Bearings in Main Directory</span>
+            <span>Browse All 193 Bearings in Main Directory</span>
             <ArrowRight className="w-3.5 h-3.5 text-[#C9962B]" />
           </Link>
         </div>

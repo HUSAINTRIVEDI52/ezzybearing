@@ -103,20 +103,27 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           </div>
 
           {/* Quick Dimensions Strip */}
-          <div className="grid grid-cols-3 gap-3 p-4 rounded-xl bg-[#F4F6FA] border border-slate-200">
-            <div className="text-center">
-              <span className="block text-xs font-mono text-slate-500">Bore (d)</span>
-              <span className="text-lg font-heading font-extrabold text-[#0B1B3D]">{product.d} <span className="text-xs font-normal text-slate-500">mm</span></span>
+          {product.dimensionsVerified && (
+            <div>
+              <span className="block text-[11px] font-mono text-slate-500 mb-1.5 text-center font-semibold">
+                Standard dimensions (confirm before ordering)
+              </span>
+              <div className="grid grid-cols-3 gap-3 p-4 rounded-xl bg-[#F4F6FA] border border-slate-200">
+                <div className="text-center">
+                  <span className="block text-xs font-mono text-slate-500">Bore (d)</span>
+                  <span className="text-lg font-heading font-extrabold text-[#0B1B3D]">{product.d} <span className="text-xs font-normal text-slate-500">mm</span></span>
+                </div>
+                <div className="text-center border-x border-slate-200">
+                  <span className="block text-xs font-mono text-slate-500">Outer Dia (D)</span>
+                  <span className="text-lg font-heading font-extrabold text-[#0B1B3D]">{product.D} <span className="text-xs font-normal text-slate-500">mm</span></span>
+                </div>
+                <div className="text-center">
+                  <span className="block text-xs font-mono text-slate-500">Width (B)</span>
+                  <span className="text-lg font-heading font-extrabold text-[#0B1B3D]">{product.B} <span className="text-xs font-normal text-slate-500">mm</span></span>
+                </div>
+              </div>
             </div>
-            <div className="text-center border-x border-slate-200">
-              <span className="block text-xs font-mono text-slate-500">Outer Dia (D)</span>
-              <span className="text-lg font-heading font-extrabold text-[#0B1B3D]">{product.D} <span className="text-xs font-normal text-slate-500">mm</span></span>
-            </div>
-            <div className="text-center">
-              <span className="block text-xs font-mono text-slate-500">Width (B)</span>
-              <span className="text-lg font-heading font-extrabold text-[#0B1B3D]">{product.B} <span className="text-xs font-normal text-slate-500">mm</span></span>
-            </div>
-          </div>
+          )}
 
           {/* Brands Available */}
           <div>

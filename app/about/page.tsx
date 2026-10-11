@@ -163,7 +163,7 @@ export default function AboutPage() {
               </div>
               <div className="flex justify-between py-2 border-b border-slate-100">
                 <span className="text-slate-400">Inventory Breadth:</span>
-                <span className="font-bold text-[#0B1B3D]">198+ Ready Product Series</span>
+                <span className="font-bold text-[#0B1B3D]">193 Ready Product Series</span>
               </div>
               <div className="flex justify-between py-2 border-b border-slate-100">
                 <span className="text-slate-400">Stockist Brands:</span>

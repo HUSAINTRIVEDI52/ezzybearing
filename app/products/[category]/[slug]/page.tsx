@@ -55,7 +55,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const title = product.name;
   const fullPageTitle = `${product.name} | ${siteConfig.name}`;
   const canonicalUrl = `${siteConfig.siteUrl}/products/${product.category}/${product.slug || product.id}`;
-  const description = `Buy authentic ${product.name} (${product.d}x${product.D}x${product.B} mm). In stock at EZZI Bearing Suppliers, Manmad with all-India express delivery.`;
+  const description = product.dimensionsVerified
+    ? `Buy authentic ${product.name} (standard dimensions: ${product.d}x${product.D}x${product.B} mm). In stock at EZZI Bearing Suppliers, Manmad with all-India express delivery.`
+    : `Buy authentic ${product.name}. In stock at EZZI Bearing Suppliers, Manmad with all-India express delivery.`;
 
   return {
     title,
@@ -63,8 +65,6 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     keywords: [
       product.partNumber,
       `bearing ${product.partNumber}`,
-      `${product.partNumber} dimensions`,
-      `${product.d}x${product.D}x${product.B} bearing`,
       ...product.brands.map((b) => `${b} ${product.partNumber}`),
       product.categoryName,
       "bearing stockist manmad",
@@ -123,7 +123,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
       "@type": "AggregateOffer",
       "priceCurrency": "INR",
       "lowPrice": "100",
-      "offerCount": "198",
+      "offerCount": "193",
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
@@ -168,7 +168,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
             <div className="relative rounded-2xl bg-white border border-slate-200 p-4 shadow-soft overflow-hidden group">
               <div className="relative w-full aspect-square rounded-xl overflow-hidden bg-[#F4F6FA] border border-slate-100">
                 <Image
-                  src={getImagePath(product.category)}
+                  src={product.image || getImagePath(product.category)}
                   alt={getBearingAltText({ partNumber: product.partNumber, name: product.name, categoryName: product.categoryName })}
                   fill
                   priority
@@ -176,6 +176,9 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
+              <span className="text-[11px] font-mono text-slate-400 block text-center mt-2">
+                Representative image
+              </span>
 
               {/* Status Badges */}
               <div className="mt-3.5 flex items-center justify-between">
@@ -189,53 +192,55 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
               </div>
             </div>
 
-            {/* Geometric Dimensional Schematic Card */}
-            <div className="relative rounded-2xl bg-white border border-slate-200 p-6 shadow-soft flex flex-col items-center justify-center text-center overflow-hidden">
-              <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500 mb-2">
-                Dimensional Engineering Blueprint
-              </span>
+            {/* Geometric Dimensional Schematic Card - ISO Standard Verified Only */}
+            {product.dimensionsVerified && (
+              <div className="relative rounded-2xl bg-white border border-slate-200 p-6 shadow-soft flex flex-col items-center justify-center text-center overflow-hidden">
+                <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500 mb-2">
+                  Standard dimensions (confirm before ordering)
+                </span>
 
-              {/* Geometric Engineering Schematic Graphic */}
-              <div className="my-10 relative flex items-center justify-center">
-                <div className="w-52 h-52 rounded-full border-4 border-dashed border-slate-300 flex items-center justify-center bg-[#F4F6FA] shadow-inner">
-                  <div className="w-40 h-40 rounded-full border-2 border-[#0B1B3D]/30 flex items-center justify-center bg-white">
-                    <div className="w-24 h-24 rounded-full border-2 border-[#C9962B]/60 flex items-center justify-center bg-[#F4F6FA]">
-                      <div className="text-center">
-                        <span className="text-[10px] font-mono text-slate-500 block">Bore (d)</span>
-                        <span className="text-sm font-mono font-bold text-[#0B1B3D]">
-                          {product.d} mm
-                        </span>
+                {/* Geometric Engineering Schematic Graphic */}
+                <div className="my-10 relative flex items-center justify-center">
+                  <div className="w-52 h-52 rounded-full border-4 border-dashed border-slate-300 flex items-center justify-center bg-[#F4F6FA] shadow-inner">
+                    <div className="w-40 h-40 rounded-full border-2 border-[#0B1B3D]/30 flex items-center justify-center bg-white">
+                      <div className="w-24 h-24 rounded-full border-2 border-[#C9962B]/60 flex items-center justify-center bg-[#F4F6FA]">
+                        <div className="text-center">
+                          <span className="text-[10px] font-mono text-slate-500 block">Bore (d)</span>
+                          <span className="text-sm font-mono font-bold text-[#0B1B3D]">
+                            {product.d} mm
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  {/* OD Marker */}
+                  <div className="absolute -top-3 bg-white px-2 py-0.5 border border-slate-200 rounded text-[10px] font-mono font-bold text-[#0B1B3D] shadow-sm">
+                    OD (D): {product.D} mm
+                  </div>
+                  {/* Width Marker */}
+                  <div className="absolute -bottom-3 bg-white px-2 py-0.5 border border-slate-200 rounded text-[10px] font-mono font-bold text-[#0B1B3D] shadow-sm">
+                    Width (B): {product.B} mm
+                  </div>
                 </div>
-                {/* OD Marker */}
-                <div className="absolute -top-3 bg-white px-2 py-0.5 border border-slate-200 rounded text-[10px] font-mono font-bold text-[#0B1B3D] shadow-sm">
-                  OD (D): {product.D} mm
-                </div>
-                {/* Width Marker */}
-                <div className="absolute -bottom-3 bg-white px-2 py-0.5 border border-slate-200 rounded text-[10px] font-mono font-bold text-[#0B1B3D] shadow-sm">
-                  Width (B): {product.B} mm
+
+                {/* Schematic Caption */}
+                <p className="text-xs font-mono text-slate-500 mt-2">
+                  Standard dimensions: {product.d} × {product.D} × {product.B} mm
+                </p>
+
+                {/* Verified Depot Stocking Badge */}
+                <div className="mt-4 pt-4 border-t border-slate-100 w-full flex items-center justify-between text-xs font-mono text-slate-600">
+                  <span className="flex items-center gap-1.5">
+                    <MapPin className="w-3.5 h-3.5 text-[#C9962B]" />
+                    <span>Manmad Warehouse</span>
+                  </span>
+                  <span className="text-emerald-600 font-semibold flex items-center gap-1">
+                    <CheckCircle2 className="w-3.5 h-3.5" />
+                    <span>Ready Dispatch</span>
+                  </span>
                 </div>
               </div>
-
-              {/* Schematic Caption */}
-              <p className="text-xs font-mono text-slate-500 mt-2">
-                Engineering Dimensional Profile: {product.d} × {product.D} × {product.B} mm
-              </p>
-
-              {/* Verified Depot Stocking Badge */}
-              <div className="mt-4 pt-4 border-t border-slate-100 w-full flex items-center justify-between text-xs font-mono text-slate-600">
-                <span className="flex items-center gap-1.5">
-                  <MapPin className="w-3.5 h-3.5 text-[#C9962B]" />
-                  <span>Manmad Warehouse</span>
-                </span>
-                <span className="text-emerald-600 font-semibold flex items-center gap-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  <span>Ready Dispatch</span>
-                </span>
-              </div>
-            </div>
+            )}
 
             {/* Quick Dispatch Guarantee Card */}
             <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft space-y-3 font-mono text-xs">
@@ -300,29 +305,31 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 )}
               </div>
 
-              {/* Verified Dimensional Specs Table */}
-              <div className="mt-6">
-                <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 mb-3">
-                  Verified Engineering Specifications
-                </h3>
-                <div className="grid grid-cols-3 gap-3 font-mono">
-                  <div className="bg-[#F4F6FA] border border-slate-200 rounded-xl p-3 text-center">
-                    <span className="text-[10px] text-slate-500 uppercase block">Inside Bore (d)</span>
-                    <span className="text-lg font-bold text-[#0B1B3D]">{product.d}</span>
-                    <span className="text-[10px] text-slate-500 block">mm</span>
-                  </div>
-                  <div className="bg-[#F4F6FA] border border-slate-200 rounded-xl p-3 text-center">
-                    <span className="text-[10px] text-slate-500 uppercase block">Outside Dia (D)</span>
-                    <span className="text-lg font-bold text-[#0B1B3D]">{product.D}</span>
-                    <span className="text-[10px] text-slate-500 block">mm</span>
-                  </div>
-                  <div className="bg-[#F4F6FA] border border-slate-200 rounded-xl p-3 text-center">
-                    <span className="text-[10px] text-slate-500 uppercase block">Width / Height (B)</span>
-                    <span className="text-lg font-bold text-[#0B1B3D]">{product.B}</span>
-                    <span className="text-[10px] text-slate-500 block">mm</span>
+              {/* Verified Dimensional Specs Table - ISO Standard Verified Only */}
+              {product.dimensionsVerified && (
+                <div className="mt-6">
+                  <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 mb-3">
+                    Standard dimensions (confirm before ordering)
+                  </h3>
+                  <div className="grid grid-cols-3 gap-3 font-mono">
+                    <div className="bg-[#F4F6FA] border border-slate-200 rounded-xl p-3 text-center">
+                      <span className="text-[10px] text-slate-500 uppercase block">Inside Bore (d)</span>
+                      <span className="text-lg font-bold text-[#0B1B3D]">{product.d}</span>
+                      <span className="text-[10px] text-slate-500 block">mm</span>
+                    </div>
+                    <div className="bg-[#F4F6FA] border border-slate-200 rounded-xl p-3 text-center">
+                      <span className="text-[10px] text-slate-500 uppercase block">Outside Dia (D)</span>
+                      <span className="text-lg font-bold text-[#0B1B3D]">{product.D}</span>
+                      <span className="text-[10px] text-slate-500 block">mm</span>
+                    </div>
+                    <div className="bg-[#F4F6FA] border border-slate-200 rounded-xl p-3 text-center">
+                      <span className="text-[10px] text-slate-500 uppercase block">Width / Height (B)</span>
+                      <span className="text-lg font-bold text-[#0B1B3D]">{product.B}</span>
+                      <span className="text-[10px] text-slate-500 block">mm</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
 
               {/* Stockist Brands Badges */}
               <div className="mt-6 pt-6 border-t border-slate-100">

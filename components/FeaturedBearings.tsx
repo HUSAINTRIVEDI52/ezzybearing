@@ -59,7 +59,7 @@ export function FeaturedBearings() {
               href="/products"
               className="ml-2 px-4 py-2.5 rounded-xl bg-[#0B1B3D] text-[#E4B94F] font-heading font-extrabold text-xs uppercase tracking-wider hover:bg-[#132752] transition-colors"
             >
-              View All 198+
+              Browse Full Range
             </Link>
           </div>
         </div>
@@ -94,7 +94,7 @@ export function FeaturedBearings() {
                   {/* Product Category Image Thumbnail */}
                   <Link href={`/products/${p.category}/${p.slug}`} className="block relative w-full aspect-[16/10] rounded-lg overflow-hidden my-2 bg-white border border-slate-200 group-hover:border-[#C9962B]/50 transition-colors">
                     <Image
-                      src={getImagePath(p.category)}
+                      src={p.image || getImagePath(p.category)}
                       alt={getBearingAltText({ partNumber: p.partNumber, name: p.name, categoryName: p.categoryName })}
                       fill
                       sizes="280px"
@@ -111,14 +111,6 @@ export function FeaturedBearings() {
                   <span className="text-xs text-slate-500 font-semibold block mb-3 line-clamp-1">
                     {p.categoryName}
                   </span>
-
-                  {/* Dimensions Box */}
-                  <div className="bg-white border border-slate-200 rounded-lg p-2.5 text-center font-mono text-xs mb-3">
-                    <span className="text-slate-400 block text-[10px]">d x D x B</span>
-                    <span className="font-bold text-[#0B1B3D]">
-                      {p.d} x {p.D} x {p.B} mm
-                    </span>
-                  </div>
 
                   {/* Brands */}
                   <div className="flex flex-wrap gap-1 mb-4">

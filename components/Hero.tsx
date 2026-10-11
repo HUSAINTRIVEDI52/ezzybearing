@@ -64,7 +64,7 @@ export function Hero() {
                 href="/products"
                 className="py-3.5 px-6 rounded-xl bg-[#132752] hover:bg-[#183060] border border-[#C9962B]/50 text-white font-heading font-bold text-sm uppercase tracking-wider flex items-center gap-2 transition-all hover-lift"
               >
-                <span>Browse Products (198+)</span>
+                <span>Browse Products (193)</span>
                 <ArrowRight className="w-4 h-4 text-[#E4B94F]" />
               </Link>
             </div>
@@ -144,7 +144,7 @@ export function Hero() {
                   Wide Range in Stock
                 </h4>
                 <p className="text-[11px] text-slate-300 font-sans">
-                  198+ ready series in Manmad
+                  193 ready series in Manmad
                 </p>
               </div>
             </div>

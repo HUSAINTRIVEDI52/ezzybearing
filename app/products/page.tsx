@@ -8,7 +8,7 @@ import { MessageSquare } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Industrial Bearing Catalogue & Part Number Finder | Ready Stock Manmad",
-  description: "Browse 198+ verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and pillow blocks. SKF, TATA, XNO, DSF stockist shipping across India from Manmad.",
+  description: "Browse 193 verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units. SKF, TATA, XNO, DSF stockist shipping across India from Manmad.",
   keywords: [
     "bearing catalogue india",
     "bearing part number search",
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Industrial Bearing Catalogue | ${siteConfig.name}`,
-    description: "Browse 198+ verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and pillow blocks.",
+    description: "Browse 193 verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units.",
     url: `${siteConfig.siteUrl}/products`,
     images: ["/og-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: `Industrial Bearing Catalogue | ${siteConfig.name}`,
-    description: "Browse 198+ verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and pillow blocks.",
+    description: "Browse 193 verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and wheel hub units.",
     images: ["/og-image.png"],
   },
 };
@@ -79,12 +79,12 @@ export default function ProductsPage() {
 
               <div className="hidden lg:flex items-center gap-3 text-xs font-mono text-slate-300 border border-slate-700 rounded-lg p-3 bg-white/5">
                 <div>
-                  <span className="text-[#E4B94F] font-bold block text-base font-heading">198+</span>
+                  <span className="text-[#E4B94F] font-bold block text-base font-heading">193</span>
                   <span>Part Numbers</span>
                 </div>
                 <div className="h-8 w-px bg-slate-700" />
                 <div>
-                  <span className="text-[#E4B94F] font-bold block text-base font-heading">12</span>
+                  <span className="text-[#E4B94F] font-bold block text-base font-heading">10</span>
                   <span>Categories</span>
                 </div>
                 <div className="h-8 w-px bg-slate-700" />

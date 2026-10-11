@@ -223,8 +223,8 @@ Please provide stock availability, brand quotation, and delivery lead time. Than
                 onChange={(e) => setBearingList(e.target.value)}
                 placeholder="Example:
 1. 30208 (Taper Roller) - 20 pcs (SKF/TATA)
-2. 6205-2RS - 50 pcs (DSF/XNO)
-3. 22220-E (Spherical Roller) - 4 pcs for Sugar Mill
+2. 6205 - 50 pcs (DSF/XNO)
+3. 32220 (Taper Roller) - 4 pcs for Sugar Mill
 4. LM 44649/10 - 10 sets"
                 className="w-full px-4 py-3 rounded-xl bg-[#F4F6FA] border border-slate-300 text-xs font-mono text-[#0B1B3D] placeholder-slate-400 focus:outline-none focus:border-[#C9962B] focus:ring-1 focus:ring-[#C9962B] leading-relaxed"
               />

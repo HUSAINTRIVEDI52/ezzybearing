@@ -3,8 +3,7 @@
  * Location: /lib/images.ts
  * 
  * Master imageKey -> image path mapping for category-level product photography,
- * hero graphics, and depot imagery. The depot owner can replace any photograph
- * by simply dropping a new file with the same name into /public/images/.
+ * hero graphics, and depot imagery.
  */
 
 export const PLACEHOLDER_IMAGE = "/images/bearing-placeholder.svg";
@@ -19,15 +18,19 @@ export const IMAGE_MAP: Record<string, string> = {
   "deep-groove-ball": "/images/deep-groove-ball.jpg",
   "tapered-roller": "/images/tapered-roller.jpg",
   "taper-cone-cup": "/images/cone-cup-set.jpg",
+  "clutch-release-thrust": "/images/clutch-release.jpg",
   "clutch-release": "/images/clutch-release.jpg",
-  "automotive-hub": "/images/wheel-hub.jpg",
-  "pillow-block": "/images/pillow-block.jpg",
-  "spherical-roller": "/images/spherical-roller.jpg",
-  "cylindrical-roller": "/images/cylindrical-roller.jpg",
   "thrust-bearings": "/images/thrust-bearing.jpg",
+  "wheel-hub": "/images/wheel-hub.jpg",
+  "automotive-hub": "/images/wheel-hub.jpg",
+  "angular-contact-four-point": "/images/angular-contact.jpg",
   "angular-contact": "/images/angular-contact.jpg",
-  "snap-ring-ball": "/images/deep-groove-ball.jpg",
-  "wheel-roller": "/images/tapered-roller.jpg",
+  "cylindrical-spherical-roller": "/images/cylindrical-roller.jpg",
+  "cylindrical-roller": "/images/cylindrical-roller.jpg",
+  "spherical-roller": "/images/spherical-roller.jpg",
+  "needle-roller": "/images/needle-roller.jpg",
+  "belt-tensioner-idler": "/images/deep-groove-ball.jpg",
+  "special-application": "/images/deep-groove-ball.jpg",
   "hand-tools": "/images/hand-tools.jpg",
   tools: "/images/hand-tools.jpg",
 };
@@ -43,8 +46,8 @@ export function getImagePath(key?: string): string {
 }
 
 /**
- * Generates descriptive, SEO-optimized image alt text
- * e.g., "Genuine Tapered Roller Bearing 30208 - EZZI Bearing Suppliers Manmad"
+ * Generates descriptive image alt text
+ * e.g., "Tapered Roller Bearing 30208" (no "Genuine", no duplicate numbers)
  */
 export function getBearingAltText(item: {
   partNumber?: string;
@@ -52,13 +55,15 @@ export function getBearingAltText(item: {
   categoryName?: string;
   brand?: string;
 }): string {
-  const brand = item.brand || "Genuine";
-  let baseName = item.name || item.categoryName || "Bearing";
-  
-  // If partNumber is present and not already part of baseName, append it once
-  if (item.partNumber && !baseName.includes(item.partNumber)) {
-    baseName = `${baseName} ${item.partNumber}`;
+  if (item.name) {
+    return item.name.replace(/^Genuine\s+/i, "").trim();
   }
-  
-  return `${brand} ${baseName} - EZZI Bearing Suppliers Manmad`;
+  const baseCategory = (item.categoryName || "Bearing").replace(/s$/, "");
+  if (item.partNumber) {
+    if (baseCategory.includes(item.partNumber)) {
+      return baseCategory;
+    }
+    return `${baseCategory} ${item.partNumber}`;
+  }
+  return item.categoryName || "Bearing";
 }

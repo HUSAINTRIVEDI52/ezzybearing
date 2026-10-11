@@ -6,7 +6,7 @@ export function WhyChooseEzzi() {
     {
       icon: <Package className="w-7 h-7 text-[#C9962B]" />,
       title: "Wide Range in Ready Stock",
-      description: "Over 198+ bearing series in physical inventory at our Manmad depot, ranging from miniature ball bearings to heavy sugar mill spherical rollers."
+      description: "193 verified bearing part numbers in physical inventory at our Manmad depot, ranging from miniature ball bearings to heavy industrial roller bearings."
     },
     {
       icon: <BadgeCheck className="w-7 h-7 text-[#0B1B3D]" />,

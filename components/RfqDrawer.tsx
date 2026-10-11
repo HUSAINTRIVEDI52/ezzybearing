@@ -127,7 +127,7 @@ export function RfqDrawer() {
               Your Quote Sheet is Empty
             </h3>
             <p className="text-xs text-slate-500 max-w-xs mb-6 font-sans">
-              Browse our 198+ bearing catalogue and click &ldquo;+ Add to RFQ&rdquo; to build a multi-item Bill of Materials for quotation.
+              Browse our 193 bearing catalogue and click &ldquo;+ Add to RFQ&rdquo; to build a multi-item Bill of Materials for quotation.
             </p>
             <button
               onClick={closeDrawer}

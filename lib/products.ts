@@ -10,18 +10,20 @@ export interface Product {
   d: number;
   D: number;
   B: number;
-  dynamicLoad: string;
-  staticLoad: string;
-  limitingSpeed: string;
-  weight: string;
-  cage: string;
-  clearance: string;
-  sealType: string;
+  dimensionsVerified: boolean;
+  dynamicLoad?: string;
+  staticLoad?: string;
+  limitingSpeed?: string;
+  weight?: string;
+  cage?: string;
+  clearance?: string;
+  sealType?: string;
   popularApplications: string[];
   stockLocation: string;
   badge: string;
   description: string;
   slug?: string;
+  image?: string;
 }
 
 export interface CategoryInfo {
@@ -34,6 +36,7 @@ export interface CategoryInfo {
   commonSeries: string;
   featuredBadge: string;
   count: number;
+  enquiryOnly?: boolean;
   seoIntro?: string;
   aboutType?: string;
   typicalApplications?: string[];
@@ -62,7 +65,7 @@ const RAW_PRODUCTS: Product[] = productsData as Product[];
 // Enrich all products with pre-computed slug
 const PRODUCTS: Product[] = RAW_PRODUCTS.map((p) => ({
   ...p,
-  slug: slugify(p.partNumber),
+  slug: p.slug || slugify(p.partNumber),
 }));
 
 export const CATEGORIES: CategoryInfo[] = [
@@ -76,27 +79,27 @@ export const CATEGORIES: CategoryInfo[] = [
     commonSeries: "6000, 6200, 6300, Miniature (608, 626) Series",
     featuredBadge: "Fast Mover",
     count: PRODUCTS.filter((p) => p.category === "deep-groove-ball").length,
-    seoIntro: "Deep groove ball bearings are the most versatile and widely utilized rolling bearing family across Indian manufacturing plants, agro pumps, and automotive machinery. Engineered with uninterrupted deep raceway grooves that conform closely with precision steel balls, they accommodate high-speed radial loads and moderate axial thrust in both directions. At EZZI Bearing Suppliers, we maintain ready stock across standard clearance (CN), C3 thermal margin, double rubber contact seals (2RS), and metal dust shields (ZZ) from SKF, TATA, XNO, and DSF at our Manmad hub.",
+    seoIntro: "Deep groove ball bearings are the most versatile and widely utilized rolling bearing family across Indian manufacturing plants, agro pumps, and automotive machinery. Engineered with uninterrupted deep raceway grooves that conform closely with precision steel balls, they accommodate high-speed radial loads and moderate axial thrust in both directions. At EZZI Bearing Suppliers, we maintain ready stock from SKF, TATA, XNO, and DSF at our Manmad hub.",
     aboutType: "Deep groove ball bearings feature a simple, non-separable design capable of operating at very high rotational velocities with low friction and minimal maintenance requirements.",
     typicalApplications: ["Electric Motors & Centrifugal Pumps", "Automotive Alternators & Starters", "Textile Spinning Frames", "Agricultural Monoblock Pumps", "Conveyor Rollers"]
   },
   {
     id: "tapered-roller",
-    name: "Metric Tapered Roller Bearings",
+    name: "Tapered Roller Bearings",
     shortName: "Taper Roller",
     code: "TRB",
     icon: "taper-roller",
     description: "Heavy-duty tapered rollers handling combined steep radial and thrust loads in gearboxes and differentials.",
-    commonSeries: "30200, 30300, 32000, 32200, 32300 Series",
+    commonSeries: "30200, 30300, 32200, 32300 Series",
     featuredBadge: "High Shock",
     count: PRODUCTS.filter((p) => p.category === "tapered-roller").length,
-    seoIntro: "Metric tapered roller bearings are engineered specifically to absorb severe simultaneous radial forces and heavy unidirectional thrust loads common in heavy vehicle wheel axles, industrial gear reducers, and sugar mill transmission boxes. Their tapered inner cone, outer cup, and precision rollers converge at a common apex on the bearing axis to guarantee pure rolling motion without skidding. EZZI Bearing Suppliers is a trusted stockist supplying verified metric taper series across Nashik, Pune, Mumbai, MP, and pan-India.",
+    seoIntro: "Metric tapered roller bearings are engineered specifically to absorb severe simultaneous radial forces and heavy unidirectional thrust loads common in heavy vehicle wheel axles, industrial gear reducers, and sugar mill transmission boxes. Their tapered inner cone, outer cup, and precision rollers converge at a common apex on the bearing axis to guarantee pure rolling motion without skidding.",
     aboutType: "Tapered roller bearings are separable assemblies consisting of an inner ring with roller and cage assembly (cone) and an outer ring (cup). Internal clearance is set during mounting.",
     typicalApplications: ["Commercial Vehicle Wheel Hubs", "Industrial Gearbox Reducers", "Agricultural Tractor Transmissions", "Quarry Jaw Crushers", "Rolling Mill Pinion Stands"]
   },
   {
     id: "taper-cone-cup",
-    name: "Tapered Roller Cone & Cup Sets",
+    name: "Tapered Roller Bearing Cone & Cup Sets",
     shortName: "Cone & Cup Sets",
     code: "TRB-SET",
     icon: "cone-cup",
@@ -109,130 +112,117 @@ export const CATEGORIES: CategoryInfo[] = [
     typicalApplications: ["Tractor Front & Rear Hubs", "Heavy Commercial Trailer Axles", "Differential Pinion Bearings", "Forklift Mast Rollers"]
   },
   {
-    id: "snap-ring-ball",
-    name: "Ball Bearings with Snap Ring",
-    shortName: "Snap Ring Series",
-    code: "DGBB-NR",
-    icon: "snap-ring",
-    description: "Deep groove ball bearings with outer ring locating snap ring groove for simplified automotive transmission mounting.",
-    commonSeries: "6208-2N, 6210N, 6305-2N, 6308-2N Series",
-    featuredBadge: "Automotive Gear",
-    count: PRODUCTS.filter((p) => p.category === "snap-ring-ball").length,
-    seoIntro: "Bearings with outer ring snap ring grooves (NR / 2N) simplify automotive gearbox assembly by providing a positive axial stop directly against the transmission housing wall. This compact design eliminates the need for machined retaining shoulders and external lock nuts, saving housing space and assembly labor in commercial vehicle gearboxes.",
-    aboutType: "These bearings integrate an annular groove in the outer ring fitted with an external snap ring, offering simplified axial location inside compact casings.",
-    typicalApplications: ["Automotive Manual Transmissions", "Tractor Countershafts", "Compact Industrial Reducers", "Power Take-Off (PTO) Units"]
-  },
-  {
-    id: "clutch-release",
-    name: "Clutch Release & Thrust Bearings",
-    shortName: "Clutch Bearings",
-    code: "CRB-AUTO",
+    id: "clutch-release-thrust",
+    name: "Clutch Release / Thrust Bearings",
+    shortName: "Clutch & Thrust",
+    code: "CRB-TB",
     icon: "clutch",
-    description: "Automotive clutch release bearing assemblies for Tata, Leyland, Mahindra, and heavy commercial vehicles.",
-    commonSeries: "T101, T119, T126, T138(TR), T144(OS), T151(TR)",
+    description: "Automotive clutch release bearing assemblies and pure axial thrust ball bearings for commercial vehicles and machinery.",
+    commonSeries: "T101, T119, T138(TR), 51107, 51108, 51207, 51208",
     featuredBadge: "Commercial Fleet",
-    count: PRODUCTS.filter((p) => p.category === "clutch-release").length,
-    seoIntro: "Automotive clutch release bearings are specialized angular contact and thrust units engineered to absorb severe axial disengagement pressure when depressing the vehicle clutch pedal. Built with high-temperature synthetic grease and durable contact seals, our clutch series supports heavy transport fleets, agricultural tractors, and light commercial vehicles.",
-    aboutType: "Clutch release assemblies feature self-aligning bearing rings and specialized guide sleeves to prevent pedal pulsation and clutch drag.",
-    typicalApplications: ["Tata & Ashok Leyland Heavy Trucks", "Mahindra Utility Vehicles", "Eicher & Swaraj Tractors", "Earthmoving Plant Clutches"]
+    count: PRODUCTS.filter((p) => p.category === "clutch-release-thrust").length,
+    seoIntro: "Automotive clutch release bearings and thrust ball bearings are specialized angular contact and pure axial thrust units engineered to absorb severe axial disengagement and kingpin pressure. Built for heavy commercial transport fleets, agricultural tractors, machine tool spindles, and swivel mechanisms across Maharashtra and pan-India.",
+    aboutType: "Clutch release assemblies feature self-aligning bearing rings and specialized guide sleeves to prevent pedal pulsation, while thrust ball bearings sustain pure axial thrust without radial deflection.",
+    typicalApplications: ["Tata & Ashok Leyland Heavy Trucks", "Mahindra Commercial Fleets", "Tractor Transmissions", "Machine Tool Vertical Spindles", "Crane Hook Swivels"]
   },
   {
-    id: "angular-contact",
-    name: "Double Row Angular Contact",
-    shortName: "Angular Contact",
-    code: "ACBB",
-    icon: "angular-contact",
-    description: "Double row bearings for combined radial and bidirectional thrust loads in wheel hubs and compressors.",
-    commonSeries: "33005, 33010, 33013, 33019, 33111, 33214, DAC 3668",
-    featuredBadge: "Bidirectional",
-    count: PRODUCTS.filter((p) => p.category === "angular-contact").length,
-    seoIntro: "Double row angular contact ball bearings correspond design-wise to two single row angular contact bearings arranged back-to-back, taking up less axial space. They accommodate heavy radial loads and tilting moments as well as bidirectional axial loads across screw compressors, centrifugal pumps, and automotive wheel hubs.",
-    aboutType: "Features a steep contact angle that provides rigid shaft support and high axial thrust capacity in both directions.",
-    typicalApplications: ["Centrifugal Slurry Pumps", "Screw Air Compressors", "Industrial Gear Drives", "Automotive Driven Wheels"]
-  },
-  {
-    id: "wheel-roller",
-    name: "Wheel & Roller Bearings (WRB)",
-    shortName: "Wheel / WRB",
-    code: "WRB",
+    id: "wheel-hub",
+    name: "Wheel & Hub Bearings",
+    shortName: "Wheel & Hub",
+    code: "WHB",
     icon: "wheel",
-    description: "Specialized automotive wheel bearings and material handling industrial roller components.",
-    commonSeries: "1005 WRB, 3520 WRB, 16007 WRB, 98205 WRB",
-    featuredBadge: "Special WRB",
-    count: PRODUCTS.filter((p) => p.category === "wheel-roller").length,
-    seoIntro: "Wheel and roller bearings (WRB series) are tailored for rigorous material handling conveyors, overhead crane track wheels, and vehicle wheel assemblies where rolling components withstand abrasive road grit, continuous rotation, and wash-down moisture.",
-    aboutType: "Reinforced roller cages and heavy-duty outer races engineered for high impact wheel and conveyor track contact.",
-    typicalApplications: ["Overhead Crane Trolleys", "Sugar Mill Cane Table Rollers", "Mining Conveyor Idlers", "Special Purpose Vehicles"]
-  },
-  {
-    id: "automotive-hub",
-    name: "Automotive Hub Bearings (BAH)",
-    shortName: "Hub Units",
-    code: "HUB",
-    icon: "hub",
-    description: "Integrated passenger and commercial vehicle wheel hub bearing units with multi-lip sealing.",
-    commonSeries: "BAH0031, BAH0036, BAH0052, BAH0087, BAH0104",
+    description: "Integrated automotive wheel hub units (BAH) and heavy duty wheel/roller bearings (WRB) for vehicles and conveyors.",
+    commonSeries: "BAH0031, BAH0036, 1005 WRB, 3520 WRB, 16007 WRB",
     featuredBadge: "Wheel Hub",
-    count: PRODUCTS.filter((p) => p.category === "automotive-hub").length,
-    seoIntro: "Generation-1 sealed wheel hub bearings (BAH series) feature pre-greased, pre-adjusted double row ball or taper roller geometry sealed for life. Designed to eliminate manual wheel bearing adjustment during brake maintenance, BAH units reduce service downtime for passenger and commercial vehicle fleets.",
-    aboutType: "Hermetically sealed wheel hub units pre-set with factory preload, high performance grease, and integrated multi-lip dust seals.",
-    typicalApplications: ["Passenger Vehicle Front Wheels", "Light Commercial Vans", "SUV Rear Axles", "Fleet Maintenance Units"]
+    count: PRODUCTS.filter((p) => p.category === "wheel-hub").length,
+    seoIntro: "Generation-1 sealed wheel hub bearings (BAH series) and specialized wheel & roller bearings (WRB series) feature precision double row geometry engineered for automotive wheel applications and rigorous material handling conveyor equipment.",
+    aboutType: "Hermetically sealed wheel hub units pre-set with factory preload, high performance synthetic grease, and reinforced multi-lip dust shields.",
+    typicalApplications: ["Passenger Vehicle Front Wheels", "Commercial Fleet Wheel Hubs", "Conveyor Track Wheels", "Overhead Crane Trolleys"]
   },
   {
-    id: "pillow-block",
-    name: "Pillow & Plummer Block Units",
-    shortName: "Pillow Blocks",
-    code: "UCP/UCF",
-    icon: "pillow-block",
-    description: "Mounted cast iron housings for conveyors, sugar mills, elevators, and agricultural processing equipment.",
-    commonSeries: "UCP 205, UCP 208, UCF 208, UCFL 206",
-    featuredBadge: "Ready Mount",
-    count: PRODUCTS.filter((p) => p.category === "pillow-block").length,
-    seoIntro: "Mounted bearing units consist of an insert ball bearing with a sphered outer ring mounted inside rigid cast iron pillow block (UCP), four-bolt flange (UCF), or two-bolt flange (UCFL) housings. Self-aligning capability compensates for initial shaft deflection on long conveyors and agricultural machines.",
-    aboutType: "Cast iron rigid housings featuring grease lubrication fittings and self-aligning insert bearings secured by set-screws.",
-    typicalApplications: ["Bucket Elevators & Screw Feeders", "Grain Cleaning Mills", "Sugar Mill Bagasse Conveyors", "Stone Crusher Discharge Belts"]
+    id: "angular-contact-four-point",
+    name: "Angular Contact & Four-Point Bearings",
+    shortName: "Angular & 4-Point",
+    code: "AC-4P",
+    icon: "angular-contact",
+    description: "Double row angular contact and four-point contact ball bearings for combined radial and bidirectional thrust loads.",
+    commonSeries: "33005, 33010, 33013, 33019, QJ 208, QJ 309, QJ 311",
+    featuredBadge: "Bidirectional",
+    count: PRODUCTS.filter((p) => p.category === "angular-contact-four-point").length,
+    seoIntro: "Double row angular contact and four-point contact ball bearings accommodate heavy radial loads and steep bidirectional axial thrust in compact machine envelopes. Ideal for industrial pumps, compressors, and automotive pinion supports.",
+    aboutType: "Engineered with steep contact angles providing rigid axial shaft location and high tilting moment rigidity.",
+    typicalApplications: ["Centrifugal Slurry Pumps", "Screw Air Compressors", "Industrial Gear Drives", "Automotive Driven Axles"]
   },
   {
-    id: "spherical-roller",
-    name: "Spherical Roller Bearings",
-    shortName: "Spherical Roller",
-    code: "SRB",
-    icon: "spherical-roller",
-    description: "Heavy industrial self-aligning bearings for sugar crushers, cement mills, vibrating screens, and heavy drives.",
-    commonSeries: "22220-E, 22222-EK/C3, 22318-CC, OC 2207",
-    featuredBadge: "Mill & Heavy",
-    count: PRODUCTS.filter((p) => p.category === "spherical-roller").length,
-    seoIntro: "Spherical roller bearings are the ultimate workhorses of heavy industry. Featuring two rows of symmetrical barrel-shaped rollers running in a common sphered outer ring raceway, they accommodate severe radial shock loads while self-aligning against heavy shaft misalignments common in sugar mills, cement crushers, and vibrating screens across Maharashtra and MP.",
-    aboutType: "Two rows of barrel rollers and a spherical raceway allowing continuous self-alignment without inducing edge stresses.",
-    typicalApplications: ["Sugar Cane Crushers & Mill Rolls", "Cement Rotary Kiln Drives", "Vibrating De-watering Screens", "Thermal Power Plant Pulverizers"]
-  },
-  {
-    id: "cylindrical-roller",
-    name: "Cylindrical Roller Bearings",
-    shortName: "Cylindrical Roller",
-    code: "CRB",
+    id: "cylindrical-spherical-roller",
+    name: "Cylindrical & Spherical Roller Bearings",
+    shortName: "Cylindrical & Spherical",
+    code: "CRB-SRB",
     icon: "cylindrical-roller",
-    description: "High radial capacity bearings for locomotive traction motors, compressors, and high speed pumps.",
-    commonSeries: "NU 209, NU 309, NU 2209",
-    featuredBadge: "Traction Motor",
-    count: PRODUCTS.filter((p) => p.category === "cylindrical-roller").length,
-    seoIntro: "Cylindrical roller bearings provide exceptional radial load capacity and high-speed operation. Modified line contact between rollers and raceways prevents stress concentrations, while separable inner and outer rings simplify mounting in electric traction motors and heavy industrial pumps.",
-    aboutType: "Precision ground rollers in line contact with hardened rings, providing the highest radial capacity for a given envelope size.",
-    typicalApplications: ["Railway Traction Motors", "Centrifugal Multistage Pumps", "Heavy Reciprocating Compressors", "Industrial Gear Reducers"]
+    description: "High radial capacity cylindrical roller bearings for traction motors and heavy self-aligning spherical roller bearings.",
+    commonSeries: "NU 209, NU 309, NU 2209, OC 2207",
+    featuredBadge: "Heavy Industrial",
+    count: PRODUCTS.filter((p) => p.category === "cylindrical-spherical-roller").length,
+    seoIntro: "Cylindrical and spherical roller bearings provide exceptional heavy-duty radial load capability and self-aligning tolerance for severe industrial machinery, railway traction drives, and vibrating equipment.",
+    aboutType: "Modified line contact between rollers and raceways prevents stress concentrations, while spherical raceways accommodate continuous angular misalignment.",
+    typicalApplications: ["Railway Traction Motors", "Centrifugal Multistage Pumps", "Industrial Gear Reducers", "Sugar Mill Drives"]
   },
   {
-    id: "thrust-bearings",
-    name: "Thrust Ball Bearings",
-    shortName: "Thrust Bearings",
-    code: "TB",
-    icon: "thrust-bearing",
-    description: "Pure axial load components for vehicle kingpins, crane swivels, and vertical machine spindles.",
-    commonSeries: "51107, 51108, 51207, 51208",
-    featuredBadge: "Pure Axial",
-    count: PRODUCTS.filter((p) => p.category === "thrust-bearings").length,
-    seoIntro: "Thrust ball bearings consist of shaft washers, housing washers, and ball and cage thrust assemblies designed exclusively for sustaining pure axial loads in vertical machine spindles, crane hooks, vehicle kingpins, and low-speed swivel tables.",
-    aboutType: "Separable components designed exclusively for pure axial loading. Radial loads must not be applied.",
-    typicalApplications: ["Heavy Crane Hooks & Swivels", "Vertical Drilling Spindles", "Commercial Vehicle Kingpins", "Hydraulic Press Platforms"]
+    id: "needle-roller",
+    name: "Needle Roller Bearings",
+    shortName: "Needle Roller",
+    code: "NRB",
+    icon: "needle-roller",
+    description: "Compact radial cross-section needle roller bearings with high dynamic load capacity for automotive gearboxes and drives.",
+    commonSeries: "TX 44SC, TX 2143SC, TX 53INT",
+    featuredBadge: "Compact Radial",
+    count: PRODUCTS.filter((p) => p.category === "needle-roller").length,
+    seoIntro: "Needle roller bearings feature cylindrical rollers with a high length-to-diameter ratio, delivering maximum load capacity within minimal radial installation space in automotive transmissions and compact reduction drives.",
+    aboutType: "Precision ground needle rollers contained in hardened cages or drawn cup steel outer rings.",
+    typicalApplications: ["Automotive Manual Transmissions", "Differential Planet Gears", "Power Take-Off Units", "Compact Speed Reducers"]
+  },
+  {
+    id: "belt-tensioner-idler",
+    name: "Belt Tensioner & Idler Bearings",
+    shortName: "Tensioner & Idler",
+    code: "TIB",
+    icon: "tensioner",
+    description: "Automotive belt tensioner and idler bearing assemblies for engine timing systems and serpentine accessory drives.",
+    commonSeries: "VKM 76870, VKM 76871",
+    featuredBadge: "Engine Drives",
+    count: PRODUCTS.filter((p) => p.category === "belt-tensioner-idler").length,
+    seoIntro: "Engine timing belt tensioners and auxiliary idler pulley assemblies ensure smooth power transmission, dampen vibration, and maintain optimal belt tension across passenger and commercial automotive fleets.",
+    aboutType: "Sealed-for-life deep groove ball units with specialized outer pulley rings and high-temperature grease.",
+    typicalApplications: ["Engine Timing Belt Drives", "Alternator Serpentine Belts", "Commercial Vehicle Water Pump Belts"]
+  },
+  {
+    id: "special-application",
+    name: "Special Application Bearings",
+    shortName: "Special Application",
+    code: "SAB",
+    icon: "special-app",
+    description: "Specialized automotive and custom equipment bearings engineered for proprietary machinery and unique mountings.",
+    commonSeries: "Special Automotive & Machine Series",
+    featuredBadge: "Special Duty",
+    count: PRODUCTS.filter((p) => p.category === "special-application").length,
+    seoIntro: "Special application bearings address specific dimensional and operational requirements in specialized automotive systems, agricultural equipment, and custom processing machinery.",
+    aboutType: "Custom manufactured geometry engineered to meet proprietary OEM equipment specifications.",
+    typicalApplications: ["Special Purpose Vehicles", "Custom Agricultural Machinery", "Industrial Processing Units"]
+  },
+  {
+    id: "hand-tools",
+    name: "Hand Tools (enquiry only)",
+    shortName: "Hand Tools",
+    code: "TOOLS",
+    icon: "hand-tools",
+    description: "Industrial bearing pullers, fitting tool sets, wrenches, and workshop maintenance equipment available upon enquiry.",
+    commonSeries: "Mechanical Pullers, Fitting Tool Sets, Spanners",
+    featuredBadge: "Enquiry Only",
+    count: 0,
+    enquiryOnly: true,
+    seoIntro: "In addition to rolling bearings, EZZI Bearing Suppliers supplies industrial workshop tools, mechanical bearing pullers, and fitting sets upon enquiry to ensure safe, damage-free bearing installation and removal.",
+    aboutType: "High quality forged steel workshop tools for mechanical maintenance and assembly.",
+    typicalApplications: ["Bearing Extraction & Pulling", "Cold Mounting & Impact Fitting", "Workshop Maintenance"]
   }
 ];
 
@@ -250,8 +240,8 @@ export const INDUSTRIES: IndustryInfo[] = [
     id: "agriculture",
     name: "Agriculture & Farm Machinery",
     icon: "tractor",
-    description: "Robust deep groove ball bearings, snap ring series, pillow blocks, and tapered sets for tractor transmissions, rotavators, threshers, and monoblock water pumps.",
-    keyBearings: ["6204", "6205", "30205", "UCP 205", "6208-2N"],
+    description: "Robust deep groove ball bearings, snap ring series, and tapered sets for tractor transmissions, rotavators, threshers, and monoblock water pumps.",
+    keyBearings: ["6204", "6205", "30205", "32208", "6208-2N"],
     hubAdvantage: "Extensive wholesale stock for agricultural tractor mechanics and farm equipment manufacturers across Maharashtra.",
     applications: ["Tractor Gearboxes & PTOs", "Rotavator Rotor Shafts", "Centrifugal Water Pumps", "Grain Threshers & Harvesters"]
   },
@@ -260,7 +250,7 @@ export const INDUSTRIES: IndustryInfo[] = [
     name: "Textile Machinery & Spindles",
     icon: "layers",
     description: "High-speed precision miniature and deep groove ball bearings engineered for low-friction spinning frames, winding drums, looms, and texturing machines.",
-    keyBearings: ["608", "626", "6002", "6202-2RS", "6203-ZZ"],
+    keyBearings: ["608", "626", "6002", "6202", "6203"],
     hubAdvantage: "Supplying textile spinning clusters across Malegaon, Dhule, Surat, and Ichalkaranji.",
     applications: ["High Speed Spindle Bolsters", "Draw Frame Tension Rollers", "Winding Machine Drums", "Circular Knitting Heads"]
   },
@@ -268,8 +258,8 @@ export const INDUSTRIES: IndustryInfo[] = [
     id: "cement",
     name: "Cement Plants & Quarry Crushers",
     icon: "hammer",
-    description: "Ultra heavy-duty spherical roller bearings, vibratory screen series, and plummer blocks built to withstand extreme dust, high temperatures, and shock.",
-    keyBearings: ["32309", "32311", "22220-E", "32220", "UCP 208"],
+    description: "Ultra heavy-duty tapered and spherical roller bearings built to withstand extreme dust, high temperatures, and shock loads.",
+    keyBearings: ["32309", "32311", "32220", "30310", "OC 2207"],
     hubAdvantage: "Emergency breakdown stock dispatched within 24 hours to cement mills and stone quarries.",
     applications: ["Jaw & Cone Crusher Shafts", "Vibrating Sizing Screens", "Raw Mill Rollers", "Clinker Conveyors"]
   },
@@ -277,17 +267,17 @@ export const INDUSTRIES: IndustryInfo[] = [
     id: "steel",
     name: "Steel Mills & Heavy Fabrication",
     icon: "shield",
-    description: "High-capacity cylindrical and spherical roller bearings engineered for continuous casting lines, mill pinion stands, and hot rolling conveyors.",
-    keyBearings: ["NU 309", "22222-EK/C3", "30310", "32218"],
-    hubAdvantage: "High load rating C3 clearance stock ready for severe thermal gradient environments.",
+    description: "High-capacity cylindrical and tapered roller bearings engineered for continuous casting lines, mill pinion stands, and hot rolling conveyors.",
+    keyBearings: ["NU 309", "NU 209", "30310", "32218", "32220"],
+    hubAdvantage: "High load rating stock ready for severe thermal gradient environments.",
     applications: ["Rolling Mill Roll Necks", "Continuous Casting Guide Rollers", "Hot Billet Transfer Tables", "Heavy Slag Cranes"]
   },
   {
     id: "sugar",
     name: "Sugar Mills & Distilleries",
     icon: "factory",
-    description: "Heavy spherical roller bearings for cane crushers, mill roll journals, centrifugals, bagasse belt conveyors, and turbine drives during crushing season.",
-    keyBearings: ["22220-E", "22222-EK/C3", "32218", "32311", "UCP 208"],
+    description: "Heavy spherical roller bearings for cane crushers, mill roll journals, centrifugals, and heavy drives during crushing season.",
+    keyBearings: ["OC 2207", "32218", "32311", "32220", "30215"],
     hubAdvantage: "Dedicated seasonal breakdown support across Nashik, Ahmednagar, Dhule, Jalgaon, and Solapur sugar factories.",
     applications: ["Cane Preparation Shredders", "Crushing Mill Roll Journals", "Centrifugal Sugar Baskets", "Bagasse Boiler Conveyors"]
   },
@@ -295,9 +285,9 @@ export const INDUSTRIES: IndustryInfo[] = [
     id: "material-handling",
     name: "Material Handling & Conveyors",
     icon: "box",
-    description: "Mounted pillow blocks (UCP/UCF), take-up units, WRB wheel roller bearings, and deep groove bearings for bulk conveyor systems, elevators, and overhead cranes.",
-    keyBearings: ["UCP 205", "UCF 208", "1005 WRB", "3520 WRB", "6308-2RS"],
-    hubAdvantage: "Comprehensive inventory of mounted housings, insert bearings, and replacement rollers.",
+    description: "Specialized WRB wheel roller bearings, cylindrical rollers, and deep groove bearings for bulk conveyor systems, elevators, and overhead cranes.",
+    keyBearings: ["1005  WRB", "3520  WRB", "16007  WRB", "6308", "NU 2209"],
+    hubAdvantage: "Comprehensive inventory of specialized track wheel and replacement conveyor rollers.",
     applications: ["Trough Belt Idlers", "Bucket Elevator Head Pulleys", "Overhead Traveling Crane Wheels", "Screw Feeder Shafts"]
   },
   {
@@ -305,7 +295,7 @@ export const INDUSTRIES: IndustryInfo[] = [
     name: "General Engineering & Machine Shops",
     icon: "wrench",
     description: "Complete catalogue of ball bearings, taper sets, thrust washers, and industrial hand tools for general machinery, maintenance workshops, and fabrication units.",
-    keyBearings: ["6004", "6206", "6305", "51108", "QJ 209"],
+    keyBearings: ["6004", "6206", "6305", "51108", "QJ 208"],
     hubAdvantage: "One-stop shop offering all types of bearing solutions and tools under one roof.",
     applications: ["Lathe & Milling Spindles", "Industrial Reduction Gearboxes", "Hydraulic Power Units", "Workshop Tool Drives"]
   }
@@ -318,9 +308,9 @@ export const FEATURED_BEARING_NUMBERS = [
   "32208",
   "30208",
   "NU 309",
-  "22220-E",
+  "OC 2207",
   "LM 44649/10",
-  "UCP 205"
+  "T138(TR)"
 ];
 
 export function getAllProducts(): Product[] {
