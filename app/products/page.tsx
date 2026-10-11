@@ -1,0 +1,99 @@
+import React, { Suspense } from "react";
+import { Metadata } from "next";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ProductsDirectory } from "@/components/ProductsDirectory";
+import { ProductGridSkeleton } from "@/components/ProductSkeleton";
+import { siteConfig } from "@/lib/siteConfig";
+import { MessageSquare } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Industrial Bearing Catalogue & Part Number Finder | Ready Stock Manmad",
+  description: "Browse 198+ verified industrial ball bearings, metric tapered rollers, clutch release assemblies, and pillow blocks. SKF, TATA, XNO, DSF stockist shipping across India from Manmad.",
+  keywords: [
+    "bearing catalogue india",
+    "bearing part number search",
+    "skf tata xno dsf stockist",
+    "manmad bearing supplier",
+    "tapered roller bearing catalogue",
+    "deep groove ball bearing stockist"
+  ]
+};
+
+import { getAllProducts, getCategories } from "@/lib/products";
+
+export default function ProductsPage() {
+  const products = getAllProducts();
+  const categories = getCategories();
+
+  return (
+    <div className="min-h-screen bg-[#F4F6FA] pb-24">
+      {/* Top Banner & Breadcrumbs */}
+      <div className="bg-[#0B1B3D] text-white pt-8 pb-10 border-b border-[#C9962B]/20 relative overflow-hidden">
+        <div className="absolute inset-0 watermark-pattern opacity-10 pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <Breadcrumbs
+            items={[
+              { label: "Products", href: "/products" }
+            ]}
+          />
+          <div className="mt-4 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+            <div>
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#E4B94F] text-xs font-mono font-bold tracking-wider uppercase mb-2">
+                <span>All-India B2B Catalogue</span>
+                <span className="text-slate-400">•</span>
+                <span>Manmad Stock</span>
+              </div>
+              <h1 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-white uppercase">
+                Complete Bearing Inventory
+              </h1>
+              <p className="mt-2 text-slate-300 text-sm sm:text-base max-w-2xl">
+                Real-time stockist inventory of ball bearings, metric tapered rollers, automotive hubs, and mounted plummer blocks. Instant RFQ via WhatsApp or multi-item quotation sheet.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+              <a
+                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Ammar bhai, I want to check stock availability from your complete bearing catalogue.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"
+                aria-label="Enquire via WhatsApp about full bearing catalogue"
+              >
+                <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
+                <span>Enquire via WhatsApp</span>
+              </a>
+
+              <div className="hidden lg:flex items-center gap-3 text-xs font-mono text-slate-300 border border-slate-700 rounded-lg p-3 bg-white/5">
+                <div>
+                  <span className="text-[#E4B94F] font-bold block text-base font-heading">198+</span>
+                  <span>Part Numbers</span>
+                </div>
+                <div className="h-8 w-px bg-slate-700" />
+                <div>
+                  <span className="text-[#E4B94F] font-bold block text-base font-heading">12</span>
+                  <span>Categories</span>
+                </div>
+                <div className="h-8 w-px bg-slate-700" />
+                <div>
+                  <span className="text-emerald-400 font-bold block text-base font-heading">4 Brands</span>
+                  <span>SKF • TATA • XNO • DSF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Directory content with Suspense for URL search params */}
+      <Suspense
+        fallback={
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="h-10 w-64 bg-slate-200 rounded-lg animate-pulse mb-8" />
+            <ProductGridSkeleton count={9} />
+          </div>
+        }
+      >
+        <ProductsDirectory initialProducts={products} categories={categories} />
+      </Suspense>
+    </div>
+  );
+}

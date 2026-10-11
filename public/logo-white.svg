@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 90" width="380" height="90" fill="none">
+  <!-- Gear & Bearing Emblem -->
+  <g transform="translate(10, 5)">
+    <!-- Gear outer cogs -->
+    <circle cx="40" cy="40" r="32" stroke="#E4B94F" stroke-width="3" stroke-dasharray="10 6" fill="none" opacity="0.9"/>
+    <circle cx="40" cy="40" r="26" stroke="#C9962B" stroke-width="2.5" fill="#0B1B3D"/>
+    
+    <!-- Bearing Outer & Inner Race -->
+    <circle cx="40" cy="40" r="20" stroke="#FFFFFF" stroke-width="2" fill="#132752"/>
+    <circle cx="40" cy="40" r="11" stroke="#E4B94F" stroke-width="2" fill="#FFFFFF"/>
+    
+    <!-- Central Bore -->
+    <circle cx="40" cy="40" r="6" fill="#0B1B3D"/>
+
+    <!-- Bearing Rolling Elements (Steel Balls) -->
+    <circle cx="40" cy="24" r="3.2" fill="#E4B94F"/>
+    <circle cx="51.3" cy="28.7" r="3.2" fill="#FFFFFF"/>
+    <circle cx="56" cy="40" r="3.2" fill="#E4B94F"/>
+    <circle cx="51.3" cy="51.3" r="3.2" fill="#FFFFFF"/>
+    <circle cx="40" cy="56" r="3.2" fill="#E4B94F"/>
+    <circle cx="28.7" cy="51.3" r="3.2" fill="#FFFFFF"/>
+    <circle cx="24" cy="40" r="3.2" fill="#E4B94F"/>
+    <circle cx="28.7" cy="28.7" r="3.2" fill="#FFFFFF"/>
+
+    <!-- Dynamic Speed Wave / Swoosh -->
+    <path d="M12 62 C 28 72, 58 72, 74 54 C 64 63, 38 66, 18 56 Z" fill="#E4B94F"/>
+    <path d="M6 56 C 24 66, 54 68, 70 48" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Typography: EZZI Wordmark -->
+  <text x="102" y="47" font-family="'Barlow Condensed', 'Oswald', sans-serif" font-weight="900" font-size="46" letter-spacing="1.5" fill="#FFFFFF">
+    EZZI
+  </text>
+
+  <!-- Subtitle: BEARING SUPPLIERS -->
+  <text x="104" y="65" font-family="'Barlow Condensed', 'Inter', sans-serif" font-weight="800" font-size="14.5" letter-spacing="3.8" fill="#E4B94F">
+    BEARING SUPPLIERS
+  </text>
+
+  <!-- Stockist Tagline -->
+  <text x="104" y="78" font-family="'Inter', sans-serif" font-weight="600" font-size="8.5" letter-spacing="1.5" fill="#9FB3D8">
+    STOCKIST • QUALITY • PRECISION • TRUST
+  </text>
+</svg>

@@ -1,0 +1,379 @@
+"use client";
+
+import React, { useState } from "react";
+import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { siteConfig } from "@/lib/siteConfig";
+import { 
+  buildWhatsAppLink, 
+  buildBulkEnquiryMessage, 
+  WhatsAppRecipient, 
+  DEFAULT_RECIPIENT, 
+  WHATSAPP_CONTACTS 
+} from "@/lib/whatsapp";
+import { WhatsAppRecipientSelector } from "@/components/WhatsAppRecipientSelector";
+import { 
+  Truck, 
+  Boxes, 
+  ShieldCheck, 
+  CheckCircle2, 
+  MessageSquare, 
+  PhoneCall, 
+  Building2, 
+  Clock, 
+  Layers,
+  Sparkles,
+  MapPin,
+  Send
+} from "lucide-react";
+
+export default function BulkOrdersPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    company: "",
+    city: "",
+    partNumbers: "",
+    estimatedQuantity: "",
+    message: "",
+  });
+
+  const [recipient, setRecipient] = useState<WhatsAppRecipient>(DEFAULT_RECIPIENT);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formData.name || !formData.phone || !formData.city) {
+      alert("Please fill in your name, phone number, and city.");
+      return;
+    }
+
+    const message = buildBulkEnquiryMessage(formData, "Wholesale & Bulk Orders Portal");
+    const waUrl = buildWhatsAppLink(message, recipient);
+    window.open(waUrl, "_blank");
+    setSubmitted(true);
+  };
+
+  return (
+    <div className="min-h-screen bg-[#F4F6FA] pb-24 text-[#1A2536]">
+      {/* Header Banner */}
+      <div className="bg-[#0B1B3D] text-white pt-8 pb-14 border-b border-[#C9962B]/20 relative overflow-hidden">
+        <div className="absolute inset-0 watermark-pattern opacity-10 pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <Breadcrumbs
+            items={[
+              { label: "Bulk Orders & Delivery", href: "/bulk-orders" }
+            ]}
+          />
+
+          <div className="mt-4 max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#E4B94F] text-xs font-mono font-bold tracking-wider uppercase mb-3">
+              <span>B2B Wholesale &amp; Fleet Procurement</span>
+              <span className="text-slate-500">•</span>
+              <span>All-India Delivery</span>
+            </div>
+            <h1 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight uppercase">
+              Bulk Orders &amp; Pan-India Logistics
+            </h1>
+            <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
+              Specialized case-lot rates, scheduled plant replenishments, and rapid railway cargo dispatch for machine workshops, sugar mills, cement plants, and regional bearing retailers.
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              <a
+                href={buildWhatsAppLink("Hello, I want to discuss wholesale case pricing and bulk order delivery.", recipient)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"
+                aria-label="Instant wholesale quote on WhatsApp"
+              >
+                <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
+                <span>Instant Wholesale Quote on WhatsApp ({WHATSAPP_CONTACTS[recipient].name.split(" ")[0]})</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 space-y-16">
+        {/* Top 3 Value Pillars */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-soft">
+            <div className="w-10 h-10 rounded-xl bg-[#0B1B3D] text-[#E4B94F] flex items-center justify-center mb-4">
+              <Boxes className="w-5 h-5" />
+            </div>
+            <h3 className="font-heading font-extrabold text-xl text-[#0B1B3D] uppercase mb-1">
+              Tiered Volume Discounts
+            </h3>
+            <p className="text-xs text-slate-600 font-sans leading-relaxed">
+              Wholesale pricing structures for 50+, 200+, and master carton quantities across SKF, TATA, XNO, and DSF series.
+            </p>
+          </div>
+
+          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-soft">
+            <div className="w-10 h-10 rounded-xl bg-[#0B1B3D] text-[#E4B94F] flex items-center justify-center mb-4">
+              <Truck className="w-5 h-5" />
+            </div>
+            <h3 className="font-heading font-extrabold text-xl text-[#0B1B3D] uppercase mb-1">
+              Railway Cargo Node
+            </h3>
+            <p className="text-xs text-slate-600 font-sans leading-relaxed">
+              Manmad Central Railway junction enables rapid parcel van handovers arriving overnight in Mumbai, Pune, Nagpur, and MP.
+            </p>
+          </div>
+
+          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-soft">
+            <div className="w-10 h-10 rounded-xl bg-[#0B1B3D] text-[#E4B94F] flex items-center justify-center mb-4">
+              <ShieldCheck className="w-5 h-5" />
+            </div>
+            <h3 className="font-heading font-extrabold text-xl text-[#0B1B3D] uppercase mb-1">
+              Export-Grade Wooden Strapping
+            </h3>
+            <p className="text-xs text-slate-600 font-sans leading-relaxed">
+              Heavy spherical and taper sets packed in moisture-proof heavy gauge wrapping and wooden pallet strapping to prevent transit damage.
+            </p>
+          </div>
+        </div>
+
+        {/* Main Grid: Logistics Process & Wholesale Form */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          {/* Left Column: Logistics Process Details (6 Cols) */}
+          <div className="lg:col-span-6 space-y-6">
+            <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-soft">
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#C9962B] block mb-2">
+                Supply Chain Architecture
+              </span>
+              <h2 className="font-heading font-extrabold text-2xl text-[#0B1B3D] uppercase mb-4">
+                The All-India Delivery Process
+              </h2>
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 rounded-full bg-[#0B1B3D] text-[#E4B94F] font-mono font-bold text-xs flex items-center justify-center shrink-0">
+                    1
+                  </div>
+                  <div>
+                    <h4 className="font-heading font-bold text-base text-[#0B1B3D] uppercase">
+                      Stock Verification &amp; Instant BOM Quoting
+                    </h4>
+                    <p className="text-xs text-slate-600 font-sans mt-1 leading-relaxed">
+                      Send your part list or Excel sheet via WhatsApp or our enquiry form. Our depot team checks warehouse shelves and returns an itemized quotation with brand options.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 rounded-full bg-[#0B1B3D] text-[#E4B94F] font-mono font-bold text-xs flex items-center justify-center shrink-0">
+                    2
+                  </div>
+                  <div>
+                    <h4 className="font-heading font-bold text-base text-[#0B1B3D] uppercase">
+                      Industrial Packaging &amp; Dispatch within 24 Hours
+                    </h4>
+                    <p className="text-xs text-slate-600 font-sans mt-1 leading-relaxed">
+                      Bearings are inspected for preservative oil integrity, sealed in poly-wrap, and packed into reinforced corrugated cartons with clear marking tags.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 rounded-full bg-[#0B1B3D] text-[#E4B94F] font-mono font-bold text-xs flex items-center justify-center shrink-0">
+                    3
+                  </div>
+                  <div>
+                    <h4 className="font-heading font-bold text-base text-[#0B1B3D] uppercase">
+                      Transport Handover &amp; Waybill Tracking
+                    </h4>
+                    <p className="text-xs text-slate-600 font-sans mt-1 leading-relaxed">
+                      Packages are handed over to Indian Railways Parcel Cargo (Manmad Jn) or leading logistics carriers (V-Trans, TCI Freight, Safexpress, Delhivery). LR copy is shared via WhatsApp.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Transport Logistics Table */}
+              <div className="mt-8 pt-6 border-t border-slate-100 font-mono text-xs">
+                <span className="font-bold text-slate-700 block mb-2 uppercase">
+                  Authorized Freight Partners:
+                </span>
+                <div className="grid grid-cols-2 gap-2 text-slate-600">
+                  <div className="p-2 bg-[#F4F6FA] rounded border border-slate-200">
+                    • V-Trans Express
+                  </div>
+                  <div className="p-2 bg-[#F4F6FA] rounded border border-slate-200">
+                    • TCI Freight Limited
+                  </div>
+                  <div className="p-2 bg-[#F4F6FA] rounded border border-slate-200">
+                    • Safexpress B2B
+                  </div>
+                  <div className="p-2 bg-[#F4F6FA] rounded border border-slate-200">
+                    • Central Railway Parcel Depot
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Direct Phone Assistance Strip */}
+            <div className="p-6 rounded-2xl bg-[#0B1B3D] text-white flex items-center justify-between">
+              <div>
+                <span className="text-xs font-mono text-[#E4B94F] uppercase tracking-wider block">
+                  Urgent Breakdown Parcel?
+                </span>
+                <span className="font-heading font-bold text-lg text-white block">
+                  Speak Directly with Ammar Bhai
+                </span>
+                <span className="text-xs text-slate-300 font-mono">
+                  +91 {siteConfig.contacts[0].phone}
+                </span>
+              </div>
+              <a
+                href={`tel:${siteConfig.contacts[0].phone}`}
+                className="px-4 py-2.5 rounded-xl bg-[#C9962B] text-[#0B1B3D] font-bold text-xs uppercase font-mono hover:bg-[#E4B94F] transition-colors"
+              >
+                Call Depot
+              </a>
+            </div>
+          </div>
+
+          {/* Right Column: Wholesale & Bulk Enquiry Form (6 Cols) */}
+          <div className="lg:col-span-6 bg-white border border-slate-200 rounded-2xl p-8 sm:p-10 shadow-soft">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#C9962B] block mb-2">
+              Instant WhatsApp Transmission
+            </span>
+            <h2 className="font-heading font-extrabold text-2xl text-[#0B1B3D] uppercase mb-2">
+              Wholesale &amp; Bulk RFQ Form
+            </h2>
+            <p className="text-xs text-slate-500 font-sans mb-6">
+              Fill in your requirements below. Clicking submit will automatically open WhatsApp with your formatted bill of materials for immediate rate confirmation.
+            </p>
+
+            {submitted && (
+              <div className="mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-mono flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span>WhatsApp enquiry initiated! If WhatsApp didn't open, please click below.</span>
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-mono font-bold text-slate-700 uppercase mb-1">
+                    Your Name *
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    placeholder="e.g. Ramesh Patel"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-sans"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-mono font-bold text-slate-700 uppercase mb-1">
+                    Mobile / WhatsApp No. *
+                  </label>
+                  <input
+                    type="tel"
+                    required
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    placeholder="e.g. 9822012345"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-sans"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-mono font-bold text-slate-700 uppercase mb-1">
+                    Company / Workshop (Optional)
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.company}
+                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                    placeholder="e.g. Patel Auto Spares / Sugar Mill"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-sans"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-mono font-bold text-slate-700 uppercase mb-1">
+                    Delivery City &amp; State *
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={formData.city}
+                    onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+                    placeholder="e.g. Pune, Maharashtra"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-sans"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-mono font-bold text-slate-700 uppercase mb-1">
+                  Required Bearing Part Numbers &amp; Sizes *
+                </label>
+                <textarea
+                  rows={3}
+                  required
+                  value={formData.partNumbers}
+                  onChange={(e) => setFormData({ ...formData, partNumbers: e.target.value })}
+                  placeholder="e.g. 6205-2RS (100 pcs), 32208 (50 pcs), UCP 208 (20 pcs), SKF or TATA preferred"
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-mono"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-mono font-bold text-slate-700 uppercase mb-1">
+                  Estimated Quantity / Order Frequency
+                </label>
+                <input
+                  type="text"
+                  value={formData.estimatedQuantity}
+                  onChange={(e) => setFormData({ ...formData, estimatedQuantity: e.target.value })}
+                  placeholder="e.g. 150 pieces total / Monthly requirement"
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-sans"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-mono font-bold text-slate-700 uppercase mb-1">
+                  Additional Notes / Urgent Delivery Deadline
+                </label>
+                <textarea
+                  rows={2}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  placeholder="e.g. Need delivery within 3 days via V-Trans"
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-[#C9962B] font-sans"
+                />
+              </div>
+
+              {/* WhatsApp Recipient Selector */}
+              <div className="pt-2">
+                <WhatsAppRecipientSelector 
+                  selected={recipient} 
+                  onChange={setRecipient} 
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full py-4 px-6 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-heading font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
+              >
+                <MessageSquare className="w-5 h-5" />
+                <span>Submit Wholesale RFQ to {WHATSAPP_CONTACTS[recipient].name.split(" ")[0]}</span>
+              </button>
+
+              <p className="text-[11px] font-mono text-center text-slate-400">
+                🔒 Direct transmission to {WHATSAPP_CONTACTS[recipient].name} ({WHATSAPP_CONTACTS[recipient].phone}). No data saved on external servers.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #0B1B3D;
+  --color-gold: #C9962B;
+  --color-gold-light: #E4B94F;
+  --color-gold-dark: #8F6510; /* WCAG AA 5.0:1 contrast on white */
+  --color-bg-light: #F4F6FA;
+  --color-whatsapp: #25D366;
+}
+
+/* WCAG AA Visible Focus Ring for Keyboard Navigation */
+*:focus-visible {
+  outline: 2px solid #C9962B;
+  outline-offset: 2px;
+}
+
+/* Accessible tap target minimum 44px */
+.tap-target-44 {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.text-gold-accessible {
+  color: #8F6510;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  background-color: #F4F6FA;
+  color: #1A2536;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle Gold Divider Motif with Diamond */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  margin: 1rem 0;
+}
+.gold-divider::before,
+.gold-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, rgba(201, 150, 43, 0.4), transparent);
+}
+.gold-diamond {
+  color: #C9962B;
+  font-size: 10px;
+  transform: scale(0.9);
+}
+
+/* Faint Bearing & Gear Line-Art Watermark for Dark Sections */
+.watermark-pattern {
+  background-image: 
+    radial-gradient(circle at 85% 20%, rgba(201, 150, 43, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 15% 80%, rgba(228, 185, 79, 0.04) 0%, transparent 40%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+}
+
+/* Soft Hover Lift for rounded-xl cards */
+.hover-lift {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -6px rgba(11, 27, 61, 0.12), 0 8px 12px -4px rgba(11, 27, 61, 0.06);
+}
+
+/* Accessibility: Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hover-lift:hover {
+    transform: none !important;
+  }
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F6FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9962B;
+}
