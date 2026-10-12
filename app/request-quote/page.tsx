@@ -88,12 +88,12 @@ export default function RequestQuotePage() {
               Request a Bearing Quote
             </h1>
             <p className="mt-2 text-slate-300 text-base leading-relaxed font-sans">
-              Provide your required part numbers or bearing specifications below. Our trade desk will confirm availability and wholesale rates via WhatsApp.
+              Provide your required part numbers or bearing specifications below. Our team will confirm availability and wholesale rates via WhatsApp.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
-                href={buildWhatsAppLink("Hello, I want to request an instant bearing quote directly on WhatsApp.", recipient)}
+                href={buildWhatsAppLink("Hello EZZI Bearing Suppliers, I want to request an instant bearing quote directly on WhatsApp.", recipient)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"
@@ -285,7 +285,7 @@ export default function RequestQuotePage() {
                   className="w-full min-h-[48px] py-3.5 px-6 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-slate-950 font-heading font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
                 >
                   <MessageSquare className="w-5 h-5 fill-slate-950 stroke-none" />
-                  <span>Send Quote Request on WhatsApp</span>
+                  <span>SEND QUOTE REQUEST ON WHATSAPP</span>
                 </button>
               </form>
             )}
@@ -295,13 +295,13 @@ export default function RequestQuotePage() {
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-[#0B1B3D] text-white rounded-2xl p-6 sm:p-8 border border-[#C9962B]/30 relative overflow-hidden">
               <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E4B94F] block mb-2">
-                Direct Contact
+                DIRECT CONTACT
               </span>
               <h3 className="font-heading font-black text-xl sm:text-2xl uppercase tracking-tight text-white mb-2">
-                Call Our Trade Desk Directly
+                CALL US DIRECTLY
               </h3>
               <p className="text-xs text-slate-300 font-sans leading-relaxed mb-6">
-                For urgent requirements, call our partners directly at Manmad.
+                Prefer to talk? Call us directly.
               </p>
 
               <div className="space-y-3 font-mono text-xs">
@@ -311,10 +311,7 @@ export default function RequestQuotePage() {
                 >
                   <div className="flex items-center gap-2.5">
                     <PhoneCall className="w-4 h-4 text-[#E4B94F]" />
-                    <div>
-                      <span className="font-bold block text-sm">{siteConfig.contacts[0].name}</span>
-                      <span className="text-[10px] text-slate-400">Managing Partner</span>
-                    </div>
+                    <span className="font-bold text-sm">{siteConfig.contacts[0].name}</span>
                   </div>
                   <span className="text-[#E4B94F] font-bold">{siteConfig.contacts[0].phone}</span>
                 </a>
@@ -325,21 +322,18 @@ export default function RequestQuotePage() {
                 >
                   <div className="flex items-center gap-2.5">
                     <PhoneCall className="w-4 h-4 text-[#E4B94F]" />
-                    <div>
-                      <span className="font-bold block text-sm">{siteConfig.contacts[1].name}</span>
-                      <span className="text-[10px] text-slate-400">Operations</span>
-                    </div>
+                    <span className="font-bold text-sm">{siteConfig.contacts[1].name}</span>
                   </div>
                   <span className="text-[#E4B94F] font-bold">{siteConfig.contacts[1].phone}</span>
                 </a>
               </div>
             </div>
 
-            {/* Warehouse Address */}
+            {/* Location Address */}
             <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft font-mono text-xs space-y-2">
               <h4 className="font-heading font-extrabold text-sm uppercase text-[#0B1B3D] tracking-wider flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-[#C9962B]" />
-                <span>Warehouse Address</span>
+                <span>Location &amp; Address</span>
               </h4>
               <p className="text-slate-600 font-sans text-xs leading-relaxed">
                 {siteConfig.address as unknown as string}

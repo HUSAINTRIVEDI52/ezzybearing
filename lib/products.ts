@@ -208,22 +208,8 @@ export const CATEGORIES: CategoryInfo[] = [
     seoIntro: "Special application bearings address specific dimensional and operational requirements in specialized automotive systems and processing machinery.",
     aboutType: "Manufactured geometry engineered to meet specific equipment specifications.",
     typicalApplications: ["Special Purpose Vehicles", "Agricultural Machinery", "Industrial Processing Units"]
-  },
-  {
-    id: "hand-tools",
-    name: "Hand Tools (enquiry only)",
-    shortName: "Hand Tools",
-    code: "TOOLS",
-    icon: "hand-tools",
-    description: "Industrial bearing pullers, fitting tool sets, wrenches, and workshop maintenance equipment available upon enquiry.",
-    commonSeries: "Mechanical Pullers, Fitting Tool Sets, Spanners",
-    featuredBadge: "Enquiry Only",
-    count: 0,
-    enquiryOnly: true,
-    seoIntro: "In addition to rolling bearings, EZZI Bearing Suppliers provides industrial hand tools and workshop equipment upon enquiry.",
-    aboutType: "Workshop tools for mechanical maintenance and assembly.",
-    typicalApplications: ["Bearing Extraction & Pulling", "Cold Mounting & Impact Fitting", "Workshop Maintenance"]
   }
+
 ];
 
 export const INDUSTRIES: IndustryInfo[] = [

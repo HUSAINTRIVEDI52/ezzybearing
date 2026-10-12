@@ -64,7 +64,7 @@ export function RfqProvider({ children }: { children: React.ReactNode }) {
     }
   }, [items, isHydrated]);
 
-  const addToRfq = (product: Product, quantity = 10) => {
+  const addToRfq = (product: Product, quantity = 1) => {
     setItems((prev) => {
       const existing = prev.find((i) => i.id === product.id);
       if (existing) {
@@ -88,7 +88,7 @@ export function RfqProvider({ children }: { children: React.ReactNode }) {
   };
 
   const addItem = (product: Product, quantity?: number) => {
-    addToRfq(product, quantity || 10);
+    addToRfq(product, quantity || 1);
   };
 
   const updateQuantity = (id: string, newQtyOrDelta: number) => {

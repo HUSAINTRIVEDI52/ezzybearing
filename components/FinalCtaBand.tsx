@@ -29,7 +29,7 @@ export function FinalCtaBand() {
 
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Ammar bhai, I want to enquire about bearing availability.")}`}
+                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello EZZI Bearing Suppliers, I want to enquire about bearing availability.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-3.5 px-6 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-heading font-extrabold text-sm uppercase tracking-wider flex items-center gap-2.5 transition-all shadow-md active:scale-95"

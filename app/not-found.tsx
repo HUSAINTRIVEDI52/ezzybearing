@@ -5,7 +5,7 @@ import { Search, MessageSquare, ArrowLeft, Home } from "lucide-react";
 
 export default function NotFound() {
   const waUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
-    "Hello EZZI Bearing Suppliers, I was searching for a bearing on your website but could not find it. Please check depot stock for me."
+    "Hello EZZI Bearing Suppliers, I was searching for a bearing on your website but could not find it. Please check availability for me."
   )}`;
 
   return (
@@ -24,7 +24,7 @@ export default function NotFound() {
         </h1>
 
         <p className="text-xs text-slate-500 font-sans leading-relaxed mb-8">
-          The bearing part number or page you requested is not listed in our standard catalogue. Our Manmad warehouse stocks hundreds of additional unlisted sizes across SKF, TATA, XNO, and DSF.
+          The bearing part number or page you requested is not listed in our standard catalogue. We stock additional sizes across SKF, TATA, XNO, and DSF. Enquire for availability on WhatsApp.
         </p>
 
         <div className="space-y-3">

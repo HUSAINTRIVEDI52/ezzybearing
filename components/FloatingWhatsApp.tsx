@@ -28,46 +28,21 @@ export function FloatingWhatsApp() {
           <div className="flex items-center justify-between pb-2.5 border-b border-slate-100 mb-3">
             <div className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-xs font-mono font-bold text-[#0B1B3D] uppercase">Select Trade Desk</span>
+              <span className="text-xs font-mono font-bold text-[#0B1B3D] uppercase">Choose Who to Message</span>
             </div>
             <button
               onClick={() => setShowMenu(false)}
               className="text-slate-400 hover:text-black p-1 rounded-md"
-              aria-label="Close trade desk selector"
+              aria-label="Close contact selector"
             >
               <X className="w-3.5 h-3.5" />
             </button>
           </div>
 
           <div className="space-y-2">
-            {/* Sales Desk (Default) */}
+            {/* Shabbir Sakriwala */}
             <a
-              href={buildWhatsAppLink("Hello Ammar bhai, I want to check bearing stock availability.", "ammar")}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setSelectedRecipient("ammar")}
-              className={`p-2.5 rounded-xl border flex items-center justify-between transition-all min-h-[44px] ${
-                selectedRecipient === "ammar"
-                  ? "border-[#25D366] bg-emerald-50 text-[#0B1B3D]"
-                  : "border-slate-200 hover:bg-slate-50 text-slate-700"
-              }`}
-              aria-label="Chat with Sales Desk on WhatsApp"
-            >
-              <div>
-                <div className="font-heading font-extrabold text-sm flex items-center gap-1.5">
-                  <span>Sales Desk</span>
-                  <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-200 text-emerald-900">
-                    Default
-                  </span>
-                </div>
-                <p className="text-[11px] font-mono text-slate-500">Quotations &amp; Dispatches • 8830721850</p>
-              </div>
-              <MessageSquare className="w-4 h-4 text-[#25D366] fill-[#25D366]" />
-            </a>
-
-            {/* Wholesale Desk */}
-            <a
-              href={buildWhatsAppLink("Hello Shabbir bhai, I want to check bearing stock availability.", "shabbir")}
+              href={buildWhatsAppLink("Hello EZZI Bearing Suppliers, I want to enquire about bearing availability.", "shabbir")}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setSelectedRecipient("shabbir")}
@@ -76,13 +51,52 @@ export function FloatingWhatsApp() {
                   ? "border-[#25D366] bg-emerald-50 text-[#0B1B3D]"
                   : "border-slate-200 hover:bg-slate-50 text-slate-700"
               }`}
-              aria-label="Chat with Wholesale Desk on WhatsApp"
+              aria-label="Chat with Shabbir Sakriwala on WhatsApp"
             >
-              <div>
-                <div className="font-heading font-extrabold text-sm">
-                  <span>Wholesale Desk</span>
+              <div className="flex items-center gap-2.5">
+                <div className={`w-7 h-7 rounded-lg flex items-center justify-center font-bold text-xs ${
+                  selectedRecipient === "shabbir" ? "bg-[#25D366] text-slate-950" : "bg-slate-100 text-slate-700"
+                }`}>
+                  S
                 </div>
-                <p className="text-[11px] font-mono text-slate-500">Bulk Orders &amp; Trade • 9272395247</p>
+                <div>
+                  <div className="font-heading font-extrabold text-sm text-[#0B1B3D]">
+                    <span>Shabbir Sakriwala</span>
+                  </div>
+                  <p className="text-[11px] font-mono text-slate-500">+91 9272395247</p>
+                </div>
+              </div>
+              <MessageSquare className="w-4 h-4 text-[#25D366] fill-[#25D366]" />
+            </a>
+
+            {/* Ammar Sakriwala (Default) */}
+            <a
+              href={buildWhatsAppLink("Hello EZZI Bearing Suppliers, I want to enquire about bearing availability.", "ammar")}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setSelectedRecipient("ammar")}
+              className={`p-2.5 rounded-xl border flex items-center justify-between transition-all min-h-[44px] ${
+                selectedRecipient === "ammar"
+                  ? "border-[#25D366] bg-emerald-50 text-[#0B1B3D]"
+                  : "border-slate-200 hover:bg-slate-50 text-slate-700"
+              }`}
+              aria-label="Chat with Ammar Sakriwala on WhatsApp (Default)"
+            >
+              <div className="flex items-center gap-2.5">
+                <div className={`w-7 h-7 rounded-lg flex items-center justify-center font-bold text-xs ${
+                  selectedRecipient === "ammar" ? "bg-[#25D366] text-slate-950" : "bg-slate-100 text-slate-700"
+                }`}>
+                  A
+                </div>
+                <div>
+                  <div className="font-heading font-extrabold text-sm flex items-center gap-1.5 text-[#0B1B3D]">
+                    <span>Ammar Sakriwala</span>
+                    <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-200 text-emerald-900 uppercase">
+                      Default
+                    </span>
+                  </div>
+                  <p className="text-[11px] font-mono text-slate-500">+91 8830721850</p>
+                </div>
               </div>
               <MessageSquare className="w-4 h-4 text-[#25D366] fill-[#25D366]" />
             </a>

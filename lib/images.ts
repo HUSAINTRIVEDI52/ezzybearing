@@ -2,8 +2,8 @@
  * EZZI BEARING SUPPLIERS - Central Image Configuration
  * Location: /lib/images.ts
  * 
- * Master imageKey -> image path mapping for category-level product photography,
- * hero graphics, and depot imagery.
+ * Master imageKey -> image path mapping for category-level product photography
+ * and hero graphics.
  */
 
 export const PLACEHOLDER_IMAGE = "/images/bearing-placeholder.svg";
@@ -11,8 +11,7 @@ export const PLACEHOLDER_IMAGE = "/images/bearing-placeholder.svg";
 export const IMAGE_MAP: Record<string, string> = {
   // Global & Site Layout Imagery
   hero: "/images/hero-bearing.jpg",
-  warehouse: "/images/warehouse-depot.jpg",
-  about: "/images/warehouse-depot.jpg",
+  about: "/images/ezzi-team.jpg",
 
   // Category Level Product Photography
   "deep-groove-ball": "/images/deep-groove-ball.jpg",

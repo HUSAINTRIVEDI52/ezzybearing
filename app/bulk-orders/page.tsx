@@ -81,7 +81,7 @@ export default function BulkOrdersPage() {
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
-                href={buildWhatsAppLink("Hello, I would like to enquire about bulk bearing orders.", recipient)}
+                href={buildWhatsAppLink("Hello EZZI Bearing Suppliers, I would like to enquire about bulk bearing orders.", recipient)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"
@@ -184,7 +184,7 @@ export default function BulkOrdersPage() {
                       Packaging &amp; Delivery Across India
                     </h4>
                     <p className="text-xs text-slate-600 font-sans mt-1 leading-relaxed">
-                      Orders are packed securely and dispatched with transport details shared with you.
+                      Orders are packed securely and handed over for delivery with transport details shared with you.
                     </p>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function BulkOrdersPage() {
                   Delivery Coverage:
                 </span>
                 <p className="text-slate-600 font-sans text-xs">
-                  We arrange delivery across India. Enquire for dispatch timelines and transport options.
+                  We arrange delivery across India. Enquire for availability and transport options.
                 </p>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function BulkOrdersPage() {
                   Have Questions?
                 </span>
                 <span className="font-heading font-bold text-lg text-white block">
-                  Speak Directly with Our Desk
+                  Speak Directly with Our Team
                 </span>
                 <span className="text-xs text-slate-300 font-mono">
                   +91 {siteConfig.contacts[0].phone}
@@ -218,7 +218,7 @@ export default function BulkOrdersPage() {
                 href={`tel:${siteConfig.contacts[0].phone}`}
                 className="px-4 py-2.5 rounded-xl bg-[#C9962B] text-[#0B1B3D] font-bold text-xs uppercase font-mono hover:bg-[#E4B94F] transition-colors"
               >
-                Call Desk
+                Call Us
               </a>
             </div>
           </div>

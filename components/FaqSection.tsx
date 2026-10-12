@@ -13,7 +13,7 @@ const FAQS: FaqItem[] = [
   },
   {
     question: "How can I get a price quotation?",
-    answer: "You can find your bearing part number on our website and click 'Request Quote' to send an enquiry via WhatsApp, or call our trade desk directly. Please mention your required quantity and delivery city."
+    answer: "You can find your bearing part number on our website and click 'Request Quote' to send an enquiry via WhatsApp, or call us directly. Please mention your required quantity and delivery city."
   },
   {
     question: "Where are you located and how do you ship orders?",

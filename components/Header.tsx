@@ -43,22 +43,20 @@ export function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 bg-[#0B1B3D] text-white border-b border-[#C9962B]/25 transition-all duration-300 shadow-md ${
-          isScrolled ? "py-2 shadow-xl" : "py-3 sm:py-4"
-        }`}
+        className={`sticky top-0 z-50 bg-[#0B1B3D] text-white border-b border-[#C9962B]/25 transition-all duration-300 shadow-md w-full max-w-full overflow-hidden ${isScrolled ? "py-2 shadow-xl" : "py-2.5 sm:py-4"
+          }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between gap-2 sm:gap-4 w-full">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink min-w-0">
             <Image
               src="/logo-white.svg"
               alt={`${siteConfig.name} - Quality Precision Trust`}
               width={220}
               height={50}
               priority
-              className={`w-auto object-contain transition-all duration-300 ${
-                isScrolled ? "h-10" : "h-11 sm:h-12"
-              }`}
+              className={`w-auto object-contain transition-all duration-300 max-w-[140px] xs:max-w-[170px] sm:max-w-none ${isScrolled ? "h-8 sm:h-10" : "h-8 sm:h-11"
+                }`}
             />
           </Link>
 
@@ -77,15 +75,13 @@ export function Header() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className={`transition-colors py-1 relative group font-sans ${
-                    isActive ? "text-[#E4B94F] font-semibold" : "text-slate-200 hover:text-[#E4B94F]"
-                  }`}
+                  className={`transition-colors py-1 relative group font-sans ${isActive ? "text-[#E4B94F] font-semibold" : "text-slate-200 hover:text-[#E4B94F]"
+                    }`}
                 >
                   <span>{item.label}</span>
                   <span
-                    className={`absolute bottom-0 left-0 h-0.5 bg-[#C9962B] transition-all duration-200 ${
-                      isActive ? "w-full" : "w-0 group-hover:w-full"
-                    }`}
+                    className={`absolute bottom-0 left-0 h-0.5 bg-[#C9962B] transition-all duration-200 ${isActive ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
                   />
                 </Link>
               );
@@ -93,11 +89,11 @@ export function Header() {
           </nav>
 
           {/* Right Header Actions */}
-          <div className="flex items-center gap-2.5 sm:gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             {/* Click to Call on Mobile */}
             <a
               href={`tel:${shabbir.phoneClean}`}
-              className="lg:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl bg-[#132752] text-[#E4B94F] border border-[#C9962B]/30 hover:bg-[#183060] transition-colors focus-visible:ring-2 focus-visible:ring-[#C9962B]"
+              className="hidden xs:flex lg:hidden min-h-[40px] min-w-[40px] sm:min-h-[44px] sm:min-w-[44px] items-center justify-center rounded-xl bg-[#132752] text-[#E4B94F] border border-[#C9962B]/30 hover:bg-[#183060] transition-colors focus-visible:ring-2 focus-visible:ring-[#C9962B]"
               title={`Call ${shabbir.name}`}
               aria-label={`Call ${shabbir.name}`}
             >
@@ -107,7 +103,7 @@ export function Header() {
             {/* Quote Sheet Basket Trigger */}
             <button
               onClick={openDrawer}
-              className="relative min-h-[44px] min-w-[44px] px-3 py-2 rounded-xl bg-[#132752] hover:bg-[#183060] border border-[#C9962B]/40 text-white flex items-center justify-center gap-1.5 transition-all focus-visible:ring-2 focus-visible:ring-[#C9962B]"
+              className="relative min-h-[40px] min-w-[40px] sm:min-h-[44px] sm:min-w-[44px] px-2 sm:px-3 py-1.5 sm:py-2 rounded-xl bg-[#132752] hover:bg-[#183060] border border-[#C9962B]/40 text-white flex items-center justify-center gap-1.5 transition-all focus-visible:ring-2 focus-visible:ring-[#C9962B]"
               title="Open Quote Sheet / BOM"
               aria-label={`View RFQ Sheet (${totalItems} items)`}
             >
@@ -120,10 +116,10 @@ export function Header() {
               )}
             </button>
 
-            {/* Gold Request a Quote Button */}
+            {/* Gold Request a Quote Button - Desktop/Tablet */}
             <Link
               href="/request-quote"
-              className="min-h-[44px] px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl bg-[#C9962B] hover:bg-[#E4B94F] text-slate-950 font-heading font-extrabold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-md active:scale-95 flex items-center justify-center gap-1.5 focus-visible:ring-2 focus-visible:ring-[#C9962B]"
+              className="hidden md:inline-flex min-h-[44px] px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl bg-[#C9962B] hover:bg-[#E4B94F] text-slate-950 font-heading font-extrabold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-md active:scale-95 items-center justify-center gap-1.5 focus-visible:ring-2 focus-visible:ring-[#C9962B]"
             >
               <span>Request a Quote</span>
             </Link>
@@ -131,7 +127,7 @@ export function Header() {
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-xl text-slate-200 hover:text-white hover:bg-[#132752] transition-colors focus-visible:ring-2 focus-visible:ring-[#C9962B]"
+              className="lg:hidden min-h-[40px] min-w-[40px] sm:min-h-[44px] sm:min-w-[44px] flex items-center justify-center rounded-xl text-slate-200 hover:text-white hover:bg-[#132752] transition-colors focus-visible:ring-2 focus-visible:ring-[#C9962B] shrink-0"
               aria-label="Open mobile navigation menu"
               aria-expanded={mobileMenuOpen}
             >
@@ -176,7 +172,7 @@ export function Header() {
                 {[
                   { label: "Home", href: "/" },
                   { label: "Products & Catalogue", href: "/products" },
-                  { label: "Brands We Stock", href: "/brands" },
+                  { label: "Brands", href: "/brands" },
                   { label: "About EZZI", href: "/about" },
                   { label: "Industries Served", href: "/industries" },
                   { label: "Bulk Orders & Freight", href: "/bulk-orders" },
@@ -207,7 +203,7 @@ export function Header() {
               </Link>
 
               <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Ammar bhai, I want to inquire about bearing stock availability.")}`}
+                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello EZZI Bearing Suppliers, I want to inquire about bearing availability.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full min-h-[44px] py-3 rounded-xl bg-[#25D366] text-slate-950 font-heading font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-md active:scale-95 focus-visible:ring-2 focus-visible:ring-[#C9962B]"

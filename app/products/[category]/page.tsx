@@ -115,7 +115,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
               <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#E4B94F] text-xs font-mono font-bold tracking-wider uppercase mb-3">
                 <span>{cat.code} Series</span>
                 <span className="text-slate-500">•</span>
-                <span>{products.length} Items in Inventory</span>
+                <span>{products.length} Items Listed</span>
               </div>
               <h1 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight uppercase">
                 {cat.name}
@@ -142,7 +142,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white font-medium text-sm border border-white/20 transition-all"
                 >
                   <PhoneCall className="w-4 h-4 text-[#E4B94F]" />
-                  <span>Call Desk ({siteConfig.contacts[0].phone})</span>
+                  <span>Call Us ({siteConfig.contacts[0].phone})</span>
                 </a>
               </div>
             </div>

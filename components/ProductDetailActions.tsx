@@ -66,10 +66,10 @@ export function ProductDetailActions({ product }: ProductDetailActionsProps) {
         <a
           href={`tel:+91${contact.phone}`}
           className="min-h-[44px] py-3 px-4 rounded-xl font-mono text-xs text-[#0B1B3D] bg-white border border-slate-300 hover:border-[#0B1B3D] flex items-center justify-center gap-2 transition-colors font-bold focus-visible:ring-2 focus-visible:ring-[#C9962B]"
-          aria-label={`Call trade desk at +91 ${contact.phone}`}
+          aria-label={`Call Shabbir at +91 ${contact.phone}`}
         >
           <Phone className="w-4 h-4 text-[#C9962B]" />
-          <span>Call Trade Desk</span>
+          <span>Call Shabbir</span>
         </a>
 
         <button

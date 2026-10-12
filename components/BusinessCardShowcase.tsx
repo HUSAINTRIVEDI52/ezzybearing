@@ -3,14 +3,14 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { siteConfig } from "@/lib/siteConfig";
-import { 
-  Phone, 
-  MessageSquare, 
-  MapPin, 
-  Mail, 
-  Copy, 
-  Check, 
-  ExternalLink, 
+import {
+  Phone,
+  MessageSquare,
+  MapPin,
+  Mail,
+  Copy,
+  Check,
+  ExternalLink,
   Sparkles
 } from "lucide-react";
 
@@ -40,7 +40,7 @@ export function BusinessCardShowcase() {
           </div>
 
           <h2 className="text-4xl sm:text-5xl font-heading font-extrabold text-[#0B1B3D] uppercase tracking-tight">
-            Direct Trade Contacts
+            Direct Contacts
           </h2>
 
           <div className="flex items-center justify-center gap-3 my-3">
@@ -50,7 +50,7 @@ export function BusinessCardShowcase() {
           </div>
 
           <p className="text-sm sm:text-base text-slate-600 font-sans">
-            Connect directly with our partners for quotes, bulk orders, and bearing enquiries.
+            Connect directly with Shabbir and Ammar for quotes, bulk orders, and bearing enquiries.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export function BusinessCardShowcase() {
             {/* 4 Value Pillars from Visiting Card */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 my-6">
               {siteConfig.valuePillars.map((pillar) => (
-                <div 
+                <div
                   key={pillar.title}
                   className="p-3.5 rounded-xl bg-[#07122A] border border-white/10 text-center flex flex-col justify-between"
                 >
@@ -105,18 +105,18 @@ export function BusinessCardShowcase() {
             </div>
 
             {/* Stockist Brands Banner */}
-            <div className="p-3 rounded-xl bg-[#132752] border border-[#C9962B]/30 my-4 text-center">
-              <span className="text-[10px] font-mono uppercase tracking-wider text-slate-300 block mb-1">
-                Stockist of SKF, TATA, XNO, DSF:
-              </span>
-              <p className="text-xs font-mono font-bold text-[#E4B94F]">
-                XNO • DSF • SKF • TATA • BALL &amp; ROLLER TAPER BEARINGS • HAND TOOLS
-              </p>
-            </div>
+            {/* <div className="p-3 rounded-xl bg-[#132752] border border-[#C9962B]/30 my-4 text-center"> */}
+            {/* <span className="text-[10px] font-mono uppercase tracking-wider text-slate-300 block mb-1"> */}
+            {/* Stockist of SKF, TATA, XNO, DSF: */}
+            {/* </span> */}
+            {/* <p className="text-xs font-mono font-bold text-[#E4B94F]"> */}
+            {/* XNO • DSF • SKF • TATA • BALL &amp; ROLLER TAPER BEARINGS • HAND TOOLS */}
+            {/* </p> */}
+            {/* </div> */}
 
-            {/* Partner Contacts & Address Grid */}
+            {/* Contacts & Address Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-[#C9962B]/40">
-              {/* Left Column: Direct Partner Phones */}
+              {/* Left Column: Direct Phone Contacts */}
               <div className="space-y-4">
                 <span className="text-xs font-mono uppercase tracking-wider text-[#E4B94F] font-bold block">
                   Direct Contacts:
@@ -125,18 +125,10 @@ export function BusinessCardShowcase() {
                 {/* Shabbir Sakriwala */}
                 <div className="p-3.5 rounded-xl bg-[#132752] border border-[#C9962B]/30 flex items-center justify-between">
                   <div>
-                    <div className="flex items-center gap-2">
-                      <h4 className="text-sm font-heading font-extrabold text-white uppercase">
-                        {shabbir.name}
-                      </h4>
-                      <span className="text-[9px] font-mono font-bold uppercase px-1.5 py-0.5 rounded bg-[#C9962B]/20 text-[#E4B94F] border border-[#C9962B]/30">
-                        Managing Partner
-                      </span>
-                    </div>
-                    <p className="text-[11px] font-mono text-slate-300">
-                      Wholesale &amp; Procurement
-                    </p>
-                    <a 
+                    <h4 className="text-sm font-heading font-extrabold text-white uppercase">
+                      {shabbir.name}
+                    </h4>
+                    <a
                       href={`tel:${shabbir.phoneClean}`}
                       className="text-xs font-mono font-bold text-[#E4B94F] hover:underline mt-0.5 block"
                     >
@@ -147,18 +139,18 @@ export function BusinessCardShowcase() {
                     <a
                       href={`tel:${shabbir.phoneClean}`}
                       className="p-2 rounded-lg bg-[#0B1B3D] hover:bg-black text-[#E4B94F] transition-colors"
-                      title="Call Shabbir bhai"
-                      aria-label="Call Shabbir bhai"
+                      title="Call Shabbir Sakriwala"
+                      aria-label="Call Shabbir Sakriwala"
                     >
                       <Phone className="w-4 h-4" />
                     </a>
                     <a
-                      href={`https://wa.me/${shabbir.whatsappClean}?text=${encodeURIComponent("Hello Shabbir bhai, I am contacting you via EZZI Bearing Suppliers website for a quote.")}`}
+                      href={`https://wa.me/${shabbir.whatsappClean}?text=${encodeURIComponent("Hello EZZI Bearing Suppliers, I am contacting you via your website for a quote.")}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-[#25D366] text-slate-950 transition-colors"
-                      title="WhatsApp Shabbir bhai"
-                      aria-label="WhatsApp Shabbir bhai"
+                      title="WhatsApp"
+                      aria-label="WhatsApp Shabbir Sakriwala"
                     >
                       <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
                     </a>
@@ -171,10 +163,7 @@ export function BusinessCardShowcase() {
                     <h4 className="text-sm font-heading font-extrabold text-white uppercase">
                       {ammar.name}
                     </h4>
-                    <p className="text-[11px] font-mono text-slate-300">
-                      Partner &amp; Operations
-                    </p>
-                    <a 
+                    <a
                       href={`tel:${ammar.phoneClean}`}
                       className="text-xs font-mono font-bold text-[#E4B94F] hover:underline mt-0.5 block"
                     >
@@ -185,18 +174,18 @@ export function BusinessCardShowcase() {
                     <a
                       href={`tel:${ammar.phoneClean}`}
                       className="p-2 rounded-lg bg-[#0B1B3D] hover:bg-black text-[#E4B94F] transition-colors"
-                      title="Call Ammar bhai"
-                      aria-label="Call Ammar bhai"
+                      title="Call Ammar"
+                      aria-label="Call Ammar Sakriwala"
                     >
                       <Phone className="w-4 h-4" />
                     </a>
                     <a
-                      href={`https://wa.me/${ammar.whatsappClean}?text=${encodeURIComponent("Hello Ammar bhai, I am contacting you via EZZI Bearing Suppliers website for a quote.")}`}
+                      href={`https://wa.me/${ammar.whatsappClean}?text=${encodeURIComponent("Hello EZZI Bearing Suppliers, I am contacting you via your website for a quote.")}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-[#25D366] text-slate-950 transition-colors"
-                      title="WhatsApp Ammar bhai"
-                      aria-label="WhatsApp Ammar bhai"
+                      title="WhatsApp"
+                      aria-label="WhatsApp Ammar Sakriwala"
                     >
                       <MessageSquare className="w-4 h-4 fill-slate-950 stroke-none" />
                     </a>
@@ -207,7 +196,7 @@ export function BusinessCardShowcase() {
                 <div className="flex items-center gap-2 text-xs font-mono text-slate-300 pl-1">
                   <Mail className="w-4 h-4 text-[#E4B94F]" />
                   <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors">
-                    {siteConfig.email}
+                    {siteConfig.displayEmail || "ezzybearing@gmail.com"}
                   </a>
                 </div>
               </div>

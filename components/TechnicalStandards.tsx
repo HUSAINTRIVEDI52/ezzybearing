@@ -51,7 +51,7 @@ export function TechnicalStandards() {
         <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#C9962B] font-mono text-xs font-bold mb-3">
             <BookOpen className="w-3.5 h-3.5" />
-            <span>ENGINEERING SPECIFICATION DESK</span>
+            <span>ENGINEERING SPECIFICATION GUIDE</span>
           </div>
 
           <h2 className="text-4xl sm:text-5xl font-heading font-extrabold text-[#0B1B3D] uppercase tracking-tight">

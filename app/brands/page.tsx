@@ -17,7 +17,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Bearing Brands Stocked - XNO, DSF, SKF, TATA",
-  description: "Explore world-class bearing brands stocked at EZZI Bearing Suppliers in Manmad: XNO, DSF, SKF, and TATA. Instant WhatsApp price quotes and all-India dispatch.",
+  description: "Explore world-class bearing brands stocked at EZZI Bearing Suppliers in Manmad: XNO, DSF, SKF, and TATA. Instant WhatsApp price quotes and delivery across India.",
   keywords: [
     "skf bearings stockist",
     "tata bearings supplier",
@@ -93,7 +93,7 @@ export default function BrandsPage() {
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Ammar bhai, I want to enquire about brand availability for SKF, TATA, XNO, and DSF bearings.")}`}
+                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello EZZI Bearing Suppliers, I want to enquire about brand availability for SKF, TATA, XNO, and DSF bearings.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"

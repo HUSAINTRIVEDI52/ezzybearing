@@ -7,7 +7,7 @@ All visual assets for EZZI Bearing Suppliers have been crafted with high-resolut
 | Image File | Description | Type / Category | Source / Attribution |
 | :--- | :--- | :--- | :--- |
 | `hero-bearing.jpg` | Industrial ball & roller bearings on dark slate with gold reflections | Hero Banner Component | Custom Studio Render |
-| `warehouse-depot.jpg` | Modern industrial stockist logistics warehouse with high-bay racks | About / Logistics Depot | Custom Architectural Render |
+| `ezzi-team.jpg` | Shabbir & Ammar Sakriwala at EZZI Bearing Suppliers office in Manmad | About / Team | Company Photo |
 | `deep-groove-ball.jpg` | 6205 series deep groove radial ball bearing with 2RS rubber seal | Deep Groove Ball Bearings | Custom Studio Product Render |
 | `tapered-roller.jpg` | 30208 metric tapered roller bearing inner cone & outer cup assembly | Metric Tapered Roller Bearings | Custom Studio Product Render |
 | `cone-cup-set.jpg` | Heavy-duty tractor & truck matched cone and cup set (LM 44649/10) | Matched Cone & Cup Sets | Custom Studio Product Render |
@@ -21,5 +21,5 @@ All visual assets for EZZI Bearing Suppliers have been crafted with high-resolut
 | `hand-tools.jpg` | 3-jaw forged bearing puller, fitting impact set, grease gun tools | Industrial Hand Tools & Accessories | Custom Studio Product Render |
 | `bearing-placeholder.svg` | Branded technical vector schematic fallback placeholder | Universal Fallback | EZZI In-House Vector Design |
 
-## Replacement Instructions for Depot Owner
+## Replacement Instructions
 To replace any image, drop an optimized file with the same filename into `/public/images/`. The master image mapping in [`/lib/images.ts`](file:///lib/images.ts) will resolve it automatically across all components and product pages.

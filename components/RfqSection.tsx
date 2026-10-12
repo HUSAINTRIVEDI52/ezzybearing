@@ -56,7 +56,7 @@ export function RfqSection() {
 
 --------------------------------------
 *Bearing Part Numbers & Quantities:*
-${bearingList || "Please check requirement list with sales desk."}
+${bearingList || "Please check requirement list with our team."}
 
 --------------------------------------
 _Source: Website RFQ Portal_
@@ -230,7 +230,7 @@ Please provide availability and quote. Thank you!`;
               />
             </div>
 
-            {/* Direct Trade Contact Selector */}
+            {/* WhatsApp Contact Selector */}
             <div className="pt-2">
               <WhatsAppRecipientSelector 
                 selected={recipient} 

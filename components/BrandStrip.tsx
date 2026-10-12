@@ -33,10 +33,10 @@ export function BrandStrip() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0B1B3D]/5 border border-slate-200 text-[#0B1B3D] font-mono text-xs font-bold mb-3">
-            <Award className="w-3.5 h-3.5 text-[#C9962B]" />
-            <span>STOCKIST OF SKF, TATA, XNO, DSF</span>
-          </div>
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0B1B3D]/5 border border-slate-200 text-[#0B1B3D] font-mono text-xs font-bold mb-3"> */}
+          {/* <Award className="w-3.5 h-3.5 text-[#C9962B]" /> */}
+          {/* <span>STOCKIST OF SKF, TATA, XNO, DSF</span> */}
+          {/* </div> */}
 
           <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B1B3D] uppercase tracking-tight">
             Brands We Stock

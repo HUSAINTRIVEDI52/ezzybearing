@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Request a Quote - Instant WhatsApp RFQ",
-  description: "Request wholesale pricing for industrial ball and tapered roller bearings. Instant quotation dispatched via WhatsApp directly to our Manmad depot partners.",
+  description: "Request wholesale pricing for industrial ball and tapered roller bearings. Get a quote on WhatsApp directly from our team in Manmad.",
   alternates: {
     canonical: `${siteConfig.siteUrl}/request-quote`,
   },

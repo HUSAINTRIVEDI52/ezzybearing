@@ -21,8 +21,8 @@ export interface ContactPersonFull {
 }
 
 export const siteFlags = {
-  // Feature flags for claims awaiting owner confirmation.
-  // Re-enable in siteConfig if confirmed by owner.
+  // Feature flags for claims awaiting confirmation.
+  // Re-enable in siteConfig if confirmed.
   showAuthorizedDistributor: false,
   showGstInvoices: false,
   showSameDayDispatch: false,
@@ -46,24 +46,26 @@ export const siteConfig = {
     {
       primary: {
         name: "Shabbir Sakriwala",
-        role: "Managing Partner",
+        role: "Shabbir Sakriwala",
         phone: "+91 92723 95247",
         phoneClean: "+919272395247",
         whatsappClean: "919272395247"
       },
       secondary: {
         name: "Ammar Sakriwala",
-        role: "Partner & Operations",
+        role: "Ammar Sakriwala",
         phone: "+91 88307 21850",
         phoneClean: "+918830721850",
         whatsappClean: "918830721850"
       },
       generalPhone: "+91 92723 95247",
-      email: "sales.ezzybearing@gmail.com"
+      email: "sales.ezzybearing@gmail.com",
+      displayEmail: "ezzybearing@gmail.com"
     }
   ),
   whatsappNumber: "918830721850",   // default WhatsApp contact - Ammar Sakriwala
   email: "sales.ezzybearing@gmail.com",
+  displayEmail: "ezzybearing@gmail.com",
   address: Object.assign(
     "Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104, Maharashtra, India",
     {
@@ -158,7 +160,7 @@ export const siteConfig = {
   ],
   logistics: {
     coverage: "Delivery across India",
-    dispatchNote: "Enquire for availability and dispatch details."
+    dispatchNote: "Enquire for availability and delivery details."
   },
   navigation: [
     { label: "Home", href: "/" },

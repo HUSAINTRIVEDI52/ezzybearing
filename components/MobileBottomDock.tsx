@@ -26,7 +26,7 @@ export function MobileBottomDock() {
 
         {/* 2. WhatsApp Button */}
         <a
-          href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Ammar bhai, I want to inquire about bearing stock availability.")}`}
+          href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello EZZI Bearing Suppliers, I want to inquire about bearing availability.")}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center min-h-[48px] py-1 text-emerald-400 hover:text-emerald-300 transition-colors rounded-xl active:bg-white/10 touch-manipulation"

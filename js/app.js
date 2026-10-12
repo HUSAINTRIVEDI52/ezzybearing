@@ -1079,7 +1079,7 @@ Please reply with quotation & delivery timeline from Manmad depot.`;
       renderCatalog();
     },
     openCustomWhatsAppEnquiry: () => {
-      const text = `Hi Shabbirbhai & Ammarbhai (EZZI Bearing Suppliers, Manmad), I am inquiring for a bearing model/size quotation.`;
+      const text = `Hello EZZI Bearing Suppliers, I am inquiring for a bearing model/size quotation.`;
       window.open(`https://wa.me/${CONFIG.whatsappPrimary}?text=${encodeURIComponent(text)}`, "_blank");
     }
   };

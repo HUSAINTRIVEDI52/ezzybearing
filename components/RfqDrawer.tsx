@@ -4,11 +4,9 @@ import React, { useState } from "react";
 import { useRfq } from "@/lib/rfqContext";
 import { siteConfig } from "@/lib/siteConfig";
 import { 
-  WhatsAppRecipient, 
   buildWhatsAppLink, 
   buildBOMEnquiryMessage 
 } from "@/lib/whatsapp";
-import { WhatsAppRecipientSelector } from "@/components/WhatsAppRecipientSelector";
 import { 
   X, 
   Trash2, 
@@ -33,7 +31,7 @@ export function RfqDrawer() {
     closeDrawer 
   } = useRfq();
 
-  const [recipient, setRecipient] = useState<WhatsAppRecipient>("ammar");
+  const recipient = "ammar";
   const [copied, setCopied] = useState(false);
   const [buyerCompany, setBuyerCompany] = useState("");
   const [buyerCity, setBuyerCity] = useState("");
@@ -207,11 +205,10 @@ export function RfqDrawer() {
                   <span className="text-xs font-mono uppercase tracking-wider text-slate-700 font-bold block">
                     Direct Contact:
                   </span>
-                  <WhatsAppRecipientSelector
-                    selected={recipient}
-                    onChange={setRecipient}
-                    compact
-                  />
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#0B1B3D] text-[#E4B94F] text-xs font-mono font-bold shadow-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                    <span>Ammar Sakriwala</span>
+                  </div>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <input

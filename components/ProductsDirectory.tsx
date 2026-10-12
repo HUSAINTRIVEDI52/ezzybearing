@@ -178,7 +178,7 @@ export function ProductsDirectory({
               Industrial Bearing Catalogue
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-0.5 font-sans">
-              Showing <strong className="text-[#0B1B3D] font-mono">{filteredProducts.length}</strong> authenticated bearing series available at our Manmad depot.
+              Showing <strong className="text-[#0B1B3D] font-mono">{filteredProducts.length}</strong> bearing series in our catalogue.
             </p>
           </div>
 
@@ -282,12 +282,12 @@ export function ProductsDirectory({
                   No match found
                 </h3>
                 <p className="text-sm text-slate-600 max-w-lg mx-auto mb-6 font-sans leading-relaxed">
-                  We stock additional industrial bearings and non-standard sizes at our Manmad depot. Send your part number directly to our trade desk on WhatsApp!
+                  We stock additional industrial bearings and non-standard sizes in Manmad. Send your part number directly to our team on WhatsApp!
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                   <a
                     href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
-                      `Hello Ammar bhai, I searched your catalogue for "${searchQuery || "bearing"}" and want to check if you have it in stock.`
+                      `Hello EZZI Bearing Suppliers, I searched your catalogue for "${searchQuery || "bearing"}" and want to enquire for availability.`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

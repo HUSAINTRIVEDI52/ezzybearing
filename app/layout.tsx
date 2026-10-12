@@ -37,8 +37,7 @@ export const metadata: Metadata = {
     "XNO bearings",
     "DSF bearings",
     "taper roller bearing",
-    "ball bearing",
-    "hand tools"
+    "ball bearing"
   ],
   authors: siteConfig.contacts.map((c) => ({ name: c.name })),
   creator: siteConfig.name,

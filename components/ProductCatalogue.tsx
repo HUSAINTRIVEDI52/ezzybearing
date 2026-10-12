@@ -137,10 +137,10 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
           {/* Quick Stats Pill */}
           <div className="flex items-center gap-3">
             <div className="px-4 py-2.5 rounded-xl bg-white border border-slate-200 shadow-soft text-right">
-              <span className="block text-[11px] font-mono text-slate-500">Inventory Status</span>
+              <span className="block text-[11px] font-mono text-slate-500">Availability</span>
               <span className="font-heading font-bold text-emerald-600 text-sm flex items-center gap-1.5 justify-end uppercase">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                Ready Depot Stock
+                Enquire for Availability
               </span>
             </div>
           </div>
@@ -322,12 +322,12 @@ export function ProductCatalogue({ initialProducts, categories }: ProductCatalog
               No match? Send us the bearing number on WhatsApp
             </h3>
             <p className="text-sm text-slate-600 max-w-lg mx-auto mb-6 font-sans leading-relaxed">
-              We stock hundreds of additional industrial bearings, heavy machine series, and non-standard sizes at our Manmad depot that may not be listed in this quick finder. Send your part number directly to our trade desk!
+              We stock hundreds of additional industrial bearings, heavy machine series, and non-standard sizes in Manmad that may not be listed in this quick finder. Send your part number directly to our team!
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
                 href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
-                  `Hello Ammar bhai, I searched for "${searchQuery || "bearing"}" in your quick finder. Please check if you have this in stock at your Manmad depot.`
+                  `Hello EZZI Bearing Suppliers, I searched for "${searchQuery || "bearing"}" in your quick finder. Please check if you have this available in Manmad.`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -16,7 +16,7 @@ export function WhyChooseEzzi() {
     {
       icon: <Truck className="w-6 h-6 text-[#C9962B]" />,
       title: "Delivery Across India",
-      description: "Reliable freight and parcel dispatch arranged to destinations across India."
+      description: "Reliable freight and parcel delivery arranged to destinations across India."
     },
     {
       icon: <MessageSquare className="w-6 h-6 text-[#0B1B3D]" />,

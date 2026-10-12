@@ -175,7 +175,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
               </div>
             </div>
 
-            {/* Geometric Dimensional Schematic Card - ISO Standard Verified Only */}
+            {/* Geometric Dimensional Schematic Card */}
             {product.dimensionsVerified && (
               <div className="relative rounded-2xl bg-white border border-slate-200 p-6 shadow-soft flex flex-col items-center justify-center text-center overflow-hidden">
                 <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500 mb-2">
@@ -247,7 +247,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 )}
               </div>
 
-              {/* Verified Dimensional Specs Table - ISO Standard Verified Only */}
+              {/* Dimensional Specs Table */}
               {product.dimensionsVerified && (
                 <div className="mt-6">
                   <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 mb-3">

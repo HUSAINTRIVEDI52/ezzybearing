@@ -70,7 +70,7 @@ export default function PrivacyPolicyPage() {
               <span>2. Direct WhatsApp Communication</span>
             </h2>
             <p>
-              When you submit a quote request or click an RFQ link, your required part numbers and contact details are prefilled into WhatsApp and transmitted directly to our partners (Shabbir Sakriwala and Ammar Sakriwala). This communication is subject to WhatsApp's standard end-to-end encryption protocols.
+              When you submit a quote request or click an RFQ link, your required part numbers and contact details are prefilled into WhatsApp and transmitted directly to Shabbir Sakriwala and Ammar Sakriwala. This communication is subject to WhatsApp's standard end-to-end encryption protocols.
             </p>
           </section>
 
@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
               Questions Regarding Privacy?
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 font-sans">
-              Contact our partners directly at: EZZI Bearing Suppliers, Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104, Maharashtra, India. Email: <a href={`mailto:${siteConfig.email}`} className="text-[#0B1B3D] font-bold hover:underline">{siteConfig.email}</a>.
+              Contact our team directly at: EZZI Bearing Suppliers, Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104, Maharashtra, India. Email: <a href={`mailto:${siteConfig.email}`} className="text-[#0B1B3D] font-bold hover:underline">{siteConfig.displayEmail || "ezzybearing@gmail.com"}</a>.
             </p>
           </section>
         </div>

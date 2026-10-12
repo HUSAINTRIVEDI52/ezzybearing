@@ -25,14 +25,14 @@ export const WHATSAPP_CONTACTS: Record<WhatsAppRecipient, ContactInfo> = {
     name: "Ammar Sakriwala",
     phone: "8830721850",
     whatsappNumber: "918830721850",
-    role: "Partner & Operations"
+    role: "Ammar Sakriwala"
   },
   shabbir: {
     id: "shabbir",
     name: "Shabbir Sakriwala",
     phone: "9272395247",
     whatsappNumber: "919272395247",
-    role: "Senior Partner & Wholesale Trade"
+    role: "Shabbir Sakriwala"
   }
 };
 
@@ -205,6 +205,6 @@ export function buildGeneralEnquiryMessage(
 ${query}
 
 _Page Reference: ${pageTitle}_
-Please connect me with your sales desk.`
+Please connect me with your team.`
   );
 }

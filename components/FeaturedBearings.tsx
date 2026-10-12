@@ -36,7 +36,7 @@ export function FeaturedBearings() {
               Featured &amp; Popular Bearings
             </h2>
             <p className="text-slate-600 text-sm mt-1 font-sans">
-              Frequently requested bearing series ready for dispatch across India.
+              Frequently requested bearing series with delivery across India.
             </p>
           </div>
 

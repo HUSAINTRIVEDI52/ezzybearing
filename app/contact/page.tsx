@@ -19,7 +19,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Contact Us | Manmad, Maharashtra",
-  description: "Contact Shabbir and Ammar Sakriwala at EZZI Bearing Suppliers in Manmad. Call, WhatsApp, email, or visit our Burhani Complex warehouse in Bohri Compound.",
+  description: "Contact Shabbir and Ammar Sakriwala at EZZI Bearing Suppliers in Manmad. Call, WhatsApp, email, or visit Burhani Complex in Bohri Compound.",
   keywords: [
     "contact ezzi bearing suppliers",
     "shabbir sakriwala phone",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Contact Us | ${siteConfig.name}`,
-    description: "Contact Shabbir and Ammar Sakriwala at EZZI Bearing Suppliers in Manmad. Call, WhatsApp, email, or visit our warehouse.",
+    description: "Contact Shabbir and Ammar Sakriwala at EZZI Bearing Suppliers in Manmad. Call, WhatsApp, or visit us in Manmad.",
     url: `${siteConfig.siteUrl}/contact`,
     images: ["/og-image.png"],
   },
@@ -64,18 +64,18 @@ export default function ContactPage() {
 
           <div className="mt-4 max-w-2xl">
             <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-[#C9962B]/10 border border-[#C9962B]/30 text-[#E4B94F] text-xs font-mono font-bold tracking-wider uppercase mb-3">
-              <span>Trade Assistance &amp; Depot Inquiries</span>
+              <span>Trade Assistance &amp; Enquiries</span>
             </div>
             <h1 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight uppercase">
               Get in Touch with EZZI
             </h1>
             <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
-              Connect directly with our partners for product availability, quotations, and bulk order enquiries.
+              Connect directly with Shabbir and Ammar for product availability, quotations, and bulk order enquiries.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
-                href={`https://wa.me/${ammar.whatsappClean}?text=${encodeURIComponent("Hello Ammar bhai, I want to inquire about bearing stock from your contact page.")}`}
+                href={`https://wa.me/${ammar.whatsappClean}?text=${encodeURIComponent("Hello EZZI Bearing Suppliers, I want to inquire about bearings from your contact page.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"
@@ -90,7 +90,7 @@ export default function ContactPage() {
                 aria-label={`Call ${shabbir.name} at ${shabbir.phone}`}
               >
                 <PhoneCall className="w-4 h-4 text-[#E4B94F]" />
-                <span>Call Trade Desk</span>
+                <span>Call {shabbir.name}</span>
               </a>
             </div>
           </div>
@@ -105,17 +105,14 @@ export default function ContactPage() {
             <div className="bg-white rounded-2xl border border-slate-200 p-8 shadow-soft space-y-6">
               <h2 className="font-heading font-extrabold text-2xl text-[#0B1B3D] uppercase tracking-tight flex items-center gap-2">
                 <PhoneCall className="w-5 h-5 text-[#C9962B]" />
-                <span>Direct Contact Personnel</span>
+                <span>DIRECT CONTACT</span>
               </h2>
 
-              {/* Shabbir Sakriwala (Managing Partner) */}
+              {/* Shabbir Sakriwala */}
               <div className="p-4 rounded-xl bg-[#F4F6FA] border border-slate-200">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-heading font-bold text-lg text-[#0B1B3D] uppercase">
                     {shabbir.name}
-                  </span>
-                  <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-[#C9962B]/10 text-[#C9962B] border border-[#C9962B]/20">
-                    {shabbir.role}
                   </span>
                 </div>
                 <p className="text-xs text-slate-500 font-sans mb-3">
@@ -130,7 +127,7 @@ export default function ContactPage() {
                     <span>Call {shabbir.phone}</span>
                   </a>
                   <a
-                    href={`https://wa.me/${shabbir.whatsappClean}?text=Hello%20Shabbir%20bhai,%20I%20have%20a%20bearing%20enquiry.`}
+                    href={`https://wa.me/${shabbir.whatsappClean}?text=Hello%20EZZI%20Bearing%20Suppliers,%20I%20have%20a%20bearing%20enquiry.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2 px-3 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
@@ -141,18 +138,15 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Ammar Sakriwala (Partner & Operations) */}
+              {/* Ammar Sakriwala */}
               <div className="p-4 rounded-xl bg-[#F4F6FA] border border-slate-200">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-heading font-bold text-lg text-[#0B1B3D] uppercase">
                     {ammar.name}
                   </span>
-                  <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded bg-[#C9962B]/10 text-[#C9962B] border border-[#C9962B]/20">
-                    {ammar.role}
-                  </span>
                 </div>
                 <p className="text-xs text-slate-500 font-sans mb-3">
-                  Operations, packaging, delivery across India, and order enquiries.
+                  Packaging, delivery across India, and order enquiries.
                 </p>
                 <div className="flex items-center gap-2 font-mono text-xs">
                   <a
@@ -163,7 +157,7 @@ export default function ContactPage() {
                     <span>Call {ammar.phone}</span>
                   </a>
                   <a
-                    href={`https://wa.me/${ammar.whatsappClean}?text=Hello%20Ammar%20bhai,%20I%20have%20a%20dispatch%20enquiry.`}
+                    href={`https://wa.me/${ammar.whatsappClean}?text=Hello%20EZZI%20Bearing%20Suppliers,%20I%20have%20an%20enquiry.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2 px-3 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
@@ -183,7 +177,7 @@ export default function ContactPage() {
                     href={`mailto:${siteConfig.email}`}
                     className="font-bold text-[#0B1B3D] hover:text-[#C9962B] transition-colors"
                   >
-                    {siteConfig.email}
+                    {siteConfig.displayEmail || "ezzybearing@gmail.com"}
                   </a>
                 </div>
               </div>
@@ -193,7 +187,7 @@ export default function ContactPage() {
             <div className="bg-white rounded-2xl border border-slate-200 p-8 shadow-soft space-y-5">
               <h3 className="font-heading font-extrabold text-xl text-[#0B1B3D] uppercase tracking-tight flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-[#C9962B]" />
-                <span>Warehouse Location</span>
+                <span>Location &amp; Address</span>
               </h3>
 
               <div className="font-sans text-sm text-slate-700 leading-relaxed space-y-1">

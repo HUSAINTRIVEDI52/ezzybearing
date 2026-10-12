@@ -129,10 +129,10 @@ export function Footer() {
                 <Phone className="w-4 h-4 text-[#E4B94F] shrink-0" />
                 <div>
                   <a href={`tel:${shabbir.phoneClean}`} className="text-white hover:text-[#E4B94F] block font-bold">
-                    {shabbir.phone}
+                    {shabbir.name}: {shabbir.phone}
                   </a>
                   <a href={`tel:${ammar.phoneClean}`} className="text-slate-300 hover:text-[#E4B94F] block font-bold">
-                    {ammar.phone}
+                    {ammar.name}: {ammar.phone}
                   </a>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export function Footer() {
               <div className="flex items-center gap-2 pt-1 font-mono">
                 <Mail className="w-4 h-4 text-slate-400 shrink-0" />
                 <a href={`mailto:${siteConfig.email}`} className="text-slate-200 hover:text-white">
-                  {siteConfig.email}
+                  {siteConfig.displayEmail || "ezzybearing@gmail.com"}
                 </a>
               </div>
             </div>

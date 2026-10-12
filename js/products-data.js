@@ -116,18 +116,8 @@ const BEARING_CATEGORIES = [
     "commonSeries": "Custom Automotive & Machine Series",
     "featuredBadge": "Special Duty",
     "count": 5
-  },
-  {
-    "id": "hand-tools",
-    "name": "Hand Tools (enquiry only)",
-    "shortName": "Hand Tools",
-    "code": "TOOLS",
-    "icon": "hand-tools",
-    "description": "Industrial bearing pullers, fitting kits, wrenches, and workshop maintenance hand tools.",
-    "commonSeries": "Mechanical Pullers, Fitting Tool Sets, Spanners",
-    "featuredBadge": "Enquiry Only",
-    "count": 0
   }
+
 ];
 
 const BRANDS_STOCKED = [

@@ -4,16 +4,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { siteConfig } from "@/lib/siteConfig";
-import { 
-  ShieldCheck, 
-  Target, 
-  Award, 
-  MapPin, 
-  PhoneCall, 
-  MessageSquare, 
-  Truck, 
-  CheckCircle2, 
-  Building2, 
+import {
+  ShieldCheck,
+  Target,
+  Award,
+  MapPin,
+  PhoneCall,
+  MessageSquare,
+  Truck,
+  CheckCircle2,
   Boxes,
   Users,
   Compass,
@@ -73,7 +72,7 @@ export default function AboutPage() {
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Ammar bhai, I am reading about EZZI Bearing Suppliers and would like to connect.")}`}
+                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello EZZI Bearing Suppliers, I am reading about your business and would like to connect.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold text-sm transition-all shadow-md active:scale-95"
@@ -85,7 +84,7 @@ export default function AboutPage() {
               <a
                 href={`tel:+91${siteConfig.contacts[0].phone}`}
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-xl min-h-[44px] bg-white/10 hover:bg-white/15 text-white font-medium text-sm border border-white/20 transition-all active:scale-95"
-                aria-label="Call EZZI trade desk"
+                aria-label="Call Shabbir Sakriwala"
               >
                 <PhoneCall className="w-4 h-4 text-[#E4B94F]" />
                 <span>Call {siteConfig.contacts[0].phone}</span>
@@ -125,62 +124,33 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Right Highlights Card with Warehouse Image */}
+          {/* Right Highlights Card with Shabbir & Ammar Team Image */}
           <div className="lg:col-span-5 bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-soft">
-            <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-100">
+            <div className="relative w-full aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-slate-100">
               <Image
-                src="/images/warehouse-depot.jpg"
-                alt="EZZI Bearing Suppliers in Manmad, Maharashtra"
+                src="/images/ezzi-team.jpg"
+                alt="Shabbir and Ammar Sakriwala - EZZI Bearing Suppliers, Manmad"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover object-center"
+                className="object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B3D]/80 via-transparent to-transparent" />
               <div className="absolute bottom-3 left-4 right-4 text-white">
-                <span className="text-[10px] font-mono text-[#E4B94F] uppercase tracking-wider block font-bold">
-                  Bohri Compound, Manmad
-                </span>
-                <span className="font-heading font-extrabold text-base uppercase">
-                  EZZI Bearing Suppliers
-                </span>
+                {/* <span className="text-[10px] font-mono text-[#E4B94F] uppercase tracking-wider block font-bold"> */}
+                {/* Burhani Complex, Manmad */}
+                {/* </span> */}
+                {/* <span className="font-heading font-extrabold text-base uppercase"> */}
+                {/* Shabbir &amp; Ammar Sakriwala */}
+                {/* </span> */}
               </div>
             </div>
-
-            <div className="p-6 sm:p-8">
-              <h3 className="font-heading font-bold text-xl text-[#0B1B3D] uppercase mb-4 flex items-center gap-2">
-                <Building2 className="w-5 h-5 text-[#C9962B]" />
-                <span>Operations Snapshot</span>
-              </h3>
-            <div className="space-y-3 font-mono text-xs text-slate-600">
-              <div className="flex justify-between py-2 border-b border-slate-100">
-                <span className="text-slate-400">Head Office:</span>
-                <span className="font-bold text-[#0B1B3D] text-right">Burhani Complex, Manmad</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-slate-100">
-                <span className="text-slate-400">District / State:</span>
-                <span className="font-bold text-[#0B1B3D]">Nashik, Maharashtra</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-slate-100">
-                <span className="text-slate-400">Catalogue Range:</span>
-                <span className="font-bold text-[#0B1B3D]">193 Bearing Items</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-slate-100">
-                <span className="text-slate-400">Stockist Brands:</span>
-                <span className="font-bold text-[#0B1B3D]">SKF, TATA, XNO, DSF</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-slate-100">
-                <span className="text-slate-400">Delivery:</span>
-                <span className="font-bold text-emerald-600">Across India</span>
-              </div>
-              <div className="flex justify-between py-2">
-                <span className="text-slate-400">Orders:</span>
-                <span className="font-bold text-[#C9962B]">Bulk Orders Welcome</span>
-              </div>
+            <div className="p-4 sm:p-5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs font-mono text-slate-600">
+              <span className="text-slate-500">EZZI Bearing Suppliers</span>
+              <span className="font-bold text-[#0B1B3D]">Manmad, Maharashtra</span>
             </div>
           </div>
         </div>
-      </div>
 
         {/* The Three Pillars: Quality, Precision, Trust */}
         <div>
@@ -192,7 +162,7 @@ export default function AboutPage() {
               Quality • Precision • Trust
             </h2>
             <p className="mt-2 text-slate-500 text-sm font-sans">
-              The three core values represented on our visiting card that steer every order and client partnership.
+              The three core values represented on our visiting card that steer every order and client relationship.
             </p>
           </div>
 
@@ -217,7 +187,7 @@ export default function AboutPage() {
                 Precision
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed font-sans">
-                In rolling elements, fractions of a millimeter define equipment life. We supply verified standard and C3 radial clearances, precise bore-to-outer diameter ratios, and correct contact angles for reliable fits.
+                In rolling elements, fractions of a millimeter define equipment life. We supply standard and C3 radial clearances, precise bore-to-outer diameter ratios, and correct contact angles for reliable fits.
               </p>
             </div>
 
@@ -245,7 +215,7 @@ export default function AboutPage() {
               What We Supply Under One Roof
             </h2>
             <p className="mt-2 text-slate-500 text-sm font-sans">
-              From heavy plant gearboxes to small precision motors, our Manmad inventory covers:
+              From heavy plant gearboxes to small precision motors, our Manmad catalogue covers:
             </p>
           </div>
 
@@ -300,13 +270,13 @@ export default function AboutPage() {
           <div className="relative z-10">
             <div className="max-w-2xl mb-8">
               <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#E4B94F] block mb-1">
-                Leadership &amp; Trade Contacts
+                Direct Contacts
               </span>
               <h2 className="font-heading font-black text-2xl sm:text-3xl text-white uppercase tracking-tight">
-                Connect Directly with the Owners
+                Connect Directly with Our Team
               </h2>
               <p className="mt-2 text-slate-300 text-sm font-sans">
-                At EZZI Bearing Suppliers, you speak directly with experienced trade decision makers who understand part cross-references and immediate procurement needs.
+                At EZZI Bearing Suppliers, you speak directly with experienced team members who understand part numbers and prompt quotation needs.
               </p>
             </div>
 
@@ -319,17 +289,17 @@ export default function AboutPage() {
                       <h3 className="font-heading font-black text-2xl text-white uppercase">
                         Shabbir Sakriwala
                       </h3>
-                      <span className="text-xs font-mono text-[#E4B94F] block">
-                        Managing Partner • Trade &amp; Procurement
-                      </span>
+                      {/* <span className="text-xs font-mono text-[#E4B94F] block"> */}
+                      {/* Direct Trade Contact */}
+                      {/* </span> */}
                     </div>
                     <div className="w-12 h-12 rounded-full bg-[#C9962B]/20 border border-[#C9962B] flex items-center justify-center text-[#E4B94F] font-heading font-bold text-lg">
                       SS
                     </div>
                   </div>
-                  <p className="text-xs text-slate-300 font-sans mb-6">
-                    Handling bulk orders, trade enquiries, and technical specifications for industrial clients.
-                  </p>
+                  {/* <p className="text-xs text-slate-300 font-sans mb-6"> */}
+                  {/* Assisting with bulk orders, trade enquiries, and technical specifications for industrial clients. */}
+                  {/* </p> */}
                 </div>
                 <div className="pt-4 border-t border-white/10 flex flex-wrap items-center gap-3">
                   <a
@@ -340,7 +310,7 @@ export default function AboutPage() {
                     <span>Call 92723 95247</span>
                   </a>
                   <a
-                    href="https://wa.me/919272395247?text=Hello%20Shabbir%20bhai,%20I%20would%20like%20to%20enquire%20about%20bearings."
+                    href="https://wa.me/919272395247?text=Hello%20EZZI%20Bearing%20Suppliers,%20I%20would%20like%20to%20enquire%20about%20bearings."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-4 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-sm"
@@ -359,17 +329,17 @@ export default function AboutPage() {
                       <h3 className="font-heading font-black text-2xl text-white uppercase">
                         Ammar Sakriwala
                       </h3>
-                      <span className="text-xs font-mono text-[#E4B94F] block">
-                        Partner • Operations &amp; Logistics
-                      </span>
+                      {/* <span className="text-xs font-mono text-[#E4B94F] block"> */}
+                      {/* Direct Trade Contact */}
+                      {/* </span> */}
                     </div>
                     <div className="w-12 h-12 rounded-full bg-[#C9962B]/20 border border-[#C9962B] flex items-center justify-center text-[#E4B94F] font-heading font-bold text-lg">
                       AS
                     </div>
                   </div>
-                  <p className="text-xs text-slate-300 font-sans mb-6">
-                    Managing order packaging, daily dispatches across India, and customer communications.
-                  </p>
+                  {/* <p className="text-xs text-slate-300 font-sans mb-6"> */}
+                  {/* Managing order packaging, daily deliveries across India, and customer communications. */}
+                  {/* </p> */}
                 </div>
                 <div className="pt-4 border-t border-white/10 flex flex-wrap items-center gap-3">
                   <a
@@ -380,7 +350,7 @@ export default function AboutPage() {
                     <span>Call 88307 21850</span>
                   </a>
                   <a
-                    href="https://wa.me/918830721850?text=Hello%20Ammar%20bhai,%20I%20would%20like%20to%20enquire%20about%20bearing%20delivery."
+                    href="https://wa.me/918830721850?text=Hello%20EZZI%20Bearing%20Suppliers,%20I%20would%20like%20to%20enquire%20about%20bearing%20delivery."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-4 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-sm"
