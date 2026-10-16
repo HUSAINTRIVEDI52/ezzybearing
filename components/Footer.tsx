@@ -140,7 +140,7 @@ export function Footer() {
               <div className="flex items-center gap-2 pt-1 font-mono">
                 <Mail className="w-4 h-4 text-slate-400 shrink-0" />
                 <a href={`mailto:${siteConfig.email}`} className="text-slate-200 hover:text-white">
-                  {siteConfig.displayEmail || "ezzybearing@gmail.com"}
+                  {siteConfig.displayEmail || "sales.ezzybearing@gmail.com"}
                 </a>
               </div>
             </div>

@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
               Questions Regarding Privacy?
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 font-sans">
-              Contact our team directly at: EZZI Bearing Suppliers, Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104, Maharashtra, India. Email: <a href={`mailto:${siteConfig.email}`} className="text-[#0B1B3D] font-bold hover:underline">{siteConfig.displayEmail || "ezzybearing@gmail.com"}</a>.
+              Contact our team directly at: EZZI Bearing Suppliers, Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104, Maharashtra, India. Email: <a href={`mailto:${siteConfig.email}`} className="text-[#0B1B3D] font-bold hover:underline">{siteConfig.displayEmail || "sales.ezzybearing@gmail.com"}</a>.
             </p>
           </section>
         </div>

@@ -177,7 +177,7 @@ export default function ContactPage() {
                     href={`mailto:${siteConfig.email}`}
                     className="font-bold text-[#0B1B3D] hover:text-[#C9962B] transition-colors"
                   >
-                    {siteConfig.displayEmail || "ezzybearing@gmail.com"}
+                    {siteConfig.displayEmail || "sales.ezzybearing@gmail.com"}
                   </a>
                 </div>
               </div>

@@ -60,12 +60,12 @@ export const siteConfig = {
       },
       generalPhone: "+91 92723 95247",
       email: "sales.ezzybearing@gmail.com",
-      displayEmail: "ezzybearing@gmail.com"
+      displayEmail: "sales.ezzybearing@gmail.com"
     }
   ),
   whatsappNumber: "918830721850",   // default WhatsApp contact - Ammar Sakriwala
   email: "sales.ezzybearing@gmail.com",
-  displayEmail: "ezzybearing@gmail.com",
+  displayEmail: "sales.ezzybearing@gmail.com",
   address: Object.assign(
     "Burhani Complex, Opp. Post Office, Near Bohri Masjid, Bohri Compound, Manmad - 423104, Maharashtra, India",
     {

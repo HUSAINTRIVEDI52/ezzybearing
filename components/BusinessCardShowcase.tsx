@@ -196,7 +196,7 @@ export function BusinessCardShowcase() {
                 <div className="flex items-center gap-2 text-xs font-mono text-slate-300 pl-1">
                   <Mail className="w-4 h-4 text-[#E4B94F]" />
                   <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors">
-                    {siteConfig.displayEmail || "ezzybearing@gmail.com"}
+                    {siteConfig.displayEmail || "sales.ezzybearing@gmail.com"}
                   </a>
                 </div>
               </div>
